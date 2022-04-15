@@ -59,7 +59,7 @@ export default {
     ],
 
     axios: {
-        baseURL: 'http://ip3dev.com/drupal-api',
+        baseURL: 'https://ip3dev.com/drupal-api',
     },
 
     styleResources: {
@@ -79,7 +79,7 @@ export default {
     },
 
     env: {
-        baseUrl: 'http://ip3dev.com/drupal-api',
-        siteUrl:'http://ip3dev.com'
+        baseUrl: 'https://ip3dev.com/drupal-api',
+        siteUrl:'https://ip3dev.com'
     }
 }
