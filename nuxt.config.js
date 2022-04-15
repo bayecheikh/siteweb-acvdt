@@ -58,6 +58,10 @@ export default {
         '@nuxtjs/axios',
     ],
 
+    axios: {
+        baseURL: 'http://localhost/drupal-api',
+    },
+
     styleResources: {
         scss: [
             '~/assets/scss/_variables.scss',
@@ -73,4 +77,9 @@ export default {
             compact: true,
         },
     },
+
+    env: {
+        baseUrl: 'http://ip3dev.com/drupal-api',
+        siteUrl:'http://ip3dev.com'
+      }
 }

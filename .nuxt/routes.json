@@ -3,217 +3,186 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\about.vue",
-    "chunkName": "pages/about",
-    "_name": "_102410fc"
+    "chunkName": "pages/about"
   },
   {
     "name": "blog",
     "path": "/blog",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\index.vue",
-    "chunkName": "pages/blog/index",
-    "_name": "_a8e56bc2"
+    "chunkName": "pages/blog/index"
   },
   {
     "name": "cart",
     "path": "/cart",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\cart.vue",
-    "chunkName": "pages/cart",
-    "_name": "_09ac64fe"
+    "chunkName": "pages/cart"
   },
   {
     "name": "checkout",
     "path": "/checkout",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\checkout.vue",
-    "chunkName": "pages/checkout",
-    "_name": "_a053dfb2"
+    "chunkName": "pages/checkout"
   },
   {
     "name": "compare",
     "path": "/compare",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\compare.vue",
-    "chunkName": "pages/compare",
-    "_name": "_7edcc494"
+    "chunkName": "pages/compare"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_cc3ed362"
+    "chunkName": "pages/contact"
   },
   {
     "name": "home-cosmetics",
     "path": "/home-cosmetics",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-cosmetics.vue",
-    "chunkName": "pages/home-cosmetics",
-    "_name": "_1cdc3f92"
+    "chunkName": "pages/home-cosmetics"
   },
   {
     "name": "home-fashion-five",
     "path": "/home-fashion-five",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-five.vue",
-    "chunkName": "pages/home-fashion-five",
-    "_name": "_6fd85ec4"
+    "chunkName": "pages/home-fashion-five"
   },
   {
     "name": "home-fashion-four",
     "path": "/home-fashion-four",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-four.vue",
-    "chunkName": "pages/home-fashion-four",
-    "_name": "_a77fc990"
+    "chunkName": "pages/home-fashion-four"
   },
   {
     "name": "home-fashion-seven",
     "path": "/home-fashion-seven",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-seven.vue",
-    "chunkName": "pages/home-fashion-seven",
-    "_name": "_768d94eb"
+    "chunkName": "pages/home-fashion-seven"
   },
   {
     "name": "home-fashion-six",
     "path": "/home-fashion-six",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-six.vue",
-    "chunkName": "pages/home-fashion-six",
-    "_name": "_503818c0"
+    "chunkName": "pages/home-fashion-six"
   },
   {
     "name": "home-fashion-three",
     "path": "/home-fashion-three",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-three.vue",
-    "chunkName": "pages/home-fashion-three",
-    "_name": "_6e5dc9fc"
+    "chunkName": "pages/home-fashion-three"
   },
   {
     "name": "home-fashion-two",
     "path": "/home-fashion-two",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-two.vue",
-    "chunkName": "pages/home-fashion-two",
-    "_name": "_c6f94dac"
+    "chunkName": "pages/home-fashion-two"
   },
   {
     "name": "login-register",
     "path": "/login-register",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\login-register.vue",
-    "chunkName": "pages/login-register",
-    "_name": "_d2582fb0"
+    "chunkName": "pages/login-register"
   },
   {
     "name": "my-account",
     "path": "/my-account",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\my-account.vue",
-    "chunkName": "pages/my-account",
-    "_name": "_ff3a5ea6"
+    "chunkName": "pages/my-account"
   },
   {
     "name": "privacy-policy",
     "path": "/privacy-policy",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\privacy-policy.vue",
-    "chunkName": "pages/privacy-policy",
-    "_name": "_59b17ab8"
+    "chunkName": "pages/privacy-policy"
   },
   {
     "name": "shop",
     "path": "/shop",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop.vue",
-    "chunkName": "pages/shop",
-    "_name": "_339d5b52"
+    "chunkName": "pages/shop"
   },
   {
     "name": "shop-grid-full-width",
     "path": "/shop-grid-full-width",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-grid-full-width.vue",
-    "chunkName": "pages/shop-grid-full-width",
-    "_name": "_1d5b4979"
+    "chunkName": "pages/shop-grid-full-width"
   },
   {
     "name": "shop-grid-no-sidebar",
     "path": "/shop-grid-no-sidebar",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-grid-no-sidebar.vue",
-    "chunkName": "pages/shop-grid-no-sidebar",
-    "_name": "_4c9ad87e"
+    "chunkName": "pages/shop-grid-no-sidebar"
   },
   {
     "name": "shop-grid-right-sidebar",
     "path": "/shop-grid-right-sidebar",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-grid-right-sidebar.vue",
-    "chunkName": "pages/shop-grid-right-sidebar",
-    "_name": "_5eaf3d6c"
+    "chunkName": "pages/shop-grid-right-sidebar"
   },
   {
     "name": "shop-grid-two-column",
     "path": "/shop-grid-two-column",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-grid-two-column.vue",
-    "chunkName": "pages/shop-grid-two-column",
-    "_name": "_5bf9cae8"
+    "chunkName": "pages/shop-grid-two-column"
   },
   {
     "name": "shop-list-full-width",
     "path": "/shop-list-full-width",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-list-full-width.vue",
-    "chunkName": "pages/shop-list-full-width",
-    "_name": "_784ec921"
+    "chunkName": "pages/shop-list-full-width"
   },
   {
     "name": "shop-list-standard",
     "path": "/shop-list-standard",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-list-standard.vue",
-    "chunkName": "pages/shop-list-standard",
-    "_name": "_4ef916d4"
+    "chunkName": "pages/shop-list-standard"
   },
   {
     "name": "terms-conditions",
     "path": "/terms-conditions",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\terms-conditions.vue",
-    "chunkName": "pages/terms-conditions",
-    "_name": "_6fec46c2"
+    "chunkName": "pages/terms-conditions"
   },
   {
     "name": "wishlist",
     "path": "/wishlist",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\wishlist.vue",
-    "chunkName": "pages/wishlist",
-    "_name": "_47082126"
+    "chunkName": "pages/wishlist"
   },
   {
     "name": "blog-blog-right-sidebar",
     "path": "/blog/blog-right-sidebar",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\blog-right-sidebar.vue",
-    "chunkName": "pages/blog/blog-right-sidebar",
-    "_name": "_1a75ea7a"
+    "chunkName": "pages/blog/blog-right-sidebar"
   },
   {
     "name": "blog-blog-without-sidebar",
     "path": "/blog/blog-without-sidebar",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\blog-without-sidebar.vue",
-    "chunkName": "pages/blog/blog-without-sidebar",
-    "_name": "_99033122"
+    "chunkName": "pages/blog/blog-without-sidebar"
   },
   {
     "name": "product-product-affiliate",
     "path": "/product/product-affiliate",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\product\\\\product-affiliate.vue",
-    "chunkName": "pages/product/product-affiliate",
-    "_name": "_4cb6b6c1"
+    "chunkName": "pages/product/product-affiliate"
   },
   {
     "name": "blog-slug",
     "path": "/blog/:slug",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\_slug.vue",
-    "chunkName": "pages/blog/_slug",
-    "_name": "_ac52ae52"
+    "chunkName": "pages/blog/_slug"
   },
   {
     "name": "product-slug",
     "path": "/product/:slug?",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\product\\\\_slug.vue",
-    "chunkName": "pages/product/_slug",
-    "_name": "_601845dc"
+    "chunkName": "pages/product/_slug"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_2fdbebc1"
+    "chunkName": "pages/index"
   }
 ]

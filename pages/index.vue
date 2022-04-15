@@ -2,8 +2,8 @@
     <div class="home-page-wrapper">
         <TheHeader />
         <HeroSlider />
-        <!-- <ServicePolicy />
-        <ProductWrapper :isSectionTitle=true />
+        <ServicePolicy />
+        <!-- <ProductWrapper :isSectionTitle=true />
         <BlogWrapper /> -->
         <TheFooter />
     </div>
