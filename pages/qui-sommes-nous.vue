@@ -17,7 +17,7 @@
         },
         head() {
             return {
-                title: "Contact Us"
+                title: "Qui sommes-nous"
             }
         }
     };
