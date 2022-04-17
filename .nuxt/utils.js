@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"baseUrl":"http://ip3dev.com/drupal-api","siteUrl":"http://ip3dev.com"}
+      env: {"baseUrl":"https://ip3dev.com/drupal-api","siteUrl":"https://ip3dev.com"}
     }
     // Only set once
 

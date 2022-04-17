@@ -24,6 +24,7 @@ You can directly use them in pages and other components without the need to impo
 - `<InstagramPostWrapper>` | `<instagram-post-wrapper>` (components/InstagramPostWrapper.vue)
 - `<Login>` | `<login>` (components/Login.vue)
 - `<MiniCart>` | `<mini-cart>` (components/MiniCart.vue)
+- `<MotDuPresident>` | `<mot-du-president>` (components/MotDuPresident.vue)
 - `<Navigation>` | `<navigation>` (components/Navigation.vue)
 - `<NewsletterStyleOne>` | `<newsletter-style-one>` (components/NewsletterStyleOne.vue)
 - `<NewsletterStyleTwo>` | `<newsletter-style-two>` (components/NewsletterStyleTwo.vue)

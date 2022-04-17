@@ -96,6 +96,12 @@
     "chunkName": "pages/privacy-policy"
   },
   {
+    "name": "qui-sommes-nous",
+    "path": "/qui-sommes-nous",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous.vue",
+    "chunkName": "pages/qui-sommes-nous"
+  },
+  {
     "name": "shop",
     "path": "/shop",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop.vue",

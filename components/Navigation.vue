@@ -4,7 +4,7 @@
             <nuxt-link to="/">Accueil</nuxt-link>
         </li>
         <li>
-            <nuxt-link to="">Qui sommes nous ?<i class="fa fa-angle-down"></i></nuxt-link>
+            <nuxt-link to="/qui-sommes-nous">Qui sommes nous ?<i class="fa fa-angle-down"></i></nuxt-link>
             <ul class="submenu">
                 <li><nuxt-link to="/">Decret/Statut</nuxt-link></li>
                 <li><nuxt-link to="/">Organigramme</nuxt-link></li>

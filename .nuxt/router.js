@@ -20,6 +20,7 @@ const _c6f94dac = () => interopDefault(import('..\\pages\\home-fashion-two.vue' 
 const _d2582fb0 = () => interopDefault(import('..\\pages\\login-register.vue' /* webpackChunkName: "pages/login-register" */))
 const _ff3a5ea6 = () => interopDefault(import('..\\pages\\my-account.vue' /* webpackChunkName: "pages/my-account" */))
 const _59b17ab8 = () => interopDefault(import('..\\pages\\privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
+const _8e3d7eee = () => interopDefault(import('..\\pages\\qui-sommes-nous.vue' /* webpackChunkName: "pages/qui-sommes-nous" */))
 const _339d5b52 = () => interopDefault(import('..\\pages\\shop.vue' /* webpackChunkName: "pages/shop" */))
 const _1d5b4979 = () => interopDefault(import('..\\pages\\shop-grid-full-width.vue' /* webpackChunkName: "pages/shop-grid-full-width" */))
 const _4c9ad87e = () => interopDefault(import('..\\pages\\shop-grid-no-sidebar.vue' /* webpackChunkName: "pages/shop-grid-no-sidebar" */))
@@ -111,6 +112,10 @@ export const routerOptions = {
     path: "/privacy-policy",
     component: _59b17ab8,
     name: "privacy-policy"
+  }, {
+    path: "/qui-sommes-nous",
+    component: _8e3d7eee,
+    name: "qui-sommes-nous"
   }, {
     path: "/shop",
     component: _339d5b52,

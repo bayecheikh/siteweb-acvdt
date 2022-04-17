@@ -16,6 +16,7 @@ export { default as HomeSidebarMenu } from '../..\\components\\HomeSidebarMenu.v
 export { default as InstagramPostWrapper } from '../..\\components\\InstagramPostWrapper.vue'
 export { default as Login } from '../..\\components\\Login.vue'
 export { default as MiniCart } from '../..\\components\\MiniCart.vue'
+export { default as MotDuPresident } from '../..\\components\\MotDuPresident.vue'
 export { default as Navigation } from '../..\\components\\Navigation.vue'
 export { default as NewsletterStyleOne } from '../..\\components\\NewsletterStyleOne.vue'
 export { default as NewsletterStyleTwo } from '../..\\components\\NewsletterStyleTwo.vue'

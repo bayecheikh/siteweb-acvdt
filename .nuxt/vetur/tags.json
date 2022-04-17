@@ -53,6 +53,9 @@
   "MiniCart": {
     "description": "Auto imported from components/MiniCart.vue"
   },
+  "MotDuPresident": {
+    "description": "Auto imported from components/MotDuPresident.vue"
+  },
   "Navigation": {
     "description": "Auto imported from components/Navigation.vue"
   },

@@ -1,10 +1,10 @@
 <template>
-    <div class="breadcrumb-area pt-35 pb-35 bg-gray-3">
+    <div class="breadcrumb-area pt-70 pb-70 bg-gray-3">
         <div class="container">
             <div class="breadcrumb-content text-center">
                 <ul>
                     <li>
-                        <n-link to="/">Home</n-link>
+                        <n-link to="/">Accueil</n-link>
                     </li>
                     <li class="active">{{ pageTitle }}</li>
                 </ul>
@@ -18,3 +18,16 @@
         props: ["pageTitle"]
     };
 </script>
+<style scoped>
+.breadcrumb-area{
+    background-image: url("/img/slider/bg-slider-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.breadcrumb-content ul li {
+  color: #fff;
+}
+.breadcrumb-content ul li a{
+  color: #fff;
+}
+</style>
