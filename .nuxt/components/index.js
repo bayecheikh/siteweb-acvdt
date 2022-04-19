@@ -1,4 +1,5 @@
 export { default as AboutMission } from '../..\\components\\AboutMission.vue'
+export { default as Activites } from '../..\\components\\Activites.vue'
 export { default as BlogItem } from '../..\\components\\BlogItem.vue'
 export { default as BlogItemStyleTwo } from '../..\\components\\BlogItemStyleTwo.vue'
 export { default as BlogSidebar } from '../..\\components\\BlogSidebar.vue'

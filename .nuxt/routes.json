@@ -7,6 +7,13 @@
     "_name": "_102410fc"
   },
   {
+    "name": "activites",
+    "path": "/activites",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\activites\\\\index.vue",
+    "chunkName": "pages/activites/index",
+    "_name": "_10006d5b"
+  },
+  {
     "name": "blog",
     "path": "/blog",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\index.vue",
@@ -222,6 +229,13 @@
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\product\\\\product-affiliate.vue",
     "chunkName": "pages/product/product-affiliate",
     "_name": "_4cb6b6c1"
+  },
+  {
+    "name": "activites-slug",
+    "path": "/activites/:slug",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\activites\\\\_slug.vue",
+    "chunkName": "pages/activites/_slug",
+    "_name": "_0e49cc13"
   },
   {
     "name": "blog-slug",

@@ -12,7 +12,7 @@
             </ul>
         </li>
         <li>
-            <nuxt-link to="/">Activités<i class="fa fa-angle-down"></i></nuxt-link>
+            <nuxt-link to="/activites">Activités<i class="fa fa-angle-down"></i></nuxt-link>
             <ul class="mega-menu mega-menu-padding">
                 <li>
                     <ul>

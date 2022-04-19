@@ -5,6 +5,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _102410fc = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
+const _10006d5b = () => interopDefault(import('..\\pages\\activites\\index.vue' /* webpackChunkName: "pages/activites/index" */))
 const _a8e56bc2 = () => interopDefault(import('..\\pages\\blog\\index.vue' /* webpackChunkName: "pages/blog/index" */))
 const _09ac64fe = () => interopDefault(import('..\\pages\\cart.vue' /* webpackChunkName: "pages/cart" */))
 const _a053dfb2 = () => interopDefault(import('..\\pages\\checkout.vue' /* webpackChunkName: "pages/checkout" */))
@@ -36,6 +37,7 @@ const _99033122 = () => interopDefault(import('..\\pages\\blog\\blog-without-sid
 const _068ffff0 = () => interopDefault(import('..\\pages\\missions\\blog-right-sidebar.vue' /* webpackChunkName: "pages/missions/blog-right-sidebar" */))
 const _0c891f74 = () => interopDefault(import('..\\pages\\missions\\blog-without-sidebar.vue' /* webpackChunkName: "pages/missions/blog-without-sidebar" */))
 const _4cb6b6c1 = () => interopDefault(import('..\\pages\\product\\product-affiliate.vue' /* webpackChunkName: "pages/product/product-affiliate" */))
+const _0e49cc13 = () => interopDefault(import('..\\pages\\activites\\_slug.vue' /* webpackChunkName: "pages/activites/_slug" */))
 const _ac52ae52 = () => interopDefault(import('..\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
 const _2e74f11c = () => interopDefault(import('..\\pages\\missions\\_slug.vue' /* webpackChunkName: "pages/missions/_slug" */))
 const _601845dc = () => interopDefault(import('..\\pages\\product\\_slug.vue' /* webpackChunkName: "pages/product/_slug" */))
@@ -57,6 +59,10 @@ export const routerOptions = {
     path: "/about",
     component: _102410fc,
     name: "about"
+  }, {
+    path: "/activites",
+    component: _10006d5b,
+    name: "activites"
   }, {
     path: "/blog",
     component: _a8e56bc2,
@@ -181,6 +187,10 @@ export const routerOptions = {
     path: "/product/product-affiliate",
     component: _4cb6b6c1,
     name: "product-product-affiliate"
+  }, {
+    path: "/activites/:slug",
+    component: _0e49cc13,
+    name: "activites-slug"
   }, {
     path: "/blog/:slug",
     component: _ac52ae52,

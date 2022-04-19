@@ -2,6 +2,9 @@
   "AboutMission": {
     "description": "Auto imported from components/AboutMission.vue"
   },
+  "Activites": {
+    "description": "Auto imported from components/Activites.vue"
+  },
   "BlogItem": {
     "description": "Auto imported from components/BlogItem.vue"
   },
