@@ -6,9 +6,9 @@
         <li>
             <nuxt-link to="/qui-sommes-nous">Qui sommes nous ?<i class="fa fa-angle-down"></i></nuxt-link>
             <ul class="submenu">
-                <li><nuxt-link to="/">Decret/Statut</nuxt-link></li>
-                <li><nuxt-link to="/">Organigramme</nuxt-link></li>
-                <li><nuxt-link to="/">Mission</nuxt-link></li>
+                <li><nuxt-link to="/qui-sommes-nous/decret-statut">Decret/Statut</nuxt-link></li>
+                <li><nuxt-link to="/qui-sommes-nous/organnigramme">Organigramme</nuxt-link></li>
+                <li><nuxt-link to="/qui-sommes-nous/mission">Mission</nuxt-link></li>
             </ul>
         </li>
         <li>

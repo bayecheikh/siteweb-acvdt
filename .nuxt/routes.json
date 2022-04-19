@@ -231,6 +231,27 @@
     "_name": "_4cb6b6c1"
   },
   {
+    "name": "qui-sommes-nous-decret-statut",
+    "path": "/qui-sommes-nous/decret-statut",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\decret-statut.vue",
+    "chunkName": "pages/qui-sommes-nous/decret-statut",
+    "_name": "_3fd274a8"
+  },
+  {
+    "name": "qui-sommes-nous-mission",
+    "path": "/qui-sommes-nous/mission",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\mission.vue",
+    "chunkName": "pages/qui-sommes-nous/mission",
+    "_name": "_7792385a"
+  },
+  {
+    "name": "qui-sommes-nous-organnigramme",
+    "path": "/qui-sommes-nous/organnigramme",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\organnigramme.vue",
+    "chunkName": "pages/qui-sommes-nous/organnigramme",
+    "_name": "_def44f7c"
+  },
+  {
     "name": "activites-slug",
     "path": "/activites/:slug",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\activites\\\\_slug.vue",

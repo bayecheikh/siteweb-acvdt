@@ -11,13 +11,13 @@
                 <div class="col-lg-4 col-sm-12 mt-0" v-for="(item, index) in missions" :key="index">
                     <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
-                            <n-link :to="`/qui-sommes-nous/`+item.nid" class="custom-center-box">
+                            <n-link :to="item.field_page" class="custom-center-box">
                                 <img height="100" class="" :src="siteUrl+item.field_icon" alt="image">
                             </n-link>
-                            <n-link :to="`/qui-sommes-nous/`+item.nid" class="custom-center-box">
+                            <n-link :to="item.field_page" class="custom-center-box">
                                 <h2 class="card-title custom-sub-title text-center pt-15">{{item.title}}</h2>
                             </n-link>
-                            <n-link :to="`/qui-sommes-nous/`+item.nid" class="custom-center-box">
+                            <n-link :to="item.field_page" class="custom-center-box">
                                 <p class="card-text pb-10 text-center">{{item.field_description_box_2}}</p>
                             </n-link>   
                         </div>

@@ -37,6 +37,9 @@ const _99033122 = () => interopDefault(import('..\\pages\\blog\\blog-without-sid
 const _068ffff0 = () => interopDefault(import('..\\pages\\missions\\blog-right-sidebar.vue' /* webpackChunkName: "pages/missions/blog-right-sidebar" */))
 const _0c891f74 = () => interopDefault(import('..\\pages\\missions\\blog-without-sidebar.vue' /* webpackChunkName: "pages/missions/blog-without-sidebar" */))
 const _4cb6b6c1 = () => interopDefault(import('..\\pages\\product\\product-affiliate.vue' /* webpackChunkName: "pages/product/product-affiliate" */))
+const _3fd274a8 = () => interopDefault(import('..\\pages\\qui-sommes-nous\\decret-statut.vue' /* webpackChunkName: "pages/qui-sommes-nous/decret-statut" */))
+const _7792385a = () => interopDefault(import('..\\pages\\qui-sommes-nous\\mission.vue' /* webpackChunkName: "pages/qui-sommes-nous/mission" */))
+const _def44f7c = () => interopDefault(import('..\\pages\\qui-sommes-nous\\organnigramme.vue' /* webpackChunkName: "pages/qui-sommes-nous/organnigramme" */))
 const _0e49cc13 = () => interopDefault(import('..\\pages\\activites\\_slug.vue' /* webpackChunkName: "pages/activites/_slug" */))
 const _ac52ae52 = () => interopDefault(import('..\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
 const _2e74f11c = () => interopDefault(import('..\\pages\\missions\\_slug.vue' /* webpackChunkName: "pages/missions/_slug" */))
@@ -187,6 +190,18 @@ export const routerOptions = {
     path: "/product/product-affiliate",
     component: _4cb6b6c1,
     name: "product-product-affiliate"
+  }, {
+    path: "/qui-sommes-nous/decret-statut",
+    component: _3fd274a8,
+    name: "qui-sommes-nous-decret-statut"
+  }, {
+    path: "/qui-sommes-nous/mission",
+    component: _7792385a,
+    name: "qui-sommes-nous-mission"
+  }, {
+    path: "/qui-sommes-nous/organnigramme",
+    component: _def44f7c,
+    name: "qui-sommes-nous-organnigramme"
   }, {
     path: "/activites/:slug",
     component: _0e49cc13,
