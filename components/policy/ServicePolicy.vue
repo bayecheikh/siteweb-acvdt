@@ -4,7 +4,7 @@
             <div class="row mtn-30 justify-content-center">
                 <div class="col-lg-4 col-sm-12 mt-30" v-for="(item, index) in missions" :key="index">
                     <div class="card height-100">   
-                        <div class="card-body">
+                        <div class="card-body d-flex align-items-start flex-column space-arround">
                             <h2 class="card-title custom-title">{{item.title}}</h2>
                             <p class="card-text">{{item.body}}</p>
                             <img class="card-img-top" :src="siteUrl+item.field_image_d_illustration" alt="Card image cap">
