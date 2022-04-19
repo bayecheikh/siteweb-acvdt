@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row mtn-30 justify-content-center">
                 <div class="col-lg-4 col-sm-12 mt-30" v-for="(item, index) in missions" :key="index">
-                    <div class="card">   
+                    <div class="card height-100">   
                         <div class="card-body">
                             <h2 class="card-title custom-title">{{item.title}}</h2>
                             <p class="card-text">{{item.body}}</p>
