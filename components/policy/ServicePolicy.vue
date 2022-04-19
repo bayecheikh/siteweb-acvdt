@@ -1,15 +1,27 @@
 <template>
-    <div class="support-area pt-100 pb-90">
+    <div class="support-area pt-60 pb-90">
         <div class="container">
-            <div class="row mtn-30 justify-content-center">
-                <div class="col-lg-4 col-sm-12 mt-30" v-for="(item, index) in missions" :key="index">
-                    <div class="card height-100">   
+            <div class="row justify-content-center mb-30">
+                <div class="col-lg-12 col-sm-12">
+                  <h1 class="card-title custom-title">Principales missions</h1>
+                  <p class="card-text">Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a. Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a.</p>  
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-12 mt-0" v-for="(item, index) in missions" :key="index">
+                    <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
-                            <h2 class="card-title custom-title">{{item.title}}</h2>
+                            <n-link :to="`/missions/`+item.id">
+                                <h2 class="card-title custom-sub-title">{{item.title}}</h2>
+                            </n-link>
                             <p class="card-text">{{item.body}}</p>
-                            <img class="card-img-top" :src="siteUrl+item.field_image_d_illustration" alt="Card image cap">
+                            <n-link :to="`/missions/`+item.id">
+                                <img class="card-img-top" :src="siteUrl+item.field_image_d_illustration" alt="image">
+                            </n-link>
                         </div>
-                        <a href="#" class="btn btn-success">Lire la suite</a>
+                        <n-link :to="`/missions/`+item.id" class="btn btn-success">
+                            Lire la suite
+                        </n-link>
                     </div>
                 </div>
             </div>
@@ -52,9 +64,14 @@
 <style scoped>
 .height-100{
     height: 100% !important;
+    box-shadow: 0px -6px 22px 0 #e9ecef;;
 }
 .custom-title{
     font-weight: 600;
+    color: #1f8389;
+}
+.custom-sub-title{
+    font-weight: 500;
     color: #1f8389;
 }
 </style>
