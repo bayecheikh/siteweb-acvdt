@@ -9,12 +9,12 @@
                     <div class="col-lg-9">
                         <div class="blog-details-wrapper ml-20">
                             <div class="blog-details-top">
-                                <!-- <div class="blog-details-img">
-                                    <img :src="mission && (siteUrl+mission.field_image_d_illustration)" :alt="mission && mission.title">
-                                </div> -->
                                 <h2 class="card-title custom-sub-title pt-30">{{mission.title}}</h2>
                                 <div class="blog-details-content">
                                     <div v-html="mission && mission.body"></div>
+                                </div>
+                                <div class="blog-details-img">
+                                    <img :src="mission && (siteUrl+mission.field_ima)" alt=" " width="300">
                                 </div>
                             </div>
 <!--                             <div class="next-previous-post">
@@ -54,7 +54,7 @@
         methods: {
            async getMission(){
                 this.progress=true
-                this.$axios.$get('/api/missions/?nid='+this.slug+'&_format=json')
+                this.$axios.$get('/api/quisommesnous/section-1/?nid='+this.slug+'&_format=json')
                 .then(async (response) => {
                     //this.$toast.success(response.message).goAway(2000)
                     console.log('Données Reçu ++++++: ', response)

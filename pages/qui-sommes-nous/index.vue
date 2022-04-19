@@ -3,6 +3,7 @@
         <TheHeader />
         <Breadcrumb pageTitle="Qui sommes-nous ?" />
         <MotDuPresident />
+        <QuiSommesNous />
         <TheFooter />
     </div>
 </template>
@@ -12,6 +13,7 @@
         components: {
             TheHeader: () => import('@/components/TheHeader'),
             MotDuPresident: () => import('@/components/MotDuPresident'),
+            QuiSommesNous: () => import('@/components/QuiSommesNous'),
             Breadcrumb: () => import('@/components/Breadcrumb'),
             TheFooter: () => import('@/components/TheFooter')
         },

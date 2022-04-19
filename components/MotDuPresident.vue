@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-3 pt-80 pb-70">
+    <div class="bg-gray-3 pt-80 pb-0">
         <div class="container d-flex align-items-stretch custom-max-width">
             <div class="row" v-for="(item, index) in mot_du_president" :key="index">
                 <div class="col-lg-3 col-md-3 col-sm-12 pl-0 pr-0">

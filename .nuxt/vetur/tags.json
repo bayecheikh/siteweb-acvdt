@@ -74,6 +74,9 @@
   "QuickView": {
     "description": "Auto imported from components/QuickView.vue"
   },
+  "QuiSommesNous": {
+    "description": "Auto imported from components/QuiSommesNous.vue"
+  },
   "Register": {
     "description": "Auto imported from components/Register.vue"
   },

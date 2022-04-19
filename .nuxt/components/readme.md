@@ -31,6 +31,7 @@ You can directly use them in pages and other components without the need to impo
 - `<OffCanvasMobileMenu>` | `<off-canvas-mobile-menu>` (components/OffCanvasMobileMenu.vue)
 - `<ProductDetailsDescriptionReview>` | `<product-details-description-review>` (components/ProductDetailsDescriptionReview.vue)
 - `<QuickView>` | `<quick-view>` (components/QuickView.vue)
+- `<QuiSommesNous>` | `<qui-sommes-nous>` (components/QuiSommesNous.vue)
 - `<Register>` | `<register>` (components/Register.vue)
 - `<ResponsiveMobileMenu>` | `<responsive-mobile-menu>` (components/ResponsiveMobileMenu.vue)
 - `<SectionTitleWithSubTitle>` | `<section-title-with-sub-title>` (components/SectionTitleWithSubTitle.vue)

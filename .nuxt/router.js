@@ -21,7 +21,7 @@ const _d2582fb0 = () => interopDefault(import('..\\pages\\login-register.vue' /*
 const _2b07ae8c = () => interopDefault(import('..\\pages\\missions\\index.vue' /* webpackChunkName: "pages/missions/index" */))
 const _ff3a5ea6 = () => interopDefault(import('..\\pages\\my-account.vue' /* webpackChunkName: "pages/my-account" */))
 const _59b17ab8 = () => interopDefault(import('..\\pages\\privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
-const _8e3d7eee = () => interopDefault(import('..\\pages\\qui-sommes-nous.vue' /* webpackChunkName: "pages/qui-sommes-nous" */))
+const _c5ebd04e = () => interopDefault(import('..\\pages\\qui-sommes-nous\\index.vue' /* webpackChunkName: "pages/qui-sommes-nous/index" */))
 const _339d5b52 = () => interopDefault(import('..\\pages\\shop.vue' /* webpackChunkName: "pages/shop" */))
 const _1d5b4979 = () => interopDefault(import('..\\pages\\shop-grid-full-width.vue' /* webpackChunkName: "pages/shop-grid-full-width" */))
 const _4c9ad87e = () => interopDefault(import('..\\pages\\shop-grid-no-sidebar.vue' /* webpackChunkName: "pages/shop-grid-no-sidebar" */))
@@ -39,6 +39,7 @@ const _4cb6b6c1 = () => interopDefault(import('..\\pages\\product\\product-affil
 const _ac52ae52 = () => interopDefault(import('..\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
 const _2e74f11c = () => interopDefault(import('..\\pages\\missions\\_slug.vue' /* webpackChunkName: "pages/missions/_slug" */))
 const _601845dc = () => interopDefault(import('..\\pages\\product\\_slug.vue' /* webpackChunkName: "pages/product/_slug" */))
+const _c95912de = () => interopDefault(import('..\\pages\\qui-sommes-nous\\_slug.vue' /* webpackChunkName: "pages/qui-sommes-nous/_slug" */))
 const _2fdbebc1 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -122,7 +123,7 @@ export const routerOptions = {
     name: "privacy-policy"
   }, {
     path: "/qui-sommes-nous",
-    component: _8e3d7eee,
+    component: _c5ebd04e,
     name: "qui-sommes-nous"
   }, {
     path: "/shop",
@@ -192,6 +193,10 @@ export const routerOptions = {
     path: "/product/:slug?",
     component: _601845dc,
     name: "product-slug"
+  }, {
+    path: "/qui-sommes-nous/:slug?",
+    component: _c95912de,
+    name: "qui-sommes-nous-slug"
   }, {
     path: "/",
     component: _2fdbebc1,

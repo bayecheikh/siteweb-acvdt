@@ -23,6 +23,7 @@ export { default as NewsletterStyleTwo } from '../..\\components\\NewsletterStyl
 export { default as OffCanvasMobileMenu } from '../..\\components\\OffCanvasMobileMenu.vue'
 export { default as ProductDetailsDescriptionReview } from '../..\\components\\ProductDetailsDescriptionReview.vue'
 export { default as QuickView } from '../..\\components\\QuickView.vue'
+export { default as QuiSommesNous } from '../..\\components\\QuiSommesNous.vue'
 export { default as Register } from '../..\\components\\Register.vue'
 export { default as ResponsiveMobileMenu } from '../..\\components\\ResponsiveMobileMenu.vue'
 export { default as SectionTitleWithSubTitle } from '../..\\components\\SectionTitleWithSubTitle.vue'

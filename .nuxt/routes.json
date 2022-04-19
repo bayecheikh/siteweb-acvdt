@@ -121,9 +121,9 @@
   {
     "name": "qui-sommes-nous",
     "path": "/qui-sommes-nous",
-    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous.vue",
-    "chunkName": "pages/qui-sommes-nous",
-    "_name": "_8e3d7eee"
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\index.vue",
+    "chunkName": "pages/qui-sommes-nous/index",
+    "_name": "_c5ebd04e"
   },
   {
     "name": "shop",
@@ -243,6 +243,13 @@
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\product\\\\_slug.vue",
     "chunkName": "pages/product/_slug",
     "_name": "_601845dc"
+  },
+  {
+    "name": "qui-sommes-nous-slug",
+    "path": "/qui-sommes-nous/:slug?",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\_slug.vue",
+    "chunkName": "pages/qui-sommes-nous/_slug",
+    "_name": "_c95912de"
   },
   {
     "name": "index",
