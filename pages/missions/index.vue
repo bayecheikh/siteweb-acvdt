@@ -1,6 +1,6 @@
 <template>
     <div class="blog-page-wrapper">
-        <HeaderWithTopbar containerClass="container" />
+        <TheHeader />
         <Breadcrumb pageTitle="Missions" />
         <ServicePolicy />
         <TheFooter />

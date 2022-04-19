@@ -11,17 +11,19 @@
                 <div class="col-lg-4 col-sm-12 mt-0" v-for="(item, index) in missions" :key="index">
                     <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
-                            <n-link :to="`/missions/`+item.id">
+                            <n-link :to="`/missions/`+item.nid">
                                 <h2 class="card-title custom-sub-title">{{item.title}}</h2>
                             </n-link>
-                            <p class="card-text">{{item.body}}</p>
-                            <n-link :to="`/missions/`+item.id">
+                            <n-link :to="`/missions/`+item.nid">
+                                <p class="card-text pb-10">{{item.field_description_box}}</p>
+                            </n-link>
+                            <n-link :to="`/missions/`+item.nid">
                                 <img class="card-img-top" :src="siteUrl+item.field_image_d_illustration" alt="image">
                             </n-link>
                         </div>
-                        <n-link :to="`/missions/`+item.id" class="btn btn-success">
+                        <!-- <n-link :to="`/missions/`+item.nid" class="btn btn-success">
                             Lire la suite
-                        </n-link>
+                        </n-link> -->
                     </div>
                 </div>
             </div>
@@ -64,7 +66,8 @@
 <style scoped>
 .height-100{
     height: 100% !important;
-    box-shadow: 0px -6px 22px 0 #e9ecef;;
+    box-shadow: 0px -6px 22px 0 #e9ecef;
+    padding: 14px;
 }
 .custom-title{
     font-weight: 600;
@@ -73,5 +76,6 @@
 .custom-sub-title{
     font-weight: 500;
     color: #1f8389;
+    font-size: 20px;
 }
 </style>
