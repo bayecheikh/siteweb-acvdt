@@ -2,11 +2,11 @@
     <ul>
         <li v-for='(link, i) in menus' :key='i'>
             <nuxt-link :to="link.url">{{ link.title }}<i :class="link.submenu && 'fa fa-angle-down'"></i></nuxt-link>
-            <ul class="mega-menu mega-menu-padding" v-if="link.submenu">
-                <li v-for='(link, i) in link.submenu' :key='i'>
+            <ul class="mega-menu mega-menu-padding row" v-if="link.submenu">
+                <li v-for='(link, i) in link.submenu' :key='i' >
                     <nuxt-link :to="link.url" v-if="!link.submenu">{{ link.title }}<i :class="link.submenu && 'fa fa-angle-down'"></i></nuxt-link>
                     <ul v-if="link.submenu">
-                        <li class="mega-menu-title" >
+                        <li class="mega-menu-title">
                             <nuxt-link :to="link.url">{{ link.title }}</nuxt-link>
                         </li>
                         <li v-for='(link, i) in link.submenu' :key='i'>
@@ -326,5 +326,7 @@
     }
 </script>
 <style scoped>
-
+.main-menu nav ul li ul.mega-menu {
+  margin-left: -100%;
+}
 </style>
