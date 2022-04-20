@@ -1,145 +1,22 @@
 <template>
     <ul>
-        <li>
-            <nuxt-link to="/">Accueil</nuxt-link>
+        <li v-for='(link, i) in menus' :key='i'>
+            <nuxt-link :to="link.url">{{ link.title }}<i :class="link.submenu && 'fa fa-angle-down'"></i></nuxt-link>
+            <ul class="mega-menu mega-menu-padding" v-if="link.submenu">
+                <li v-for='(link, i) in link.submenu' :key='i'>
+                    <nuxt-link :to="link.url" v-if="!link.submenu">{{ link.title }}<i :class="link.submenu && 'fa fa-angle-down'"></i></nuxt-link>
+                    <ul v-if="link.submenu">
+                        <li class="mega-menu-title" >
+                            <nuxt-link :to="link.url">{{ link.title }}</nuxt-link>
+                        </li>
+                        <li v-for='(link, i) in link.submenu' :key='i'>
+                            <nuxt-link :to="link.url">{{ link.title }}</nuxt-link>
+                        </li>
+                    </ul>
+                </li>
+            </ul>  
         </li>
-        <li>
-            <nuxt-link to="/qui-sommes-nous">Qui sommes nous ?<i class="fa fa-angle-down"></i></nuxt-link>
-            <ul class="submenu">
-                <li><nuxt-link to="/qui-sommes-nous/decret-statut">Decret/Statut</nuxt-link></li>
-                <li><nuxt-link to="/qui-sommes-nous/organnigramme">Organigramme</nuxt-link></li>
-                <li><nuxt-link to="/qui-sommes-nous/mission">Mission</nuxt-link></li>
-            </ul>
-        </li>
-        <li>
-            <nuxt-link to="/activites">Activités<i class="fa fa-angle-down"></i></nuxt-link>
-            <ul class="mega-menu mega-menu-padding">
-                <li>
-                    <ul>
-                        <li class="mega-menu-title">
-                            <nuxt-link to="/">Projets</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Portefeuille</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Réalisations</nuxt-link>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li class="mega-menu-title">
-                            <nuxt-link to="/">Autres activités</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Médiation sociale</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Développement durable</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Appui transversal</nuxt-link>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li class="mega-menu-title">
-                            <nuxt-link to="">Centre de ressources</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Rapports et autres publications</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Statistiques</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">SIG/Cartographie</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Phototéque</nuxt-link>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li class="mega-menu-title">
-                            <nuxt-link to="">Veille citoyenne</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Une question, une préocupation</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Je signale une incivilité</nuxt-link>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <nuxt-link to="/">Marché public<i class="fa fa-angle-down"></i></nuxt-link>
-            <ul class="mega-menu mega-menu-padding">
-                <li>
-                    <ul>
-                        <li class="mega-menu-title">
-                            <nuxt-link to="/">Présentation</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">La déontologie des marchés publics à l'agence</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Marchés attribués</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">PRMP j'ai une question!</nuxt-link>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li class="mega-menu-title">
-                            <nuxt-link to="/">Comment répondre à une consultation</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Déja inscrit</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Nouvel utilisateur</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Je soumet mon dossier</nuxt-link>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li class="mega-menu-title">
-                            <nuxt-link to="">Les consultations en cours</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Rechercher une consultation</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Recherche avancée</nuxt-link>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li class="mega-menu-title">
-                            <nuxt-link to="">Veille citoyenne</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Une question, une préocupation</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/">Je signale une incivilité</nuxt-link>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
+        
         <!-- <li>
             <nuxt-link to="/shop"> Shop <i class="fa fa-angle-down"></i></nuxt-link>
             <ul class="mega-menu">
@@ -230,8 +107,224 @@
                 </li>
             </ul>
         </li> -->
-        <li>
-            <nuxt-link to="/contact">Contact </nuxt-link>
-        </li>
+        
     </ul>
 </template>
+<script>
+    export default {
+        data() {
+            return {
+                menus: [
+                    {
+                        url: '/',
+                        title: 'Accueil'
+                    },
+                    {
+                        url: '/qui-sommes-nous',
+                        title: 'Qui sommes nous ?',
+                        submenu: [
+                            {
+                                url: '/qui-sommes-nous/decret-statut',
+                                title: 'Decret/Statut',
+                            },
+                            {
+                                url: '/qui-sommes-nous/organnigramme',
+                                title: 'Organigramme',
+                            },
+                            {
+                                url: '/qui-sommes-nous/mission',
+                                title: 'Mission',
+                            }
+                        ]
+                    },
+                    {
+                        url: '/activites',
+                        title: 'Activités',
+                        submenu: [
+                            {
+                                url: '/',
+                                title: 'Projets',
+                                submenu: [
+                                    {
+                                        url: '/',
+                                        title: 'Portefeuille',
+
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Réalisations',
+                                    }
+                                ]
+
+                            },
+                            {
+                                url: '/',
+                                title: 'Autres activités',
+                                submenu: [
+                                    {
+                                        url: '/',
+                                        title: 'Médiation sociale',
+
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Développement durable',
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Appui transversal',
+                                    }
+                                ]
+                            },
+                            {
+                                url: '/',
+                                title: 'Centre de ressources',
+                                submenu: [
+                                    {
+                                        url: '/',
+                                        title: 'Rapports et autres publications',
+
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Statistiques',
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'SIG/Cartographie',
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Phototéque',
+                                    }
+                                ]
+                            },
+                            {
+                                url: '/',
+                                title: 'Veille citoyenne',
+                                submenu: [
+                                    {
+                                        url: '/',
+                                        title: 'Une question, une préocupation',
+
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Je signale une incivilité',
+                                    }
+                                ]
+                            }
+                        ],
+                        mega:true
+                    },
+                    {
+                        url: '/',
+                        title: 'Marché public',
+                        submenu: [
+                            {
+                                url: '/',
+                                title: 'Présentation',
+                                submenu: [
+                                    {
+                                        url: '/',
+                                        title: 'La déontologie des marchés publics à l\'agence',
+
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Marchés attribués',
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'PRMP j\'ai une question!',
+                                    }
+                                ]
+
+                            },
+                            {
+                                url: '/',
+                                title: 'Comment répondre à une consultation',
+                                submenu: [
+                                    {
+                                        url: '/',
+                                        title: 'Déja inscrit',
+
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Nouvel utilisateur',
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Je soumet mon dossier',
+                                    }
+                                ]
+                            },
+                            {
+                                url: '/',
+                                title: 'Les consultations en cours',
+                                submenu: [
+                                    {
+                                        url: '/',
+                                        title: 'Rechercher une consultation',
+
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Recherche avancée',
+                                    }
+                                ]
+                            }
+                        ],
+                        mega:true
+                    },
+                    {
+                        url: '/contact',
+                        title: 'Contact',
+                    }
+                ]
+            }
+        },
+        mounted() {
+            let getSiblings = function (e) {
+                let siblings = []; 
+                if(!e.parentNode) {
+                    return siblings;
+                }
+                let sibling  = e.parentNode.firstChild;
+                while (sibling) {
+                    if (sibling.nodeType === 1 && sibling !== e) {
+                        siblings.push(sibling);
+                    }
+                    sibling = sibling.nextSibling;
+                }
+                return siblings;
+            };
+
+            const subMenuToggle = document.querySelectorAll('.submenu-toggle');
+            subMenuToggle.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    if(!this.classList.contains('active')) {
+                        this.classList.add('active')
+                        this.nextElementSibling.classList.add('active')
+                        this.closest('li').classList.add('active')
+                        getSiblings(this.closest('li')).forEach(function(item) {
+                            item.classList.remove('active')
+                            item.querySelectorAll('li, .submenu-toggle, .submenu').forEach(function(child) {
+                                child.classList.remove('active')
+                            })
+                        })
+                    } else {
+                        this.closest('li').classList.remove('active')
+                        this.closest('li').querySelectorAll('li, .submenu-toggle, .submenu').forEach(function(child) {
+                            child.classList.remove('active')
+                        })
+                    }
+                })
+            })
+        }
+    }
+</script>
+<style scoped>
+
+</style>
