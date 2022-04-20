@@ -28,17 +28,7 @@
                                     </form>
                                 </div> 
                             </div> -->
-                            
-                            <div class="same-style header-compare">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </div>
-                            <div class="same-style header-wishlist">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </div>
-                            <div class="same-style cart-wrap">
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                            <div class="same-style account-setting d-none d-lg-block">
+                            <!-- <div class="same-style account-setting d-none d-lg-block">
                                 <button class="account-setting-active" @click="isOpenAccountSettings = !isOpenAccountSettings"><i class="pe-7s-user-female"></i></button>
                                 <div class="account-dropdown" :class="{ active:isOpenAccountSettings }">
                                     <ul>
@@ -47,8 +37,19 @@
                                         <li><n-link to="/my-account">my account</n-link></li>
                                     </ul>
                                 </div>
+                            </div> -->
+                           <!--  <div class="same-style cart-wrap">
+                                <button class="icon-cart" @click="openCart = !openCart">
+                                    <i class="pe-7s-shopbag"></i>
+                                    <span class="count-style">{{ cartItemCount }}</span>
+                                </button>
+                                <MiniCart :miniCart="{ visible:openCart }" @minicartClose="openCart = !openCart" />
+                            </div> -->
+                            <div class="same-style mobile-menu-toggler d-block d-lg-none">
+                                <button class="mobile-aside-button" @click="navOpen = !navOpen">
+                                    <i class="pe-7s-menu"></i>
+                                </button>
                             </div>
-                            
                         </div>
                     </div>
                 </div>

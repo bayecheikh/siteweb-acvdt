@@ -31,183 +31,162 @@
                 menus: [
                     {
                         url: '/',
-                        title: 'Home',
+                        title: 'Accueil'    
+                    },
+                    {
+                        url: '/qui-sommes-nous',
+                        title: 'Qui sommes nous ?',
                         submenu: [
                             {
-                                url: '',
-                                title: 'Home Group 01',
+                                url: '/qui-sommes-nous/decret-statut',
+                                title: 'Decret/Statut',
+                            },
+                            {
+                                url: '/qui-sommes-nous/organnigramme',
+                                title: 'Organigramme',
+                            },
+                            {
+                                url: '/qui-sommes-nous/mission',
+                                title: 'Mission',
+                            }
+                        ]
+                    },
+                    {
+                        url: '/activites',
+                        title: 'Activités',
+                        submenu: [
+                            {
+                                url: '/',
+                                title: 'Projets',
                                 submenu: [
                                     {
                                         url: '/',
-                                        title: 'Home Fashion One',
+                                        title: 'Portefeuille',
+
                                     },
                                     {
-                                        url: '/home-fashion-two',
-                                        title: 'Home Fashion Two',
+                                        url: '/',
+                                        title: 'Réalisations',
+                                    }
+                                ]
+
+                            },
+                            {
+                                url: '/',
+                                title: 'Autres activités',
+                                submenu: [
+                                    {
+                                        url: '/',
+                                        title: 'Médiation sociale',
+
                                     },
                                     {
-                                        url: '/home-fashion-three',
-                                        title: 'Home Fashion Three',
+                                        url: '/',
+                                        title: 'Développement durable',
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Appui transversal',
                                     }
                                 ]
                             },
                             {
-                                url: '',
-                                title: 'Home Group 02',
+                                url: '/',
+                                title: 'Centre de ressources',
                                 submenu: [
                                     {
-                                        url: '/home-fashion-four',
-                                        title: 'Home Fashion Four',
+                                        url: '/',
+                                        title: 'Rapports et autres publications',
+
                                     },
                                     {
-                                        url: '/home-fashion-five',
-                                        title: 'Home Fashion Five',
+                                        url: '/',
+                                        title: 'Statistiques',
                                     },
                                     {
-                                        url: '/home-fashion-six',
-                                        title: 'Home Fashion Six',
+                                        url: '/',
+                                        title: 'SIG/Cartographie',
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Phototéque',
                                     }
                                 ]
                             },
                             {
-                                url: '',
-                                title: 'Home Group 03',
+                                url: '/',
+                                title: 'Veille citoyenne',
                                 submenu: [
                                     {
-                                        url: '/home-fashion-seven',
-                                        title: 'Home Fashion Seven',
+                                        url: '/',
+                                        title: 'Une question, une préocupation',
+
                                     },
                                     {
-                                        url: '/home-cosmetics',
-                                        title: 'Home Cosmetics',
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        url: '/shop',
-                        title: 'Shop',
-                        submenu: [
-                            {
-                                url: '',
-                                title: 'shop layout',
-                                submenu: [
-                                    {
-                                        url: '/shop',
-                                        title: 'shop grid standard',
-                                    },
-                                    {
-                                        url: '/shop-grid-two-column',
-                                        title: 'shop grid two column',
-                                    },
-                                    {
-                                        url: '/shop-grid-no-sidebar',
-                                        title: 'shop grid no sidebar',
-                                    },
-                                    {
-                                        url: '/shop-grid-full-width',
-                                        title: 'shop grid full width',
-                                    },
-                                    {
-                                        url: '/shop-grid-right-sidebar',
-                                        title: 'shop grid right sidebar',
-                                    },
-                                    {
-                                        url: '/shop-list-standard',
-                                        title: 'shop list standard',
-                                    },
-                                    {
-                                        url: '/shop-list-full-width',
-                                        title: 'shop list full width',
-                                    },
-                                ]
-                            },
-                            {
-                                url: '',
-                                title: 'product details',
-                                submenu: [
-                                    {
-                                        url: '/product/crew-ventile-coat-one',
-                                        title: 'product variation',
-                                    },
-                                    {
-                                        url: '/product/product-affiliate',
-                                        title: 'product affiliate',
-                                    },
-                                    {
-                                        url: '/product/women-winter-overcoat-one',
-                                        title: 'product simple',
+                                        url: '/',
+                                        title: 'Je signale une incivilité',
                                     }
                                 ]
                             }
                         ]
                     },
                     {
-                        url: '',
-                        title: 'Pages',
+                        url: '/',
+                        title: 'Marché public',
                         submenu: [
                             {
-                                url: '/cart',
-                                title: 'Cart',
+                                url: '/',
+                                title: 'Présentation',
+                                submenu: [
+                                    {
+                                        url: '/',
+                                        title: 'La déontologie des marchés publics à l\'agence',
+
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Marchés attribués',
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'PRMP j\'ai une question!',
+                                    }
+                                ]
+
                             },
                             {
-                                url: '/checkout',
-                                title: 'Checkout',
+                                url: '/',
+                                title: 'Comment répondre à une consultation',
+                                submenu: [
+                                    {
+                                        url: '/',
+                                        title: 'Déja inscrit',
+
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Nouvel utilisateur',
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Je soumet mon dossier',
+                                    }
+                                ]
                             },
                             {
-                                url: '/wishlist',
-                                title: 'Wishlist',
-                            },
-                            {
-                                url: '/compare',
-                                title: 'Compare',
-                            },
-                            {
-                                url: '/about',
-                                title: 'About us',
-                            },
-                            {
-                                url: '/my-account',
-                                title: 'My Account',
-                            },
-                            {
-                                url: '/login-register',
-                                title: 'Login / Register',
-                            },
-                            {
-                                url: '/contact',
-                                title: 'Contact us',
-                            },
-                            {
-                                url: '/privacy-policy',
-                                title: 'Privacy Policy',
-                            },
-                            {
-                                url: '/terms-conditions',
-                                title: 'Terms & Conditions',
-                            },
-                        ]
-                    },
-                    {
-                        url: '/blog',
-                        title: 'Blog',
-                        submenu: [
-                            {
-                                url: '/blog',
-                                title: 'blog standard',
-                            },
-                            {
-                                url: '/blog/blog-right-sidebar',
-                                title: 'blog right sidebar',
-                            },
-                            {
-                                url: '/blog/blog-without-sidebar',
-                                title: 'blog no sidebar',
-                            },
-                            {
-                                url: '/blog/a-guide-to-latest-trends-product',
-                                title: 'blog details',
+                                url: '/',
+                                title: 'Les consultations en cours',
+                                submenu: [
+                                    {
+                                        url: '/',
+                                        title: 'Rechercher une consultation',
+
+                                    },
+                                    {
+                                        url: '/',
+                                        title: 'Recherche avancée',
+                                    }
+                                ]
                             }
                         ]
                     },
