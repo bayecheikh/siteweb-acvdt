@@ -7,49 +7,40 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-12 mt-0" v-for="(item, index) in marches" :key="index">
-                    <!-- <div class="blog-wrap-2 mb-0 height-100">   
-                        <div class="card-body">
-                            <n-link :to="item.field_page" class="custom-center-box">
-                                <img height="100" class="" :src="siteUrl+item.field_icon" alt="image">
-                            </n-link>
-                            <n-link :to="item.nid" class="custom-center-box">
-                                <h2 class="card-title custom-sub-title text-center pt-15">{{item.title}}</h2>
-                            </n-link>
-                            <n-link :to="item.nid" class="custom-center-box">
-                                <p class="card-text pb-10 text-center">{{item.nid}}</p>
-                            </n-link> 
-                              
-                        </div>
-                        <n-link :to="`/marches/`+item.nid" class="btn btn-success">
-                            Lire la suite
-                        </n-link>
-                    </div> -->
-                    <div class="custom-bloc-mp">
-                        <div class="custom-bloc-head">
-                            <div class="ref_">
-                                <p>Ref</p>
-                                <p class="">{{item.field_reference}}</p>
+                <swiper :options="marcheCarousel">
+                    <swiper-slide class="col-lg-4 col-sm-12 mt-0" v-for="(item, index) in marches" :key="index">
+                        <div class="custom-bloc-mp">
+                            <div class="custom-bloc-head">
+                                <div class="ref_">
+                                    <p>Ref</p>
+                                    <p class="">{{item.field_reference}}</p>
+                                </div>
+                                <div class="del_">
+                                    <p>Date limite</p>
+                                    <p>{{item.field_date_li}}</p>
+                                </div>
                             </div>
-                            <div class="del_">
-                                <p>Date limite</p>
-                                <p>{{item.field_date_li}}</p>
+                            <div class="custom-bloc-content">
+                                <p>Objet</p>
+                                <p>{{item.field_objet}}</p>
+                            </div>
+                            <div class="custom-bloc-bottom d-flex justify-content-between">
+                                <n-link :to="item.nid" class="custom-center-box">
+                                    <p class="text-center btn ref_">Consulter</p>
+                                </n-link>
+                                <n-link :to="'#'" class="custom-center-box">
+                                    <p class="text-center btn ref_">Message</p>
+                                </n-link>
                             </div>
                         </div>
-                        <div class="custom-bloc-content">
-                            <p>Objet</p>
-                            <p>{{item.field_objet}}</p>
-                        </div>
-                        <div class="custom-bloc-bottom d-flex justify-content-between">
-                            <n-link :to="item.nid" class="custom-center-box">
-                                <p class="text-center btn ref_">Consulter</p>
-                            </n-link>
-                            <n-link :to="'#'" class="custom-center-box">
-                                <p class="text-center btn ref_">Message</p>
-                            </n-link>
-                        </div>
-                    </div>
+                    </swiper-slide>
+                </swiper>
+                <!-- <div class="hero-slider-nav swiper-button-prev custom-nav">
+                <i class="pe-7s-angle-left"></i>
                 </div>
+                <div class="hero-slider-nav swiper-button-next custom-nav">
+                    <i class="pe-7s-angle-right"></i>
+                </div> -->
             </div>
         </div>
     </div>
@@ -79,7 +70,40 @@
         data() {
             return {
                 siteUrl:process.env.siteUrl,
-                marches: []
+                marches: [],
+                marcheCarousel: {
+                    loop: true,
+                    speed: 750,
+                    spaceBetween: 30,
+                    slidesPerView: 5,
+                    autoplay: true,
+                     navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    // Responsive breakpoints
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1
+                        },
+                        480: {
+                            slidesPerView: 1
+                        },
+                        768: {
+                            slidesPerView: 2
+                        },
+                        992: {
+                            slidesPerView: 3
+                        },
+                        1024: {
+                            slidesPerView: 3
+                        },
+                        1280: {
+                            slidesPerView: 3
+                        }
+                    }
+                }
             }
         },
     };
