@@ -34,8 +34,8 @@
                         <div class="footer-list">
                             <ul>
                                 <li><n-link to="/">Marchés public</n-link></li>
-                                <li><n-link to="/about">Comment postuler à une demande</n-link></li>
-                                <li><n-link to="/about">FAQs</n-link></li>
+                                <li><n-link to="/">Comment postuler à une demande</n-link></li>
+                                <li><n-link to="/">FAQs</n-link></li>
                             </ul>
                         </div>
                     </div>
