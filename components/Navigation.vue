@@ -218,7 +218,7 @@
                         mega:true
                     },
                     {
-                        url: '/',
+                        url: '/marches-publics',
                         title: 'Marché public',
                         submenu: [
                             {

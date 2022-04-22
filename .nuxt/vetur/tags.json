@@ -53,6 +53,9 @@
   "Login": {
     "description": "Auto imported from components/Login.vue"
   },
+  "MarchesEncours": {
+    "description": "Auto imported from components/MarchesEncours.vue"
+  },
   "MiniCart": {
     "description": "Auto imported from components/MiniCart.vue"
   },
@@ -91,6 +94,9 @@
   },
   "ShopSidebar": {
     "description": "Auto imported from components/ShopSidebar.vue"
+  },
+  "StatistiqueMarches": {
+    "description": "Auto imported from components/StatistiqueMarches.vue"
   },
   "TeamMembers": {
     "description": "Auto imported from components/TeamMembers.vue"
@@ -146,6 +152,18 @@
   "HeroSliderTwo": {
     "description": "Auto imported from components/hero/HeroSliderTwo.vue"
   },
+  "PolicyServicePolicy": {
+    "description": "Auto imported from components/policy/ServicePolicy.vue"
+  },
+  "PolicyServicePolicyFour": {
+    "description": "Auto imported from components/policy/ServicePolicyFour.vue"
+  },
+  "PolicyServicePolicyThree": {
+    "description": "Auto imported from components/policy/ServicePolicyThree.vue"
+  },
+  "PolicyServicePolicyTwo": {
+    "description": "Auto imported from components/policy/ServicePolicyTwo.vue"
+  },
   "ProductDetailsWrapper": {
     "description": "Auto imported from components/product/ProductDetailsWrapper.vue"
   },
@@ -178,17 +196,5 @@
   },
   "ProductWrapperTwo": {
     "description": "Auto imported from components/product/ProductWrapperTwo.vue"
-  },
-  "PolicyServicePolicy": {
-    "description": "Auto imported from components/policy/ServicePolicy.vue"
-  },
-  "PolicyServicePolicyFour": {
-    "description": "Auto imported from components/policy/ServicePolicyFour.vue"
-  },
-  "PolicyServicePolicyThree": {
-    "description": "Auto imported from components/policy/ServicePolicyThree.vue"
-  },
-  "PolicyServicePolicyTwo": {
-    "description": "Auto imported from components/policy/ServicePolicyTwo.vue"
   }
 }

@@ -19,6 +19,7 @@ const _503818c0 = () => interopDefault(import('..\\pages\\home-fashion-six.vue' 
 const _6e5dc9fc = () => interopDefault(import('..\\pages\\home-fashion-three.vue' /* webpackChunkName: "pages/home-fashion-three" */))
 const _c6f94dac = () => interopDefault(import('..\\pages\\home-fashion-two.vue' /* webpackChunkName: "pages/home-fashion-two" */))
 const _d2582fb0 = () => interopDefault(import('..\\pages\\login-register.vue' /* webpackChunkName: "pages/login-register" */))
+const _f6ef0bb6 = () => interopDefault(import('..\\pages\\marches-publics\\index.vue' /* webpackChunkName: "pages/marches-publics/index" */))
 const _2b07ae8c = () => interopDefault(import('..\\pages\\missions\\index.vue' /* webpackChunkName: "pages/missions/index" */))
 const _ff3a5ea6 = () => interopDefault(import('..\\pages\\my-account.vue' /* webpackChunkName: "pages/my-account" */))
 const _59b17ab8 = () => interopDefault(import('..\\pages\\privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
@@ -34,6 +35,9 @@ const _6fec46c2 = () => interopDefault(import('..\\pages\\terms-conditions.vue' 
 const _47082126 = () => interopDefault(import('..\\pages\\wishlist.vue' /* webpackChunkName: "pages/wishlist" */))
 const _1a75ea7a = () => interopDefault(import('..\\pages\\blog\\blog-right-sidebar.vue' /* webpackChunkName: "pages/blog/blog-right-sidebar" */))
 const _99033122 = () => interopDefault(import('..\\pages\\blog\\blog-without-sidebar.vue' /* webpackChunkName: "pages/blog/blog-without-sidebar" */))
+const _001fcaf4 = () => interopDefault(import('..\\pages\\marches-publics\\decret-statut.vue' /* webpackChunkName: "pages/marches-publics/decret-statut" */))
+const _74b439c2 = () => interopDefault(import('..\\pages\\marches-publics\\mission.vue' /* webpackChunkName: "pages/marches-publics/mission" */))
+const _50d32e8e = () => interopDefault(import('..\\pages\\marches-publics\\organnigramme.vue' /* webpackChunkName: "pages/marches-publics/organnigramme" */))
 const _068ffff0 = () => interopDefault(import('..\\pages\\missions\\blog-right-sidebar.vue' /* webpackChunkName: "pages/missions/blog-right-sidebar" */))
 const _0c891f74 = () => interopDefault(import('..\\pages\\missions\\blog-without-sidebar.vue' /* webpackChunkName: "pages/missions/blog-without-sidebar" */))
 const _4cb6b6c1 = () => interopDefault(import('..\\pages\\product\\product-affiliate.vue' /* webpackChunkName: "pages/product/product-affiliate" */))
@@ -42,6 +46,7 @@ const _7792385a = () => interopDefault(import('..\\pages\\qui-sommes-nous\\missi
 const _def44f7c = () => interopDefault(import('..\\pages\\qui-sommes-nous\\organnigramme.vue' /* webpackChunkName: "pages/qui-sommes-nous/organnigramme" */))
 const _0e49cc13 = () => interopDefault(import('..\\pages\\activites\\_slug.vue' /* webpackChunkName: "pages/activites/_slug" */))
 const _ac52ae52 = () => interopDefault(import('..\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
+const _fa5c4e46 = () => interopDefault(import('..\\pages\\marches-publics\\_slug.vue' /* webpackChunkName: "pages/marches-publics/_slug" */))
 const _2e74f11c = () => interopDefault(import('..\\pages\\missions\\_slug.vue' /* webpackChunkName: "pages/missions/_slug" */))
 const _601845dc = () => interopDefault(import('..\\pages\\product\\_slug.vue' /* webpackChunkName: "pages/product/_slug" */))
 const _c95912de = () => interopDefault(import('..\\pages\\qui-sommes-nous\\_slug.vue' /* webpackChunkName: "pages/qui-sommes-nous/_slug" */))
@@ -119,6 +124,10 @@ export const routerOptions = {
     component: _d2582fb0,
     name: "login-register"
   }, {
+    path: "/marches-publics",
+    component: _f6ef0bb6,
+    name: "marches-publics"
+  }, {
     path: "/missions",
     component: _2b07ae8c,
     name: "missions"
@@ -179,6 +188,18 @@ export const routerOptions = {
     component: _99033122,
     name: "blog-blog-without-sidebar"
   }, {
+    path: "/marches-publics/decret-statut",
+    component: _001fcaf4,
+    name: "marches-publics-decret-statut"
+  }, {
+    path: "/marches-publics/mission",
+    component: _74b439c2,
+    name: "marches-publics-mission"
+  }, {
+    path: "/marches-publics/organnigramme",
+    component: _50d32e8e,
+    name: "marches-publics-organnigramme"
+  }, {
     path: "/missions/blog-right-sidebar",
     component: _068ffff0,
     name: "missions-blog-right-sidebar"
@@ -210,6 +231,10 @@ export const routerOptions = {
     path: "/blog/:slug",
     component: _ac52ae52,
     name: "blog-slug"
+  }, {
+    path: "/marches-publics/:slug?",
+    component: _fa5c4e46,
+    name: "marches-publics-slug"
   }, {
     path: "/missions/:slug",
     component: _2e74f11c,
