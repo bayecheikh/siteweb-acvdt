@@ -31,7 +31,7 @@
                 menus: [
                     {
                         url: '/',
-                        title: 'Accueil'    
+                        title: 'Accueil'
                     },
                     {
                         url: '/qui-sommes-nous',
@@ -128,10 +128,11 @@
                                     }
                                 ]
                             }
-                        ]
+                        ],
+                        mega:true
                     },
                     {
-                        url: '/',
+                        url: '/marches-publics',
                         title: 'Marché public',
                         submenu: [
                             {
@@ -188,7 +189,8 @@
                                     }
                                 ]
                             }
-                        ]
+                        ],
+                        mega:true
                     },
                     {
                         url: '/contact',
