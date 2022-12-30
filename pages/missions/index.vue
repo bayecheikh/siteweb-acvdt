@@ -10,6 +10,9 @@
 <script>
     import blogData from "@/data/blog.json";
     export default {
+        mounted: function() {
+            this.$store.dispatch('contenus/getList')
+        },
         components: {
             TheHeader: () => import('@/components/TheHeader'),
             ServicePolicy: () => import('@/components/policy/ServicePolicy'),

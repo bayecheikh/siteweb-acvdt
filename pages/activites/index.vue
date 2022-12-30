@@ -9,6 +9,9 @@
 
 <script>
     export default {
+        mounted: function() {
+            this.$store.dispatch('contenus/getList')
+        },
         components: {
             TheHeader: () => import('@/components/TheHeader'),
             Activites: () => import('@/components/Activites'),

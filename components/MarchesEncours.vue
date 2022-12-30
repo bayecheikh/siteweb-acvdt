@@ -8,27 +8,28 @@
             </div>
             <div class="row justify-content-center">
                 <swiper :options="marcheCarousel">
-                    <swiper-slide class="col-lg-4 col-sm-12 mt-0" v-for="(item, index) in marches" :key="index">
+
+                    <swiper-slide class="col-lg-4 col-sm-12 mt-0">
                         <div class="custom-bloc-mp">
                             <div class="custom-bloc-head">
                                 <div class="ref_">
                                     <p>Ref</p>
-                                    <p class="">{{item.field_reference}}</p>
+                                    <p class="">#SIRAT_12</p>
                                 </div>
                                 <div class="del_">
                                     <p>Date limite</p>
-                                    <p>{{item.field_date_li}}</p>
+                                    <p>12-12-2023</p>
                                 </div>
                             </div>
                             <div class="custom-bloc-content">
                                 <p>Objet</p>
-                                <p>{{item.field_objet}}</p>
+                                <p>Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="custom-bloc-bottom d-flex justify-content-between">
-                                <n-link :to="item.nid" class="custom-center-box">
+                                <n-link to="" class="custom-center-box">
                                     <p class="text-center btn ref_">Consulter</p>
                                 </n-link>
-                                <n-link :to="'#'" class="custom-center-box">
+                                <n-link to="" class="custom-center-box">
                                     <p class="text-center btn ref_">Message</p>
                                 </n-link>
                             </div>
@@ -49,7 +50,7 @@
 <script>
     export default {
         mounted: function() {
-            this.getListMarche()
+            //this.getListMarche()
         },
         methods: {
             getListMarche(){
