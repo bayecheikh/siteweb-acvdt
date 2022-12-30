@@ -9,10 +9,10 @@
                     <div class="col-lg-9">
                         <div class="blog-details-wrapper ml-20">
                             <div class="blog-details-top">
-                                <!-- <div class="blog-details-img">
-                                    <img :src="mission && (siteUrl+mission.field_image_d_illustration)" :alt="mission && mission.title">
-                                </div> -->
-                                <h2 class="card-title custom-sub-title pt-30">{{mission.title}}</h2>
+                                <div class="blog-details-img">
+                                    <img class="card-img-top" :src="fileUrl+(mission.futured_images && mission.futured_images[0] && mission.futured_images[0].name)" alt="">
+                                </div>
+                                <h2 class="card-title custom-sub-title pt-30">{{mission.titre}}</h2>
                                 <div class="blog-details-content">
                                     <div v-html="mission && mission.body"></div>
                                 </div>
@@ -43,6 +43,7 @@
         },
         data() {
             return {
+                fileUrl:process.env.fileUrl,
                 slug: this.$route.params.slug,
                 mission:{},
                 siteUrl:process.env.siteUrl,
@@ -54,11 +55,11 @@
         methods: {
            async getMission(){
                 this.progress=true
-                this.$axios.$get('/api/missions/?nid='+this.slug+'&_format=json')
+                this.$axios.$get('/allcontenus/'+this.slug)
                 .then(async (response) => {
                     //this.$toast.success(response.message).goAway(2000)
-                    console.log('Données Reçu ++++++: ', response)
-                    this.mission = response[0]
+                    console.log('Données detail Reçu ++++++: ', response.data)
+                    this.mission = response.data
 
                 }).catch((error) => {
                     console.log('Code error ++++++: ', error?.response?.data?.message)
@@ -70,7 +71,7 @@
 
         head() {
             return {
-                title: this.mission && this.mission.title
+                title: this.mission && this.mission.titre
             }
         },
     };

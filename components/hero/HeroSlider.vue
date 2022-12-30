@@ -1,18 +1,17 @@
 <template>
     <div class="slider-area nav-style-1">
         <swiper :options="swiperOption">
-            <swiper-slide v-for="(item,i) in sliders" :key="i" class="single-slider slider-height-1 bg-green bg-slide-1">
+            <swiper-slide v-for="(item,i) in listcontenus.filter(contenu => contenu.categories[0].slug === 'slider-accueil')" :key="i" class="single-slider slider-height-1 bg-green bg-slide-1" :style="{'background-image':'url('+(fileUrl+(item.futured_images[0] && item.futured_images[0].name))+')'}">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="slider-content slider-animation-1">
-                                <p class="custom-title-slider">{{item.title}}</p>
+                                <p class="custom-title-slider">{{item.titre}}</p>
                                 <hr class="custom-hr">
-                                <p class="custom-text-slider">
-                                    {{item.body}}
+                                <p class="custom-text-slider" v-html="item.resume">
                                 </p>
                                 <div class="slider-btn btn-hover">
-                                    <n-link :to="item.field_url">EN SAVOIR</n-link>
+                                    <n-link :to="item.id">EN SAVOIR</n-link>
                                 </div>
                             </div>
                         </div>
@@ -38,28 +37,16 @@
 </template>
 
 <script>
+import { mapMutations, mapGetters } from 'vuex'
     export default {
-        mounted: function() {
-            this.getListSlider()
-        },
+        computed: mapGetters({
+            listcontenus: 'contenus/listcontenus',
+        }),
         methods: {
-            getListSlider(){
-                this.progress=true
-                this.$axios.$get('/api/sliders?_format=json')
-                .then(async (response) => {
-                    //this.$toast.success(response.message).goAway(2000)
-                    console.log('Données Reçu ++++++: ', response)
-                    this.sliders = response
-
-                }).catch((error) => {
-                    console.log('Code error ++++++: ', error?.response?.data?.message)
-                }).finally(() => {
-                    console.log('Requette envoyé ')
-                });
-            }
         },
         data() {
             return {
+                fileUrl:process.env.fileUrl,
                 sliders:[],
                 swiperOption: {
                     loop: true,
@@ -93,12 +80,12 @@
     transform-origin: 50% 50% 0px;
 }
 .custom-text-slider{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
 }
 
 .bg-slide-1 {
-  background-color: #078090;;
-  background-image: url("/img/slider/bg-slider-1.jpg");
+  background-color: #0060a8;;
+  
   background-size: cover;
   background-repeat: no-repeat;
 }

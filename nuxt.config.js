@@ -7,8 +7,8 @@ export default {
     
     // Global page headers (https://go.nuxtjs.dev/config-head)
     head: {
-        title: 'ACVDT - Agence du cadre de vie',
-        titleTemplate: 'ACVDT | %s',
+        title: 'SIRAT - Ministère des Infrastructures et des Transports',
+        titleTemplate: 'SIRAT | %s',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -59,7 +59,7 @@ export default {
     ],
 
     axios: {
-        baseURL: 'https://ip3dev.com/drupal-api',
+        baseURL: 'https://ip3dev.com/api-sirat/public/api',
     },
 
     styleResources: {
@@ -79,7 +79,8 @@ export default {
     },
 
     env: {
-        baseUrl: 'https://ip3dev.com/drupal-api',
-        siteUrl:'https://ip3dev.com'
+        baseUrl: 'https://ip3dev.com/api-sirat/public/api',
+        siteUrl:'https://ip3dev.com',
+        fileUrl:'https://ip3dev.com/api-sirat/public/upload/'
     }
 }

@@ -7,23 +7,54 @@
                   <p class="card-text">Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a. Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a.</p>  
                 </div>
             </div>
+
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-12 mt-0" v-for="(item, index) in statistiques" :key="index">
+                <div class="col-lg-3 col-sm-12 mt-0">
                     <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
-                            <!-- <n-link :to="item.field_page" class="custom-center-box">
-                                <img height="100" class="" :src="siteUrl+item.field_icon" alt="image">
-                            </n-link> -->
-                            <n-link :to="item.field_categorie_marche_1" class="custom-center-box">
-                                <h2 class="card-title custom-sub-title text-center pt-15">{{item.field_categorie_marche}}</h2>
+                            <n-link to="" class="custom-center-box">
+                                <p class="card-text  text-center pt-15">Plan de passation</p>
                             </n-link>
-                            <n-link :to="item.field_categorie_marche_1" class="custom-center-box">
-                                <p class="card-text pb-10 text-center">{{item.nid}}</p>
+                            <n-link to="" class="custom-center-box">
+                                <h2 class="card-title custom-sub-title pb-10 text-center">223</h2>
                             </n-link>   
                         </div>
-                        <!-- <n-link :to="`/statistiques/`+item.nid" class="btn btn-success">
-                            Lire la suite
-                        </n-link> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 mt-0">
+                    <div class="blog-wrap-2 mb-0 height-100">   
+                        <div class="card-body">
+                            <n-link to="" class="custom-center-box">
+                                <p class="card-text  text-center pt-15">Avis d'appel à candidature</p>
+                            </n-link>
+                            <n-link to="" class="custom-center-box">
+                                <h2 class="card-title custom-sub-title pb-10 text-center">223</h2>
+                            </n-link>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 mt-0">
+                    <div class="blog-wrap-2 mb-0 height-100">   
+                        <div class="card-body">
+                            <n-link to="" class="custom-center-box">
+                                <p class="card-text  text-center pt-15">Avis d'appel à concurence</p>
+                            </n-link>
+                            <n-link to="" class="custom-center-box">
+                                <h2 class="card-title custom-sub-title pb-10 text-center">223</h2>
+                            </n-link>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 mt-0">
+                    <div class="blog-wrap-2 mb-0 height-100">   
+                        <div class="card-body">
+                            <n-link to="" class="custom-center-box">
+                                <p class="card-text  text-center pt-15">Procés verbal d'attribution provisoire</p>
+                            </n-link>
+                            <n-link to="" class="custom-center-box">
+                                <h2 class="card-title custom-sub-title pb-10 text-center">223</h2>
+                            </n-link>   
+                        </div>
                     </div>
                 </div>
             </div>
@@ -34,7 +65,7 @@
 <script>
     export default {
         mounted: function() {
-            this.getListStatistique()
+            //this.getListStatistique()
         },
         methods: {
             getListStatistique(){
@@ -68,11 +99,11 @@
 }
 .custom-title{
     font-weight: 600;
-    color: #1f8389;
+    color: #0060a8;
 }
 .custom-sub-title{
     font-weight: 500;
-    color: #1f8389;
+    color: #0060a8;
     font-size: 20px;
 }
 .custom-center-box{

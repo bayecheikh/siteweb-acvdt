@@ -2,7 +2,7 @@
     <div class="shop-page-wrapper">
         <TheHeader />
         <Breadcrumb pageTitle="Qui sommes-nous ?" />
-        <MotDuPresident />
+        <!--<MotDuPresident />-->
         <QuiSommesNous />
         <TheFooter />
     </div>
@@ -10,6 +10,9 @@
 
 <script>
     export default {
+        mounted: function() {
+            this.$store.dispatch('contenus/getList')
+        },
         components: {
             TheHeader: () => import('@/components/TheHeader'),
             MotDuPresident: () => import('@/components/MotDuPresident'),

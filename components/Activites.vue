@@ -1,27 +1,21 @@
 <template>
-    <div class="support-area pt-60 pb-90">
+    <div class="support-area pt-60 pb-40">
         <div class="container">
-            <!-- <div class="row justify-content-center mb-30">
-                <div class="col-lg-12 col-sm-12">
-                  <h1 class="card-title custom-title">Activités (ACVDT)</h1>
-                  <p class="card-text">Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a. Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a.</p>  
-                </div>
-            </div> -->
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-12 mt-0 mb-30" v-for="(item, index) in missions" :key="index">
+                <div class="col-lg-4 col-sm-12 mt-0" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'activites')" :key="index">
                     <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
-                            <n-link :to="'#'" class="custom-center-box">
-                                <img height="100" class="" :src="siteUrl+item.field_icon_2" alt="image">
+                            <n-link :to="`/missions/`+item.id">
+                                <h2 class="card-title custom-sub-title">{{item.titre}}</h2>
                             </n-link>
-                            <n-link :to="'#'" class="custom-center-box">
-                                <h2 class="card-title custom-sub-title text-center pt-15">{{item.title}}</h2>
+                            <n-link :to="`/missions/`+item.id">
+                                <p class="card-text pb-10">{{item.resume}}</p>
                             </n-link>
-                            <n-link :to="'#'" class="custom-center-box">
-                                <p class="card-text pb-10 text-center">{{item.field_des}}</p>
-                            </n-link>   
+                            <n-link :to="`/missions/`+item.id">
+                                <img class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
+                            </n-link>
                         </div>
-                        <!-- <n-link :to="`/missions/`+item.nid" class="btn btn-success">
+                        <!-- <n-link :to="`/missions/`+item.id" class="btn btn-success">
                             Lire la suite
                         </n-link> -->
                     </div>
@@ -32,33 +26,23 @@
 </template>
 
 <script>
+import { mapMutations, mapGetters } from 'vuex'
     export default {
-        mounted: function() {
-            this.getListMission()
-        },
+        computed: mapGetters({
+            listcontenus: 'contenus/listcontenus',
+        }),
         methods: {
             getUrlImage(url){
                 return url.substring(str.indexOf('drupal-api') + 1);
             },
-            getListMission(){
-                this.progress=true
-                this.$axios.$get('/api/activites?_format=json')
-                .then(async (response) => {
-                    //this.$toast.success(response.message).goAway(2000)
-                    console.log('Données Reçu ++++++: ', response)
-                    this.missions = response
-
-                }).catch((error) => {
-                    console.log('Code error ++++++: ', error?.response?.data?.message)
-                }).finally(() => {
-                    console.log('Requette envoyé ')
-                });
-            }
+            
         },
         data() {
             return {
                 siteUrl:process.env.siteUrl,
-                missions: []
+                fileUrl:process.env.fileUrl,
+                missions: [],
+                mission_intro:[]
             }
         },
     };
@@ -71,18 +55,12 @@
 }
 .custom-title{
     font-weight: 600;
-    color: #1f8389;
+    font-size: 26px !important;
+    color: #0060a8;
 }
 .custom-sub-title{
     font-weight: 500;
-    color: #1f8389;
-    font-size: 20px;
-}
-.custom-center-box{
-    display: flex;
-    justify-content: center;
-}
-.text-center{
-    text-align: center;
+    color: #0060a8;
+    font-size: 16px !important;
 }
 </style>
