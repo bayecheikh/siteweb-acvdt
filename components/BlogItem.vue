@@ -1,15 +1,19 @@
 <template>
     <div class="blog-wrap mb-25">
         <div class="blog-img">
-            <n-link :to="`/blog/${slugify(blog.titre)}`">
+            <n-link :to="`#`">
                 <img :src="fileUrl+(blog.futured_images[0] && blog.futured_images[0].name)" :alt="blog.title">
             </n-link>
+            <!--<n-link :to="`/blog/${slugify(blog.titre)}`">
+                <img :src="fileUrl+(blog.futured_images[0] && blog.futured_images[0].name)" :alt="blog.title">
+            </n-link>-->
             <!--<span>{{ blog.category[0]}}</span>-->
         </div>
         <div class="blog-content-wrap">
             <div class="blog-content text-center">
                 <h3>
-                    <n-link :to="`/blog/${slugify(blog.titre)}`">{{ blog.titre }}</n-link>
+                    <n-link :to="`#`">{{ blog.titre }}</n-link>
+                    <!--<n-link :to="`/blog/${slugify(blog.titre)}`">{{ blog.titre }}</n-link>-->
                 </h3>
                 <!--<span>Par <n-link to="">{{ blog.author }}</n-link></span>-->
             </div>
