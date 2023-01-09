@@ -108,6 +108,13 @@
     "chunkName": "pages/my-account"
   },
   {
+    "name": "postes-peages",
+    "path": "/postes-peages",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\index.vue",
+    "chunkName": "pages/postes-peages/index",
+    "_name": "_949ea0ea"
+  },
+  {
     "name": "privacy-policy",
     "path": "/privacy-policy",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\privacy-policy.vue",
@@ -216,6 +223,27 @@
     "chunkName": "pages/missions/blog-without-sidebar"
   },
   {
+    "name": "postes-peages-decret-statut",
+    "path": "/postes-peages/decret-statut",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\decret-statut.vue",
+    "chunkName": "pages/postes-peages/decret-statut",
+    "_name": "_70f18b4c"
+  },
+  {
+    "name": "postes-peages-mission",
+    "path": "/postes-peages/mission",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\mission.vue",
+    "chunkName": "pages/postes-peages/mission",
+    "_name": "_4d965705"
+  },
+  {
+    "name": "postes-peages-organnigramme",
+    "path": "/postes-peages/organnigramme",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\organnigramme.vue",
+    "chunkName": "pages/postes-peages/organnigramme",
+    "_name": "_183a9df4"
+  },
+  {
     "name": "product-product-affiliate",
     "path": "/product/product-affiliate",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\product\\\\product-affiliate.vue",
@@ -262,6 +290,13 @@
     "path": "/missions/:slug",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\missions\\\\_slug.vue",
     "chunkName": "pages/missions/_slug"
+  },
+  {
+    "name": "postes-peages-slug",
+    "path": "/postes-peages/:slug?",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\_slug.vue",
+    "chunkName": "pages/postes-peages/_slug",
+    "_name": "_980be37a"
   },
   {
     "name": "product-slug",

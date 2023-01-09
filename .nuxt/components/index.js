@@ -53,6 +53,10 @@ export { default as PolicyServicePolicy } from '../..\\components\\policy\\Servi
 export { default as PolicyServicePolicyFour } from '../..\\components\\policy\\ServicePolicyFour.vue'
 export { default as PolicyServicePolicyThree } from '../..\\components\\policy\\ServicePolicyThree.vue'
 export { default as PolicyServicePolicyTwo } from '../..\\components\\policy\\ServicePolicyTwo.vue'
+<<<<<<< HEAD
+=======
+export { default as SectionsFinancementParRegion2 } from '../..\\components\\sections\\FinancementParRegion2.vue'
+>>>>>>> dev
 export { default as ProductDetailsWrapper } from '../..\\components\\product\\ProductDetailsWrapper.vue'
 export { default as ProductGridItem } from '../..\\components\\product\\ProductGridItem.vue'
 export { default as ProductGridItemTwo } from '../..\\components\\product\\ProductGridItemTwo.vue'

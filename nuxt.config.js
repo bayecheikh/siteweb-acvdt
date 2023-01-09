@@ -43,6 +43,10 @@ export default {
             src: '~/plugins/notifications-client.js', 
             mode: 'client' 
         },
+        {
+            src: '~/plugins/amchart.js',
+            ssr: false
+        }
     ],
 
     // Auto import components (https://go.nuxtjs.dev/config-components)
