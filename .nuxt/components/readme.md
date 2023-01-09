@@ -61,6 +61,7 @@ You can directly use them in pages and other components without the need to impo
 - `<PolicyServicePolicyFour>` | `<policy-service-policy-four>` (components/policy/ServicePolicyFour.vue)
 - `<PolicyServicePolicyThree>` | `<policy-service-policy-three>` (components/policy/ServicePolicyThree.vue)
 - `<PolicyServicePolicyTwo>` | `<policy-service-policy-two>` (components/policy/ServicePolicyTwo.vue)
+- `<SectionsFinancementParRegion2>` | `<sections-financement-par-region2>` (components/sections/FinancementParRegion2.vue)
 - `<ProductDetailsWrapper>` | `<product-details-wrapper>` (components/product/ProductDetailsWrapper.vue)
 - `<ProductGridItem>` | `<product-grid-item>` (components/product/ProductGridItem.vue)
 - `<ProductGridItemTwo>` | `<product-grid-item-two>` (components/product/ProductGridItemTwo.vue)
@@ -72,4 +73,3 @@ You can directly use them in pages and other components without the need to impo
 - `<ProductWrapperSeven>` | `<product-wrapper-seven>` (components/product/ProductWrapperSeven.vue)
 - `<ProductWrapperThree>` | `<product-wrapper-three>` (components/product/ProductWrapperThree.vue)
 - `<ProductWrapperTwo>` | `<product-wrapper-two>` (components/product/ProductWrapperTwo.vue)
-- `<SectionsFinancementParRegion2>` | `<sections-financement-par-region2>` (components/sections/FinancementParRegion2.vue)

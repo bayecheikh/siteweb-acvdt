@@ -3,312 +3,364 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_102410fc"
   },
   {
     "name": "activites",
     "path": "/activites",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\activites\\\\index.vue",
-    "chunkName": "pages/activites/index"
+    "chunkName": "pages/activites/index",
+    "_name": "_10006d5b"
   },
   {
     "name": "blog",
     "path": "/blog",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\index.vue",
-    "chunkName": "pages/blog/index"
+    "chunkName": "pages/blog/index",
+    "_name": "_a8e56bc2"
   },
   {
     "name": "cart",
     "path": "/cart",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\cart.vue",
-    "chunkName": "pages/cart"
+    "chunkName": "pages/cart",
+    "_name": "_09ac64fe"
   },
   {
     "name": "checkout",
     "path": "/checkout",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\checkout.vue",
-    "chunkName": "pages/checkout"
+    "chunkName": "pages/checkout",
+    "_name": "_a053dfb2"
   },
   {
     "name": "compare",
     "path": "/compare",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\compare.vue",
-    "chunkName": "pages/compare"
+    "chunkName": "pages/compare",
+    "_name": "_7edcc494"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact"
+    "chunkName": "pages/contact",
+    "_name": "_cc3ed362"
   },
   {
     "name": "home-cosmetics",
     "path": "/home-cosmetics",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-cosmetics.vue",
-    "chunkName": "pages/home-cosmetics"
+    "chunkName": "pages/home-cosmetics",
+    "_name": "_1cdc3f92"
   },
   {
     "name": "home-fashion-five",
     "path": "/home-fashion-five",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-five.vue",
-    "chunkName": "pages/home-fashion-five"
+    "chunkName": "pages/home-fashion-five",
+    "_name": "_6fd85ec4"
   },
   {
     "name": "home-fashion-four",
     "path": "/home-fashion-four",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-four.vue",
-    "chunkName": "pages/home-fashion-four"
+    "chunkName": "pages/home-fashion-four",
+    "_name": "_a77fc990"
   },
   {
     "name": "home-fashion-seven",
     "path": "/home-fashion-seven",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-seven.vue",
-    "chunkName": "pages/home-fashion-seven"
+    "chunkName": "pages/home-fashion-seven",
+    "_name": "_768d94eb"
   },
   {
     "name": "home-fashion-six",
     "path": "/home-fashion-six",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-six.vue",
-    "chunkName": "pages/home-fashion-six"
+    "chunkName": "pages/home-fashion-six",
+    "_name": "_503818c0"
   },
   {
     "name": "home-fashion-three",
     "path": "/home-fashion-three",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-three.vue",
-    "chunkName": "pages/home-fashion-three"
+    "chunkName": "pages/home-fashion-three",
+    "_name": "_6e5dc9fc"
   },
   {
     "name": "home-fashion-two",
     "path": "/home-fashion-two",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-two.vue",
-    "chunkName": "pages/home-fashion-two"
+    "chunkName": "pages/home-fashion-two",
+    "_name": "_c6f94dac"
   },
   {
     "name": "login-register",
     "path": "/login-register",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\login-register.vue",
-    "chunkName": "pages/login-register"
+    "chunkName": "pages/login-register",
+    "_name": "_d2582fb0"
   },
   {
     "name": "marches-publics",
     "path": "/marches-publics",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\marches-publics\\\\index.vue",
-    "chunkName": "pages/marches-publics/index"
+    "chunkName": "pages/marches-publics/index",
+    "_name": "_f6ef0bb6"
   },
   {
     "name": "missions",
     "path": "/missions",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\missions\\\\index.vue",
-    "chunkName": "pages/missions/index"
+    "chunkName": "pages/missions/index",
+    "_name": "_2b07ae8c"
   },
   {
     "name": "my-account",
     "path": "/my-account",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\my-account.vue",
-    "chunkName": "pages/my-account"
+    "chunkName": "pages/my-account",
+    "_name": "_ff3a5ea6"
   },
   {
     "name": "postes-peages",
     "path": "/postes-peages",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\index.vue",
-    "chunkName": "pages/postes-peages/index"
+    "chunkName": "pages/postes-peages/index",
+    "_name": "_949ea0ea"
   },
   {
     "name": "privacy-policy",
     "path": "/privacy-policy",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\privacy-policy.vue",
-    "chunkName": "pages/privacy-policy"
+    "chunkName": "pages/privacy-policy",
+    "_name": "_59b17ab8"
   },
   {
     "name": "qui-sommes-nous",
     "path": "/qui-sommes-nous",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\index.vue",
-    "chunkName": "pages/qui-sommes-nous/index"
+    "chunkName": "pages/qui-sommes-nous/index",
+    "_name": "_c5ebd04e"
   },
   {
     "name": "shop",
     "path": "/shop",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop.vue",
-    "chunkName": "pages/shop"
+    "chunkName": "pages/shop",
+    "_name": "_339d5b52"
   },
   {
     "name": "shop-grid-full-width",
     "path": "/shop-grid-full-width",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-grid-full-width.vue",
-    "chunkName": "pages/shop-grid-full-width"
+    "chunkName": "pages/shop-grid-full-width",
+    "_name": "_1d5b4979"
   },
   {
     "name": "shop-grid-no-sidebar",
     "path": "/shop-grid-no-sidebar",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-grid-no-sidebar.vue",
-    "chunkName": "pages/shop-grid-no-sidebar"
+    "chunkName": "pages/shop-grid-no-sidebar",
+    "_name": "_4c9ad87e"
   },
   {
     "name": "shop-grid-right-sidebar",
     "path": "/shop-grid-right-sidebar",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-grid-right-sidebar.vue",
-    "chunkName": "pages/shop-grid-right-sidebar"
+    "chunkName": "pages/shop-grid-right-sidebar",
+    "_name": "_5eaf3d6c"
   },
   {
     "name": "shop-grid-two-column",
     "path": "/shop-grid-two-column",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-grid-two-column.vue",
-    "chunkName": "pages/shop-grid-two-column"
+    "chunkName": "pages/shop-grid-two-column",
+    "_name": "_5bf9cae8"
   },
   {
     "name": "shop-list-full-width",
     "path": "/shop-list-full-width",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-list-full-width.vue",
-    "chunkName": "pages/shop-list-full-width"
+    "chunkName": "pages/shop-list-full-width",
+    "_name": "_784ec921"
   },
   {
     "name": "shop-list-standard",
     "path": "/shop-list-standard",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-list-standard.vue",
-    "chunkName": "pages/shop-list-standard"
+    "chunkName": "pages/shop-list-standard",
+    "_name": "_4ef916d4"
   },
   {
     "name": "terms-conditions",
     "path": "/terms-conditions",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\terms-conditions.vue",
-    "chunkName": "pages/terms-conditions"
+    "chunkName": "pages/terms-conditions",
+    "_name": "_6fec46c2"
   },
   {
     "name": "wishlist",
     "path": "/wishlist",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\wishlist.vue",
-    "chunkName": "pages/wishlist"
+    "chunkName": "pages/wishlist",
+    "_name": "_47082126"
   },
   {
     "name": "blog-blog-right-sidebar",
     "path": "/blog/blog-right-sidebar",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\blog-right-sidebar.vue",
-    "chunkName": "pages/blog/blog-right-sidebar"
+    "chunkName": "pages/blog/blog-right-sidebar",
+    "_name": "_1a75ea7a"
   },
   {
     "name": "blog-blog-without-sidebar",
     "path": "/blog/blog-without-sidebar",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\blog-without-sidebar.vue",
-    "chunkName": "pages/blog/blog-without-sidebar"
+    "chunkName": "pages/blog/blog-without-sidebar",
+    "_name": "_99033122"
   },
   {
     "name": "marches-publics-decret-statut",
     "path": "/marches-publics/decret-statut",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\marches-publics\\\\decret-statut.vue",
-    "chunkName": "pages/marches-publics/decret-statut"
+    "chunkName": "pages/marches-publics/decret-statut",
+    "_name": "_001fcaf4"
   },
   {
     "name": "marches-publics-mission",
     "path": "/marches-publics/mission",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\marches-publics\\\\mission.vue",
-    "chunkName": "pages/marches-publics/mission"
+    "chunkName": "pages/marches-publics/mission",
+    "_name": "_74b439c2"
   },
   {
     "name": "marches-publics-organnigramme",
     "path": "/marches-publics/organnigramme",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\marches-publics\\\\organnigramme.vue",
-    "chunkName": "pages/marches-publics/organnigramme"
+    "chunkName": "pages/marches-publics/organnigramme",
+    "_name": "_50d32e8e"
   },
   {
     "name": "missions-blog-right-sidebar",
     "path": "/missions/blog-right-sidebar",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\missions\\\\blog-right-sidebar.vue",
-    "chunkName": "pages/missions/blog-right-sidebar"
+    "chunkName": "pages/missions/blog-right-sidebar",
+    "_name": "_068ffff0"
   },
   {
     "name": "missions-blog-without-sidebar",
     "path": "/missions/blog-without-sidebar",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\missions\\\\blog-without-sidebar.vue",
-    "chunkName": "pages/missions/blog-without-sidebar"
+    "chunkName": "pages/missions/blog-without-sidebar",
+    "_name": "_0c891f74"
   },
   {
     "name": "postes-peages-decret-statut",
     "path": "/postes-peages/decret-statut",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\decret-statut.vue",
-    "chunkName": "pages/postes-peages/decret-statut"
+    "chunkName": "pages/postes-peages/decret-statut",
+    "_name": "_70f18b4c"
   },
   {
     "name": "postes-peages-mission",
     "path": "/postes-peages/mission",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\mission.vue",
-    "chunkName": "pages/postes-peages/mission"
+    "chunkName": "pages/postes-peages/mission",
+    "_name": "_4d965705"
   },
   {
     "name": "postes-peages-organnigramme",
     "path": "/postes-peages/organnigramme",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\organnigramme.vue",
-    "chunkName": "pages/postes-peages/organnigramme"
+    "chunkName": "pages/postes-peages/organnigramme",
+    "_name": "_183a9df4"
   },
   {
     "name": "product-product-affiliate",
     "path": "/product/product-affiliate",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\product\\\\product-affiliate.vue",
-    "chunkName": "pages/product/product-affiliate"
+    "chunkName": "pages/product/product-affiliate",
+    "_name": "_4cb6b6c1"
   },
   {
     "name": "qui-sommes-nous-decret-statut",
     "path": "/qui-sommes-nous/decret-statut",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\decret-statut.vue",
-    "chunkName": "pages/qui-sommes-nous/decret-statut"
+    "chunkName": "pages/qui-sommes-nous/decret-statut",
+    "_name": "_3fd274a8"
   },
   {
     "name": "qui-sommes-nous-mission",
     "path": "/qui-sommes-nous/mission",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\mission.vue",
-    "chunkName": "pages/qui-sommes-nous/mission"
+    "chunkName": "pages/qui-sommes-nous/mission",
+    "_name": "_7792385a"
   },
   {
     "name": "qui-sommes-nous-organnigramme",
     "path": "/qui-sommes-nous/organnigramme",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\organnigramme.vue",
-    "chunkName": "pages/qui-sommes-nous/organnigramme"
+    "chunkName": "pages/qui-sommes-nous/organnigramme",
+    "_name": "_def44f7c"
   },
   {
     "name": "activites-slug",
     "path": "/activites/:slug",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\activites\\\\_slug.vue",
-    "chunkName": "pages/activites/_slug"
+    "chunkName": "pages/activites/_slug",
+    "_name": "_0e49cc13"
   },
   {
     "name": "blog-slug",
     "path": "/blog/:slug",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\_slug.vue",
-    "chunkName": "pages/blog/_slug"
+    "chunkName": "pages/blog/_slug",
+    "_name": "_ac52ae52"
   },
   {
     "name": "marches-publics-slug",
     "path": "/marches-publics/:slug?",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\marches-publics\\\\_slug.vue",
-    "chunkName": "pages/marches-publics/_slug"
+    "chunkName": "pages/marches-publics/_slug",
+    "_name": "_fa5c4e46"
   },
   {
     "name": "missions-slug",
     "path": "/missions/:slug",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\missions\\\\_slug.vue",
-    "chunkName": "pages/missions/_slug"
+    "chunkName": "pages/missions/_slug",
+    "_name": "_2e74f11c"
   },
   {
     "name": "postes-peages-slug",
     "path": "/postes-peages/:slug?",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\_slug.vue",
-    "chunkName": "pages/postes-peages/_slug"
+    "chunkName": "pages/postes-peages/_slug",
+    "_name": "_980be37a"
   },
   {
     "name": "product-slug",
     "path": "/product/:slug?",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\product\\\\_slug.vue",
-    "chunkName": "pages/product/_slug"
+    "chunkName": "pages/product/_slug",
+    "_name": "_601845dc"
   },
   {
     "name": "qui-sommes-nous-slug",
     "path": "/qui-sommes-nous/:slug?",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\_slug.vue",
-    "chunkName": "pages/qui-sommes-nous/_slug"
+    "chunkName": "pages/qui-sommes-nous/_slug",
+    "_name": "_c95912de"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_2fdbebc1"
   }
 ]
