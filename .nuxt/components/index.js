@@ -49,6 +49,10 @@ export { default as HeroSliderSeven } from '../..\\components\\hero\\HeroSliderS
 export { default as HeroSliderSix } from '../..\\components\\hero\\HeroSliderSix.vue'
 export { default as HeroSliderThree } from '../..\\components\\hero\\HeroSliderThree.vue'
 export { default as HeroSliderTwo } from '../..\\components\\hero\\HeroSliderTwo.vue'
+export { default as PolicyServicePolicy } from '../..\\components\\policy\\ServicePolicy.vue'
+export { default as PolicyServicePolicyFour } from '../..\\components\\policy\\ServicePolicyFour.vue'
+export { default as PolicyServicePolicyThree } from '../..\\components\\policy\\ServicePolicyThree.vue'
+export { default as PolicyServicePolicyTwo } from '../..\\components\\policy\\ServicePolicyTwo.vue'
 export { default as ProductDetailsWrapper } from '../..\\components\\product\\ProductDetailsWrapper.vue'
 export { default as ProductGridItem } from '../..\\components\\product\\ProductGridItem.vue'
 export { default as ProductGridItemTwo } from '../..\\components\\product\\ProductGridItemTwo.vue'
@@ -60,10 +64,6 @@ export { default as ProductWrapperFour } from '../..\\components\\product\\Produ
 export { default as ProductWrapperSeven } from '../..\\components\\product\\ProductWrapperSeven.vue'
 export { default as ProductWrapperThree } from '../..\\components\\product\\ProductWrapperThree.vue'
 export { default as ProductWrapperTwo } from '../..\\components\\product\\ProductWrapperTwo.vue'
-export { default as PolicyServicePolicy } from '../..\\components\\policy\\ServicePolicy.vue'
-export { default as PolicyServicePolicyFour } from '../..\\components\\policy\\ServicePolicyFour.vue'
-export { default as PolicyServicePolicyThree } from '../..\\components\\policy\\ServicePolicyThree.vue'
-export { default as PolicyServicePolicyTwo } from '../..\\components\\policy\\ServicePolicyTwo.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
