@@ -6,6 +6,10 @@ import NuxtError from '..\\layouts\\error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
+import '..\\assets\\scss\\style.scss'
+
+import '..\\assets\\css\\animation.css'
+
 import _6f6c098b from '..\\layouts\\default.vue'
 import _602e6cb4 from '..\\layouts\\HomeSidebarMenu.vue'
 
@@ -95,6 +99,10 @@ export default {
 
     isFetching () {
       return this.nbFetching > 0
+    },
+
+    isPreview () {
+      return Boolean(this.$options.previewData)
     },
   },
 

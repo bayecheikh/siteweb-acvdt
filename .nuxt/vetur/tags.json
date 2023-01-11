@@ -164,12 +164,6 @@
   "PolicyServicePolicyTwo": {
     "description": "Auto imported from components/policy/ServicePolicyTwo.vue"
   },
-<<<<<<< HEAD
-=======
-  "SectionsFinancementParRegion2": {
-    "description": "Auto imported from components/sections/FinancementParRegion2.vue"
-  },
->>>>>>> dev
   "ProductDetailsWrapper": {
     "description": "Auto imported from components/product/ProductDetailsWrapper.vue"
   },
@@ -202,5 +196,8 @@
   },
   "ProductWrapperTwo": {
     "description": "Auto imported from components/product/ProductWrapperTwo.vue"
+  },
+  "SectionsFinancementParRegion2": {
+    "description": "Auto imported from components/sections/FinancementParRegion2.vue"
   }
 }

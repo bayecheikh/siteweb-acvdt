@@ -111,8 +111,7 @@
     "name": "postes-peages",
     "path": "/postes-peages",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\index.vue",
-    "chunkName": "pages/postes-peages/index",
-    "_name": "_949ea0ea"
+    "chunkName": "pages/postes-peages/index"
   },
   {
     "name": "privacy-policy",
@@ -226,22 +225,19 @@
     "name": "postes-peages-decret-statut",
     "path": "/postes-peages/decret-statut",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\decret-statut.vue",
-    "chunkName": "pages/postes-peages/decret-statut",
-    "_name": "_70f18b4c"
+    "chunkName": "pages/postes-peages/decret-statut"
   },
   {
     "name": "postes-peages-mission",
     "path": "/postes-peages/mission",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\mission.vue",
-    "chunkName": "pages/postes-peages/mission",
-    "_name": "_4d965705"
+    "chunkName": "pages/postes-peages/mission"
   },
   {
     "name": "postes-peages-organnigramme",
     "path": "/postes-peages/organnigramme",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\organnigramme.vue",
-    "chunkName": "pages/postes-peages/organnigramme",
-    "_name": "_183a9df4"
+    "chunkName": "pages/postes-peages/organnigramme"
   },
   {
     "name": "product-product-affiliate",
@@ -295,8 +291,7 @@
     "name": "postes-peages-slug",
     "path": "/postes-peages/:slug?",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\_slug.vue",
-    "chunkName": "pages/postes-peages/_slug",
-    "_name": "_980be37a"
+    "chunkName": "pages/postes-peages/_slug"
   },
   {
     "name": "product-slug",

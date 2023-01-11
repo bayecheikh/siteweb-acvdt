@@ -22,6 +22,7 @@ const _d2582fb0 = () => interopDefault(import('..\\pages\\login-register.vue' /*
 const _f6ef0bb6 = () => interopDefault(import('..\\pages\\marches-publics\\index.vue' /* webpackChunkName: "pages/marches-publics/index" */))
 const _2b07ae8c = () => interopDefault(import('..\\pages\\missions\\index.vue' /* webpackChunkName: "pages/missions/index" */))
 const _ff3a5ea6 = () => interopDefault(import('..\\pages\\my-account.vue' /* webpackChunkName: "pages/my-account" */))
+const _949ea0ea = () => interopDefault(import('..\\pages\\postes-peages\\index.vue' /* webpackChunkName: "pages/postes-peages/index" */))
 const _59b17ab8 = () => interopDefault(import('..\\pages\\privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
 const _c5ebd04e = () => interopDefault(import('..\\pages\\qui-sommes-nous\\index.vue' /* webpackChunkName: "pages/qui-sommes-nous/index" */))
 const _339d5b52 = () => interopDefault(import('..\\pages\\shop.vue' /* webpackChunkName: "pages/shop" */))
@@ -40,6 +41,9 @@ const _74b439c2 = () => interopDefault(import('..\\pages\\marches-publics\\missi
 const _50d32e8e = () => interopDefault(import('..\\pages\\marches-publics\\organnigramme.vue' /* webpackChunkName: "pages/marches-publics/organnigramme" */))
 const _068ffff0 = () => interopDefault(import('..\\pages\\missions\\blog-right-sidebar.vue' /* webpackChunkName: "pages/missions/blog-right-sidebar" */))
 const _0c891f74 = () => interopDefault(import('..\\pages\\missions\\blog-without-sidebar.vue' /* webpackChunkName: "pages/missions/blog-without-sidebar" */))
+const _70f18b4c = () => interopDefault(import('..\\pages\\postes-peages\\decret-statut.vue' /* webpackChunkName: "pages/postes-peages/decret-statut" */))
+const _4d965705 = () => interopDefault(import('..\\pages\\postes-peages\\mission.vue' /* webpackChunkName: "pages/postes-peages/mission" */))
+const _183a9df4 = () => interopDefault(import('..\\pages\\postes-peages\\organnigramme.vue' /* webpackChunkName: "pages/postes-peages/organnigramme" */))
 const _4cb6b6c1 = () => interopDefault(import('..\\pages\\product\\product-affiliate.vue' /* webpackChunkName: "pages/product/product-affiliate" */))
 const _3fd274a8 = () => interopDefault(import('..\\pages\\qui-sommes-nous\\decret-statut.vue' /* webpackChunkName: "pages/qui-sommes-nous/decret-statut" */))
 const _7792385a = () => interopDefault(import('..\\pages\\qui-sommes-nous\\mission.vue' /* webpackChunkName: "pages/qui-sommes-nous/mission" */))
@@ -48,6 +52,7 @@ const _0e49cc13 = () => interopDefault(import('..\\pages\\activites\\_slug.vue' 
 const _ac52ae52 = () => interopDefault(import('..\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
 const _fa5c4e46 = () => interopDefault(import('..\\pages\\marches-publics\\_slug.vue' /* webpackChunkName: "pages/marches-publics/_slug" */))
 const _2e74f11c = () => interopDefault(import('..\\pages\\missions\\_slug.vue' /* webpackChunkName: "pages/missions/_slug" */))
+const _980be37a = () => interopDefault(import('..\\pages\\postes-peages\\_slug.vue' /* webpackChunkName: "pages/postes-peages/_slug" */))
 const _601845dc = () => interopDefault(import('..\\pages\\product\\_slug.vue' /* webpackChunkName: "pages/product/_slug" */))
 const _c95912de = () => interopDefault(import('..\\pages\\qui-sommes-nous\\_slug.vue' /* webpackChunkName: "pages/qui-sommes-nous/_slug" */))
 const _2fdbebc1 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
@@ -136,6 +141,10 @@ export const routerOptions = {
     component: _ff3a5ea6,
     name: "my-account"
   }, {
+    path: "/postes-peages",
+    component: _949ea0ea,
+    name: "postes-peages"
+  }, {
     path: "/privacy-policy",
     component: _59b17ab8,
     name: "privacy-policy"
@@ -208,6 +217,18 @@ export const routerOptions = {
     component: _0c891f74,
     name: "missions-blog-without-sidebar"
   }, {
+    path: "/postes-peages/decret-statut",
+    component: _70f18b4c,
+    name: "postes-peages-decret-statut"
+  }, {
+    path: "/postes-peages/mission",
+    component: _4d965705,
+    name: "postes-peages-mission"
+  }, {
+    path: "/postes-peages/organnigramme",
+    component: _183a9df4,
+    name: "postes-peages-organnigramme"
+  }, {
     path: "/product/product-affiliate",
     component: _4cb6b6c1,
     name: "product-product-affiliate"
@@ -239,6 +260,10 @@ export const routerOptions = {
     path: "/missions/:slug",
     component: _2e74f11c,
     name: "missions-slug"
+  }, {
+    path: "/postes-peages/:slug?",
+    component: _980be37a,
+    name: "postes-peages-slug"
   }, {
     path: "/product/:slug?",
     component: _601845dc,
