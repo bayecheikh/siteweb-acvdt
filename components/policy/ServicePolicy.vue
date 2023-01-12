@@ -15,7 +15,7 @@
                                 <h2 class="card-title custom-sub-title">{{item.titre}}</h2>
                             </n-link>
                             <n-link :to="`/missions/`+item.id">
-                                <p class="card-text pb-10">{{truncate(item.resume,140)}}</p>
+                                <p class="card-text pb-10">{{truncate(item.resume,150)}}</p>
                             </n-link>
                             <n-link :to="`/missions/`+item.id">
                                 <img class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
