@@ -1,5 +1,5 @@
 <template>
-    <div class="support-area pt-40 pb-90">
+    <div class="support-area pt-40 pb-20">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-sm-12">
@@ -20,7 +20,7 @@
                             <div class="mb-0 height-100">   
                                 <div class="">
                                     <n-link :to="`/missions/`+item.id">
-                                        <img class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
+                                        <img height="150" class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
                                     </n-link>
                                 </div>
                                 <!-- <n-link :to="`/missions/`+item.id" class="btn btn-success">

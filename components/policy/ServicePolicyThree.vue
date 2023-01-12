@@ -6,9 +6,9 @@
                   <h1 class="card-title custom-title">Marchés publics</h1> 
                 </div>
             </div>
-            <div class="row justify-content-center mb-30 blog-wrap-2 mb-0 height-100">
+            <div class="row justify-content-center mb-30 blog-wrap-2 mb-0 height-100 border-grey">
                 <div class="col-lg-12 col-sm-12">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Plan de passation</button>
                         </li>
