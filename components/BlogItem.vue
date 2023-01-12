@@ -11,10 +11,10 @@
         </div>
         <div class="blog-content-wrap">
             <div class="blog-content text-center">
-                <h3>
-                    <n-link :to="`#`">{{ blog.titre }}</n-link>
+                <h4>
+                    <n-link :to="`#`">{{truncate(blog.titre,60)  }}</n-link>
                     <!--<n-link :to="`/blog/${slugify(blog.titre)}`">{{ blog.titre }}</n-link>-->
-                </h3>
+                </h4>
                 <!--<span>Par <n-link to="">{{ blog.author }}</n-link></span>-->
             </div>
         </div>
@@ -42,6 +42,9 @@
                     .replace(/--+/g, "-") // Replace multiple - with single -
                     .replace(/^-+/, "") // Trim - from start of text
                     .replace(/-+$/, ""); // Trim - from end of text
+            },
+            truncate(source, size) {
+                return source.length > size ? source.slice(0, size - 1) + "…" : source;
             }
         },
     };
