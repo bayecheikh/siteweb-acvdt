@@ -4,7 +4,7 @@
             <div class="row justify-content-center mb-30">
                 <div class="col-lg-12 col-sm-12" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'mission-intro')" :key="index">
                   <h1 class="card-title custom-title">{{item.titre}}</h1>
-                  <div class="card-text" v-html="item.body"></div>  
+                  <div class="card-text " v-html="item.resume"></div>  
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -15,7 +15,7 @@
                                 <h2 class="card-title custom-sub-title">{{item.titre}}</h2>
                             </n-link>
                             <n-link :to="`/missions/`+item.id">
-                                <p class="card-text pb-10">{{item.resume}}</p>
+                                <p class="card-text pb-10">{{truncate(item.resume,140)}}</p>
                             </n-link>
                             <n-link :to="`/missions/`+item.id">
                                 <img class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
@@ -41,6 +41,9 @@ import { mapMutations, mapGetters } from 'vuex'
             getUrlImage(url){
                 return url.substring(str.indexOf('drupal-api') + 1);
             },
+            truncate(source, size) {
+                return source.length > size ? source.slice(0, size - 1) + "…" : source;
+            }
             
         },
         data() {

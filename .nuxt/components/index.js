@@ -36,11 +36,6 @@ export { default as TestimonialOne } from '../..\\components\\TestimonialOne.vue
 export { default as TheFooter } from '../..\\components\\TheFooter.vue'
 export { default as TheHeader } from '../..\\components\\TheHeader.vue'
 export { default as WelcomeMessage } from '../..\\components\\WelcomeMessage.vue'
-export { default as BannerItem } from '../..\\components\\banner\\BannerItem.vue'
-export { default as BannerStyleFour } from '../..\\components\\banner\\BannerStyleFour.vue'
-export { default as BannerStyleOne } from '../..\\components\\banner\\BannerStyleOne.vue'
-export { default as BannerStyleThree } from '../..\\components\\banner\\BannerStyleThree.vue'
-export { default as BannerStyleTwo } from '../..\\components\\banner\\BannerStyleTwo.vue'
 export { default as HeroSlider } from '../..\\components\\hero\\HeroSlider.vue'
 export { default as HeroSliderCosmetics } from '../..\\components\\hero\\HeroSliderCosmetics.vue'
 export { default as HeroSliderFive } from '../..\\components\\hero\\HeroSliderFive.vue'
@@ -53,6 +48,12 @@ export { default as PolicyServicePolicy } from '../..\\components\\policy\\Servi
 export { default as PolicyServicePolicyFour } from '../..\\components\\policy\\ServicePolicyFour.vue'
 export { default as PolicyServicePolicyThree } from '../..\\components\\policy\\ServicePolicyThree.vue'
 export { default as PolicyServicePolicyTwo } from '../..\\components\\policy\\ServicePolicyTwo.vue'
+export { default as BannerItem } from '../..\\components\\banner\\BannerItem.vue'
+export { default as BannerStyleFour } from '../..\\components\\banner\\BannerStyleFour.vue'
+export { default as BannerStyleOne } from '../..\\components\\banner\\BannerStyleOne.vue'
+export { default as BannerStyleThree } from '../..\\components\\banner\\BannerStyleThree.vue'
+export { default as BannerStyleTwo } from '../..\\components\\banner\\BannerStyleTwo.vue'
+export { default as SectionsFinancementParRegion2 } from '../..\\components\\sections\\FinancementParRegion2.vue'
 export { default as ProductDetailsWrapper } from '../..\\components\\product\\ProductDetailsWrapper.vue'
 export { default as ProductGridItem } from '../..\\components\\product\\ProductGridItem.vue'
 export { default as ProductGridItemTwo } from '../..\\components\\product\\ProductGridItemTwo.vue'
@@ -64,7 +65,6 @@ export { default as ProductWrapperFour } from '../..\\components\\product\\Produ
 export { default as ProductWrapperSeven } from '../..\\components\\product\\ProductWrapperSeven.vue'
 export { default as ProductWrapperThree } from '../..\\components\\product\\ProductWrapperThree.vue'
 export { default as ProductWrapperTwo } from '../..\\components\\product\\ProductWrapperTwo.vue'
-export { default as SectionsFinancementParRegion2 } from '../..\\components\\sections\\FinancementParRegion2.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
