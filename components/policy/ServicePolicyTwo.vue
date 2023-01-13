@@ -46,7 +46,7 @@
                                         <h2 class="card-title custom-sub-title">{{item.titre}}</h2>
                                     </n-link>
                                     <n-link :to="`/missions/`+item.id">
-                                        <p class="card-text custom-body pb-10">{{truncate(item.resume,200)}}</p>
+                                        <p class="card-text custom-body pb-10">{{$truncate(item.resume,200)}}</p>
                                     </n-link>
                                 </div>
                                 <!-- <n-link :to="`/missions/`+item.id" class="btn btn-success">
@@ -70,9 +70,6 @@ import { mapMutations, mapGetters } from 'vuex'
         methods: {
             getUrlImage(url){
                 return url.substring(str.indexOf('drupal-api') + 1);
-            },
-            truncate(source, size) {
-                return source.length > size ? source.slice(0, size - 1) + "…" : source;
             }
             
         },

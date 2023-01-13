@@ -31,6 +31,7 @@ export default {
         '~/plugins/vue-awesome-swiper.js',
         '~/plugins/vuejs-pagiante.js',
         '~/plugins/observe-visibility.js',
+        "~/plugins/helpers.js",
         { 
             src: '~/plugins/bootstrap.js', 
             mode: 'client'

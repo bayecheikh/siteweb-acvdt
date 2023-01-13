@@ -31,51 +31,83 @@
                                         <tr>
                                         <th scope="col">Référence</th>
                                         <th scope="col">Objet</th>
-                                        <th scope="col">Autorité contractante</th>
+                                        <th scope="col">Type de marché</th>
                                         <th scope="col">Publié</th>
                                         <th scope="col">Date limite</th>
                                         <th scope="col">Détail</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <th scope="row">#SIRAT/BJ_12</th>
-                                            <td>Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a.</td>
-                                            <td>Société des infrastructures routières et de l'aménagement du territoire</td>
-                                            <td>12-12-2022</td>
-                                            <td>12-04-2023</td>
-                                            <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">#SIRAT/BJ_13</th>
-                                            <td>Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a.</td>
-                                            <td>Société des infrastructures routières et de l'aménagement du territoire</td>
-                                            <td>12-12-2022</td>
-                                            <td>12-04-2023</td>
-                                            <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">#SIRAT/BJ_14</th>
-                                            <td>Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a.</td>
-                                            <td>Société des infrastructures routières et de l'aménagement du territoire</td>
-                                            <td>12-12-2022</td>
-                                            <td>12-04-2023</td>
-                                            <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">#SIRAT/BJ_15</th>
-                                            <td>Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a.</td>
-                                            <td>Société des infrastructures routières et de l'aménagement du territoire</td>
-                                            <td>12-12-2022</td>
-                                            <td>12-04-2023</td>
+                                        <tr v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation')" :key="index">
+                                            <th scope="row">{{ item.reference }}</th>
+                                            <td><div class="card-text" v-html="item.objet"></div></td>
+                                            <td>{{ item.type_marche }}</td>
+                                            <td>{{ item.date_publication}}</td>
+                                            <td>{{ item.date_limite }}</td>
                                             <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <caption>
+                                        
+                                    </caption>
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">Référence</th>
+                                        <th scope="col">Objet</th>
+                                        <th scope="col">Type de marché</th>
+                                        <th scope="col">Publié</th>
+                                        <th scope="col">Date limite</th>
+                                        <th scope="col">Détail</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'avis-generaux')" :key="index">
+                                            <th scope="row">{{ item.reference }}</th>
+                                            <td><div class="card-text" v-html="item.objet"></div></td>
+                                            <td>{{ item.type_marche }}</td>
+                                            <td>{{ item.date_publication}}</td>
+                                            <td>{{ item.date_limite }}</td>
+                                            <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <caption>
+                                        
+                                    </caption>
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">Référence</th>
+                                        <th scope="col">Objet</th>
+                                        <th scope="col">Type de marché</th>
+                                        <th scope="col">Publié</th>
+                                        <th scope="col">Date limite</th>
+                                        <th scope="col">Détail</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'avis-d-appel-a-concurence')" :key="index">
+                                            <th scope="row">{{ item.reference }}</th>
+                                            <td><div class="card-text" v-html="item.objet"></div></td>
+                                            <td>{{ item.type_marche }}</td>
+                                            <td>{{ item.date_publication}}</td>
+                                            <td>{{ item.date_limite }}</td>
+                                            <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div> 
                 </div>
             </div>
@@ -88,7 +120,7 @@
 import { mapMutations, mapGetters } from 'vuex'
     export default {
         computed: mapGetters({
-            listcontenus: 'contenus/listcontenus',
+            listmarchepublics: 'marchepublics/listmarchepublics',
         }),
         methods: {
             getUrlImage(url){
