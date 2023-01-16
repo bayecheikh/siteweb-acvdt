@@ -7,7 +7,7 @@
                     <div class="custom-top-card pt-15 pb-15 pl-80 pr-5">
                         <div class="custom-bloc-chiffre d-flex justify-content-evenly border-green bg-green">
                             <span class="custom-chiffre">NOMBRE DE POSTE DE PÉAGE :</span> 
-                            <span class="custom-chiffre text-green">11</span>
+                            <span class="custom-chiffre text-green">{{ this.peages.length }}</span>
                         </div> 
                     </div>
                     <div class="custom-top-card pt-15 pb-15 pl-80 pr-5">
