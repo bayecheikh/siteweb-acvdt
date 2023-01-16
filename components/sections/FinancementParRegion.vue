@@ -12,8 +12,8 @@
                     </div>
                     <div class="custom-top-card pt-15 pb-15 pl-80 pr-5">
                         <ul class="list-group list-group-flush pl-48 scrollable-bloc">
-                            <li class="list-group-item pl-0 pt-3 pb-3 font-weight-600 text-blue" v-for="(item,i) in this.secteurs" :key="i">
-                                <button :class="'text-secteur '+ (isActivesecteur==item.id?'activesecteur':'')" @click="investissementBysecteur(item)">
+                            <li class="list-group-item pl-0 pt-3 pb-3 font-weight-600 text-blue" v-for="(item,i) in this.peages" :key="i">
+                                <button :class="'text-peage '+ (isActivepeage==item.id?'activepeage':'')" @click="postepeageBypeage(item)">
                                         {{item.titre}}
                                 </button>    
                             </li>
@@ -21,7 +21,7 @@
                     </div>
                     
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 m-0 pt-15 pl-15 pb-30 d-flex flex-column align-items-center" style="background-color: #0060a8;background-repeat: no-repeat; background-size: cover; max-height: 640px;">
+                <div class="col-lg-6 col-md-6 col-sm-12 m-0 pt-15 pl-15 pb-30 d-flex flex-column align-items-center" style="background-color: #0060a8;background-repeat: no-repeat; background-size: cover; height: 700px;">
 
                     <button class="btn btn-success" type="button" disabled style="position: absolute; z-index: 100; top: 90%; left: 50%;" v-if="isloading">
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -29,7 +29,7 @@
                     </button>
                     <div id="chartdiv"></div>
                     <div class="my-2">
-                        <span style="font-weight:600; font-size:18px; color: #fff; text-transform:capitalize; font-family:Arial, Helvetica, sans-serif;">Secteur : {{titlesecteur}} </span> 
+                        <span style="font-weight:600; font-size:18px; color: #fff; text-transform:capitalize; font-family:Arial, Helvetica, sans-serif;">{{titlepeage}} </span> 
                     </div>                   
                 </div>
                 
@@ -47,7 +47,7 @@ import { mapMutations, mapGetters } from 'vuex'
         }),
         mounted: function() {
             //this.createdMap()
-            this.getListsecteur()
+            this.getListpeage()
             //this.$store.dispatch('contenus/getList')
         },
         computed:{
@@ -61,12 +61,12 @@ import { mapMutations, mapGetters } from 'vuex'
         data() {
             return {
                 isloading:false,
-                tablefinancementmaps:[],
-                isActivesecteur:0,
-                titlesecteur:'',
+                tablepostepeages:[],
+                isActivepeage:0,
+                titlepeage:'',
                 siteUrl:process.env.siteUrl,
-                secteurs: [],
-                investissementBysecteurs:[],
+                peages: [],
+                postepeageBypeages:[],
                 dimensions: [],
                 sources: [],
                 missions: [],
@@ -83,82 +83,15 @@ import { mapMutations, mapGetters } from 'vuex'
         },
 
         methods: {
-            getInfoTooltip(e){
-                let slugRegion = e
 
-                this.engagement = 0
-                this.mobilisation = 0
-                this.execution = 0
-
-                let tablefinancement = this.investissementBysecteurs?.filter(investissement => investissement.region[0].slug === slugRegion)
-                 
-                let montants = tablefinancement?.map((item)=>{
-                //console.log('List Invest Region***********',item )
-                    item.ligne_financements.map((item)=>{
-                    //Engagement
-                    let montantBienServicePrevus = parseInt(item.montantBienServicePrevus)
-                    let montantInvestissementPrevus = parseInt(item.montantInvestissementPrevus)
-                    this.engagement = this.engagement + montantBienServicePrevus + montantInvestissementPrevus
-
-                    //Mobilisation
-                    let montantBienServiceMobilises = parseInt(item.montantBienServiceMobilises)
-                    let montantInvestissementMobilises = parseInt(item.montantInvestissementMobilises)
-                    this.mobilisation = this.mobilisation + montantBienServiceMobilises + montantInvestissementMobilises
-
-                    //Execution
-                    let montantBienServiceExecutes = parseInt(item.montantBienServiceExecutes)
-                    let montantInvestissementExecutes = parseInt(item.montantInvestissementExecutes)
-                    this.execution = this.execution + montantBienServiceExecutes + montantInvestissementExecutes
-
-                    })
-                })
-                console.log('Montant engagement : +++ ',this.engagement)
-                
-            },
-            getInfo(e){
-                let slugRegion = e.target.id
-                this.title = e.target.id
-                this.isHovering = true
-                this.x = e.pageX;
-                this.y = e.pageY;
-
-                this.engagement = 0
-                this.mobilisation = 0
-                this.execution = 0
-
-                let tablefinancement = this.investissementBysecteurs?.filter(investissement => investissement.region[0].slug === slugRegion)
-                 
-                let montants = tablefinancement?.map((item)=>{
-                //console.log('List Invest Region***********',item )
-                    item.ligne_financements.map((item)=>{
-                    //Engagement
-                    let montantBienServicePrevus = parseInt(item.montantBienServicePrevus)
-                    let montantInvestissementPrevus = parseInt(item.montantInvestissementPrevus)
-                    this.engagement = this.engagement + montantBienServicePrevus + montantInvestissementPrevus
-
-                    //Mobilisation
-                    let montantBienServiceMobilises = parseInt(item.montantBienServiceMobilises)
-                    let montantInvestissementMobilises = parseInt(item.montantInvestissementMobilises)
-                    this.mobilisation = this.mobilisation + montantBienServiceMobilises + montantInvestissementMobilises
-
-                    //Execution
-                    let montantBienServiceExecutes = parseInt(item.montantBienServiceExecutes)
-                    let montantInvestissementExecutes = parseInt(item.montantInvestissementExecutes)
-                    this.execution = this.execution + montantBienServiceExecutes + montantInvestissementExecutes
-
-                    })
-                })
-                console.log('Montant engagement : +++ ',this.engagement)
-                
-            },
-            getListsecteur(){
+            getListpeage(){
                 
                 this.progress=true
                 this.$axios.$get('/allpostepeages')
                 .then(async (response) => {
                     //this.$toast.success(response.message).goAway(2000)
-                    console.log('Données secteurs Reçu ++++++: ', response)
-                    this.secteurs = response.data
+                    console.log('Données peages Reçu ++++++: ', response)
+                    this.peages = response.data
                    // Create chart instance
                    let {am4core, am4charts,am4maps,senegalHigh, am4themes_animated, am4themes_dark} = this.$am4core();
                     // Create map instance
@@ -172,283 +105,68 @@ import { mapMutations, mapGetters } from 'vuex'
                     
                     // Zoom control
                     map.zoomControl = new am4maps.ZoomControl();
+                    map.paddingBottom = 5;
                         
                     // The world
                     let polygonSeries = map.series.push(new am4maps.MapPolygonSeries());    
                     polygonSeries.useGeodata = true;
                     polygonSeries.calculateVisualCenter = true;
 
-                    polygonSeries.data = tablefinancementmaps
-
-                    //set the color
-                    polygonSeries.heatRules.push({
-                    "property": "fill",
-                    "target": polygonSeries.mapPolygons.template,
-                    "min": am4core.color("#ffffff"),
-                    "max": am4core.color("#084f31"),
-                    "logarithmic": true
-                    });
-
-                    //set legend
-                    // Set up heat legend
-                    let heatLegend = map.createChild(am4maps.HeatLegend);
-                    heatLegend.series = polygonSeries;
-                    heatLegend.align = "right";
-                    heatLegend.height = am4core.percent(80);
-                    heatLegend.orientation = "vertical";
-                    heatLegend.valign = "top";
-                    heatLegend.marginLeft = am4core.percent(4);
-                    heatLegend.marginTop = am4core.percent(4);
-                    heatLegend.valueAxis.renderer.opposite = true;
-                    heatLegend.valueAxis.renderer.dx = - 25;
-                    heatLegend.valueAxis.strictMinMax = false;
-                    heatLegend.valueAxis.fontSize = 12;
-                    heatLegend.valueAxis.logarithmic = true;
-                    polygonSeries.mapPolygons.template.events.on("over", function(ev) {
-                    if (!isNaN(ev.target.dataItem.value)) {
-                        heatLegend.valueAxis.showTooltipAt(ev.target.dataItem.value)
-                    }
-                    else {
-                        heatLegend.valueAxis.hideTooltip();
-                    }
-                    });
-
-                    polygonSeries.mapPolygons.template.events.on("out", function(ev) {
-                    heatLegend.valueAxis.hideTooltip();
-                    });
-
                     // Configure series
-                    let polygonTemplate = polygonSeries.mapPolygons.template;
-                    polygonTemplate.tooltipText = "{name} : {value} ";
-                    polygonTemplate.propertyFields.fill = "fill";
+                    var polygonTemplate = polygonSeries.mapPolygons.template;
+                    polygonTemplate.tooltipText = "{name}";
+                    polygonTemplate.fill = am4core.color("#fff");
                     polygonTemplate.stroke = am4core.color("#084f31")
                     polygonTemplate.strokeWidth = 1;
                     polygonTemplate.hoverOnFocus = true;
                     polygonTemplate.nonScalingStroke = true;
 
                     // Create hover state and set alternative fill color
-                    let hs = polygonTemplate.states.create("hover");
+                    var hs = polygonTemplate.states.create("hover");
                     hs.properties.fill = am4core.color("#367B25");
 
-                    //circles
-                    /* let imageSeries = map.series.push(new am4maps.MapImageSeries());
-                    let imageSeriesTemplate = imageSeries.mapImages.template;
-                    let circle = imageSeriesTemplate.createChild(am4core.Circle);
-                    circle.radius = 10;
-                    circle.fill = am4core.color("#367B25");
-                    circle.stroke = am4core.color("#FFFFFF");
-                    circle.strokeWidth = 2;
+                    // Bind "fill" property to "fill" key in data
+                    polygonTemplate.propertyFields.fill = "fill";
+
+                    // Create image series
+                    var imageSeries = map.series.push(new am4maps.MapImageSeries());
+                    
+                    // Create a circle image in image series template so it gets replicated to all new images
+                    var imageSeriesTemplate = imageSeries.mapImages.template;
+                    var circle = imageSeriesTemplate.createChild(am4core.Circle);
+                    circle.radius = 8;
+                    circle.fill = am4core.color("#fff");
+                    circle.stroke = am4core.color("#00B42D");
+                    circle.strokeWidth = 4;
                     circle.nonScaling = true;
-                    circle.tooltipText = "{name}";
+                    circle.tooltipText = "{titre}";
+
+                    // Set property fields
                     imageSeriesTemplate.propertyFields.latitude = "latitude";
                     imageSeriesTemplate.propertyFields.longitude = "longitude";
-                    imageSeries.data = tablefinancementmaps
 
-                    imageSeriesTemplate.events.on("hit", (ev)=>{
-                    console.log(ev.target.dataItem.dataContext.name)
-                    }) */
-
-                    //label
-                    let labelSeries = map.series.push(new am4maps.MapImageSeries());
-                    let labelTemplate = labelSeries.mapImages.template.createChild(am4core.Label);
-                    labelTemplate.horizontalCenter = "right";
-                    labelTemplate.verticalCenter = "middle";
-                    labelTemplate.fontSize = 12;
-                    //labelTemplate.nonScaling = true;
-                    labelTemplate.interactionsEnabled = false;
-
-                    polygonSeries.events.on("inited", function () {
-                    polygonSeries.mapPolygons.each(function (polygon) {
-                        let label = labelSeries.mapImages.create();
-                        let state = polygon.dataItem.dataContext.name;
-                        label.latitude = polygon.visualLatitude;
-                        label.longitude = polygon.visualLongitude;
-                        label.children.getIndex(0).text = state;
-                    });
-                    });
-
-                }).catch((error) => {
-                    console.log('Code error ++++++: ', error?.response?.data?.message)
-                }).finally(() => {
-                    console.log('Requette envoyé ')
-                });
-            },
-            investissementBysecteur(secteur){
-                this.isloading =true
-                this.isActivesecteur = secteur.id
-                this.titlesecteur = secteur.libelle
-                this.progress=true
-                this.$axios.$get('/investissementBySecteur/'+secteur)
-                .then(async (response) => {
-                    //this.$toast.success(response.message).goAway(2000)
-                    console.log('Données Investissement Reçu ++++++: ', response.data.data)
-                    this.investissementBysecteurs = response.data.data
-                    let tablefinancementmaps = []
-                   await response.data.data.map((item)=>{
-                        /* let regionId = item.region.length?.region[0].slug
-                        let regionName = item.region.length?.region[0].nom_region */
-                        //console.log('region données+++++++',item.region[0].slug)
-                        let idRegion = item.region[0]?.slug
-                        let slugRegion = item.region[0]?.slug
-                        let nameRegion = item.region[0]?.nom_region
-                        let latitude = item.region[0]?.latitude
-                        let longitude = item.region[0]?.longitude
-
-                        this.getInfoTooltip(idRegion)
-                        
-                        tablefinancementmaps.push({id:slugRegion,name:nameRegion,value:this.engagement,latitude:latitude,longitude:longitude})
+                    // Add data for the three cities
+                    let tablepostepeages = []
+                    await response.data.map((item)=>{
+                        let latitude = parseFloat(item?.latitude)
+                        let longitude = parseFloat(item?.longitude)
+                        let titre = item?.titre                      
+                        tablepostepeages.push({"latitude":latitude,"longitude":longitude,"titre":titre})
                     })
-                    // Create chart instance
-                    let {am4core, am4charts,am4maps,senegalHigh, am4themes_animated, am4themes_dark} = this.$am4core();
-                    // Create map instance
-                    let map = am4core.create("chartdiv", am4maps.MapChart);
+                    imageSeries.data = tablepostepeages
+
                     
-                    // Set map definition
-                    map.geodata = senegalHigh;
-                        
-                    // Set projection
-                    map.projection = new am4maps.projections.Miller();
-                    
-                    // Zoom control
-                    map.zoomControl = new am4maps.ZoomControl();
-                        
-                    // The world
-                    let polygonSeries = map.series.push(new am4maps.MapPolygonSeries());    
-                    polygonSeries.useGeodata = true;
-                    polygonSeries.calculateVisualCenter = true;
-
-                    polygonSeries.data = tablefinancementmaps
-
-                    //set the color
-                    polygonSeries.heatRules.push({
-                    "property": "fill",
-                    "target": polygonSeries.mapPolygons.template,
-                    "min": am4core.color("#ffffff"),
-                    "max": am4core.color("#084f31"),
-                    "logarithmic": true
-                    });
-
-                    //set legend
-                    // Set up heat legend
-                    let heatLegend = map.createChild(am4maps.HeatLegend);
-                    heatLegend.series = polygonSeries;
-                    heatLegend.align = "right";
-                    heatLegend.height = am4core.percent(80);
-                    heatLegend.orientation = "vertical";
-                    heatLegend.valign = "top";
-                    heatLegend.marginLeft = am4core.percent(4);
-                    heatLegend.marginTop = am4core.percent(4);
-                    heatLegend.valueAxis.renderer.opposite = true;
-                    heatLegend.valueAxis.renderer.dx = - 25;
-                    heatLegend.valueAxis.strictMinMax = false;
-                    heatLegend.valueAxis.fontSize = 12;
-                    heatLegend.valueAxis.logarithmic = true;
-                    polygonSeries.mapPolygons.template.events.on("over", function(ev) {
-                    if (!isNaN(ev.target.dataItem.value)) {
-                        heatLegend.valueAxis.showTooltipAt(ev.target.dataItem.value)
-                    }
-                    else {
-                        heatLegend.valueAxis.hideTooltip();
-                    }
-                    });
-
-                    polygonSeries.mapPolygons.template.events.on("out", function(ev) {
-                    heatLegend.valueAxis.hideTooltip();
-                    });
-
-                    // Configure series
-                    let polygonTemplate = polygonSeries.mapPolygons.template;
-                    polygonTemplate.tooltipText = "{name} : {value} ";
-                    polygonTemplate.propertyFields.fill = "fill";
-                    polygonTemplate.stroke = am4core.color("#084f31")
-                    polygonTemplate.strokeWidth = 1;
-                    polygonTemplate.hoverOnFocus = true;
-                    polygonTemplate.nonScalingStroke = true;
-
-                    // Create hover state and set alternative fill color
-                    let hs = polygonTemplate.states.create("hover");
-                    hs.properties.fill = am4core.color("#367B25");
-
-                    //circles
-                    /* let imageSeries = map.series.push(new am4maps.MapImageSeries());
-                    let imageSeriesTemplate = imageSeries.mapImages.template;
-                    let circle = imageSeriesTemplate.createChild(am4core.Circle);
-                    circle.radius = 10;
-                    circle.fill = am4core.color("#367B25");
-                    circle.stroke = am4core.color("#FFFFFF");
-                    circle.strokeWidth = 2;
-                    circle.nonScaling = true;
-                    circle.tooltipText = "{name}";
-                    imageSeriesTemplate.propertyFields.latitude = "latitude";
-                    imageSeriesTemplate.propertyFields.longitude = "longitude";
-                    imageSeries.data = tablefinancementmaps
-
-                    imageSeriesTemplate.events.on("hit", (ev)=>{
-                    console.log(ev.target.dataItem.dataContext.name)
-                    }) */
-
-                    //label
-                    let labelSeries = map.series.push(new am4maps.MapImageSeries());
-                    let labelTemplate = labelSeries.mapImages.template.createChild(am4core.Label);
-                    labelTemplate.horizontalCenter = "right";
-                    labelTemplate.verticalCenter = "middle";
-                    labelTemplate.fontSize = 12;
-                    //labelTemplate.nonScaling = true;
-                    labelTemplate.interactionsEnabled = false;
-
-                    polygonSeries.events.on("inited", function () {
-                    polygonSeries.mapPolygons.each(function (polygon) {
-                        let label = labelSeries.mapImages.create();
-                        let state = polygon.dataItem.dataContext.name;
-                        label.latitude = polygon.visualLatitude;
-                        label.longitude = polygon.visualLongitude;
-                        label.children.getIndex(0).text = state;
-                    });
-                    });
 
                 }).catch((error) => {
                     console.log('Code error ++++++: ', error?.response?.data?.message)
                 }).finally(() => {
                     console.log('Requette envoyé ')
-                    this.isloading =false
                 });
             },
-            createdMap() {
-                // Create chart instance
-                let {am4core, am4charts,am4maps,senegalHigh, am4themes_animated, am4themes_dark} = this.$am4core();
-                // Create map instance
-                let map = am4core.create("chartdiv", am4maps.MapChart);
-                
-                // Set map definition
-                map.geodata = senegalHigh;
-                    
-                // Set projection
-                map.projection = new am4maps.projections.Miller();
-                
-                // Zoom control
-                map.zoomControl = new am4maps.ZoomControl();
-                    
-                // The world
-                let polygonSeries = map.series.push(new am4maps.MapPolygonSeries());    
-                polygonSeries.useGeodata = true;
-                polygonSeries.calculateVisualCenter = true;
-
-                polygonSeries.data = this.tablefinancementmaps
-
-                // Configure series
-                let polygonTemplate = polygonSeries.mapPolygons.template;
-                polygonTemplate.tooltipText = "{name} : {value} ";
-                polygonTemplate.propertyFields.fill = "fill";
-                polygonTemplate.stroke = am4core.color("#084f31")
-                polygonTemplate.strokeWidth = 1;
-                polygonTemplate.hoverOnFocus = true;
-                polygonTemplate.nonScalingStroke = true;
-
-                // Create hover state and set alternative fill color
-                let hs = polygonTemplate.states.create("hover");
-                hs.properties.fill = am4core.color("#367B25");
-
-                
+            postepeageBypeage(peage){
+                //this.isloading =true
+                this.isActivepeage = peage.id
+                this.titlepeage = peage.titre
             }
         }
     };
@@ -476,7 +194,7 @@ path:hover {
   stroke-miterlimit:22.926;
   stroke-width: 0.5;
 }
-.descriptionsecteur {
+.descriptionpeage {
   position: absolute;
   font-size: 20px;
   text-align: center;
@@ -598,11 +316,11 @@ color: #000000b5;
 .titleRegion{
     font-weight: 600;
 }
-.text-secteur{
+.text-peage{
     font-size: 18px !important;
     color: #000000b5;
 }
-.activesecteur{
+.activepeage{
     color: #197d5c !important;
 }
 .scrollable-bloc{
