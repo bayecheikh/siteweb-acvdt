@@ -1,8 +1,8 @@
 export default {
-    getList({commit}){
-      this.$axios.$get('/allcontenus')
+    async getList({commit}){
+      await this.$axios.$get('/allcontenus')
       .then(async (response) => { 
-        console.log('Données reçu slider 2+++++++++++',response)
+        console.log('Données reçu contenus +++++++++++',response)
             await commit('initlist', response.data)
           }).catch((error) => {
               console.log('Code error ++++++: ', error?.response?.data?.message)

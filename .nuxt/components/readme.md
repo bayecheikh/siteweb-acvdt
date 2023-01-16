@@ -23,6 +23,7 @@ You can directly use them in pages and other components without the need to impo
 - `<HeaderWithTopbar>` | `<header-with-topbar>` (components/HeaderWithTopbar.vue)
 - `<HomeSidebarMenu>` | `<home-sidebar-menu>` (components/HomeSidebarMenu.vue)
 - `<InstagramPostWrapper>` | `<instagram-post-wrapper>` (components/InstagramPostWrapper.vue)
+- `<IntroPostePeage>` | `<intro-poste-peage>` (components/IntroPostePeage.vue)
 - `<Login>` | `<login>` (components/Login.vue)
 - `<MarchesEncours>` | `<marches-encours>` (components/MarchesEncours.vue)
 - `<MiniCart>` | `<mini-cart>` (components/MiniCart.vue)
@@ -72,4 +73,4 @@ You can directly use them in pages and other components without the need to impo
 - `<ProductWrapperSeven>` | `<product-wrapper-seven>` (components/product/ProductWrapperSeven.vue)
 - `<ProductWrapperThree>` | `<product-wrapper-three>` (components/product/ProductWrapperThree.vue)
 - `<ProductWrapperTwo>` | `<product-wrapper-two>` (components/product/ProductWrapperTwo.vue)
-- `<SectionsFinancementParRegion2>` | `<sections-financement-par-region2>` (components/sections/FinancementParRegion2.vue)
+- `<SectionsFinancementParRegion>` | `<sections-financement-par-region>` (components/sections/FinancementParRegion.vue)

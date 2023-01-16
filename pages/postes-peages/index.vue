@@ -1,8 +1,9 @@
 <template>
     <div class="home-page-wrapper bg-grey">
         <TheHeader />
-        <Breadcrumb pageTitle="Qui sommes-nous ?" />
+        <Breadcrumb pageTitle="Postes de péages" />
         <!--<MotDuPresident />-->
+        <IntroPostePeage />
         <FinancementParRegion />
         <TheFooter />
     </div>
@@ -10,14 +11,19 @@
 
 <script>
     export default {
+        mounted: function() {
+            this.$store.dispatch('contenus/getList')
+        },
         components: {
             HeaderWithTopbar: () => import('@/components/HeaderWithTopbar'),
-            FinancementParRegion : () => import('@/components/sections/FinancementParRegion2'),
+            FinancementParRegion : () => import('@/components/sections/FinancementParRegion'),
+            IntroPostePeage : () => import('@/components/IntroPostePeage'),
             TheFooter: () => import('@/components/TheFooter'),
         },
+        
         head() {
             return {
-                title: 'FVC-SENEGAL'
+                title: 'Postes de péages'
             }
         },
     };

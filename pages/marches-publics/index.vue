@@ -1,7 +1,7 @@
 <template>
     <div class="shop-page-wrapper">
         <TheHeader />
-        <Breadcrumb pageTitle="Qui sommes-nous ?" />
+        <Breadcrumb pageTitle="Marchés publics" />
         <StatistiqueMarches />
         <MarchesEncours />
         <ServicePolicyThree />

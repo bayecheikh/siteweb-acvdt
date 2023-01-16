@@ -15,6 +15,7 @@ export { default as HeaderOffcanvasMenuWithTransparent } from '../..\\components
 export { default as HeaderWithTopbar } from '../..\\components\\HeaderWithTopbar.vue'
 export { default as HomeSidebarMenu } from '../..\\components\\HomeSidebarMenu.vue'
 export { default as InstagramPostWrapper } from '../..\\components\\InstagramPostWrapper.vue'
+export { default as IntroPostePeage } from '../..\\components\\IntroPostePeage.vue'
 export { default as Login } from '../..\\components\\Login.vue'
 export { default as MarchesEncours } from '../..\\components\\MarchesEncours.vue'
 export { default as MiniCart } from '../..\\components\\MiniCart.vue'
@@ -64,7 +65,7 @@ export { default as ProductWrapperFour } from '../..\\components\\product\\Produ
 export { default as ProductWrapperSeven } from '../..\\components\\product\\ProductWrapperSeven.vue'
 export { default as ProductWrapperThree } from '../..\\components\\product\\ProductWrapperThree.vue'
 export { default as ProductWrapperTwo } from '../..\\components\\product\\ProductWrapperTwo.vue'
-export { default as SectionsFinancementParRegion2 } from '../..\\components\\sections\\FinancementParRegion2.vue'
+export { default as SectionsFinancementParRegion } from '../..\\components\\sections\\FinancementParRegion.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

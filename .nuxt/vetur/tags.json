@@ -50,6 +50,9 @@
   "InstagramPostWrapper": {
     "description": "Auto imported from components/InstagramPostWrapper.vue"
   },
+  "IntroPostePeage": {
+    "description": "Auto imported from components/IntroPostePeage.vue"
+  },
   "Login": {
     "description": "Auto imported from components/Login.vue"
   },
@@ -197,7 +200,7 @@
   "ProductWrapperTwo": {
     "description": "Auto imported from components/product/ProductWrapperTwo.vue"
   },
-  "SectionsFinancementParRegion2": {
-    "description": "Auto imported from components/sections/FinancementParRegion2.vue"
+  "SectionsFinancementParRegion": {
+    "description": "Auto imported from components/sections/FinancementParRegion.vue"
   }
 }

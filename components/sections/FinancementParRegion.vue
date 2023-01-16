@@ -1,26 +1,29 @@
 <template>
 
-    <div class="mb-60">
+    <div class="support-area pt-0 pb-90">
         <div class="bg-white">            
             <div class="row align-items-start d-flex">
-                <div class="col-lg-4 col-md-4 col-sm-12 mr-0 pr-0">
-                    <div class="custom-top-card pt-15 pb-15 pl-50 pr-5">
+                <div class="col-lg-6 col-md-6 col-sm-12 mr-0 pr-0">
+                    <div class="custom-top-card pt-15 pb-15 pl-80 pr-5">
                         <div class="custom-bloc-chiffre d-flex justify-content-evenly border-green bg-green">
                             <span class="custom-chiffre">NOMBRE DE POSTE DE PÉAGE :</span> 
                             <span class="custom-chiffre text-green">11</span>
                         </div> 
                     </div>
-                    <ul class="list-group list-group-flush pl-50 scrollable-bloc">
-                        <li class="list-group-item pl-0 font-weight-600 text-blue" v-for="(item,i) in this.secteurs" :key="i">
-                            <button :class="'text-secteur '+ (isActivesecteur==item.id?'activesecteur':'')" @click="investissementBysecteur(item)">
-                                    {{item.titre}}
-                            </button>    
-                        </li>
-                    </ul>
+                    <div class="custom-top-card pt-15 pb-15 pl-80 pr-5">
+                        <ul class="list-group list-group-flush pl-48 scrollable-bloc">
+                            <li class="list-group-item pl-0 pt-3 pb-3 font-weight-600 text-blue" v-for="(item,i) in this.secteurs" :key="i">
+                                <button :class="'text-secteur '+ (isActivesecteur==item.id?'activesecteur':'')" @click="investissementBysecteur(item)">
+                                        {{item.titre}}
+                                </button>    
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 m-0 pt-15 pl-15 pb-30 d-flex flex-column align-items-center" style="background-color: #0060a8;background-repeat: no-repeat; background-size: cover; min-height: 300px;">
+                <div class="col-lg-6 col-md-6 col-sm-12 m-0 pt-15 pl-15 pb-30 d-flex flex-column align-items-center" style="background-color: #0060a8;background-repeat: no-repeat; background-size: cover; max-height: 640px;">
 
-                    <button class="btn btn-success" type="button" disabled style="position: absolute; z-index: 100; top: 50%; left: 50%;" v-if="isloading">
+                    <button class="btn btn-success" type="button" disabled style="position: absolute; z-index: 100; top: 90%; left: 50%;" v-if="isloading">
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                     Chargement des données encours...
                     </button>
@@ -37,10 +40,15 @@
 </template>
 
 <script>
+import { mapMutations, mapGetters } from 'vuex'
     export default {
+        computed: mapGetters({
+            listcontenus: 'contenus/listcontenus',
+        }),
         mounted: function() {
             //this.createdMap()
             this.getListsecteur()
+            //this.$store.dispatch('contenus/getList')
         },
         computed:{
             styles: function(){
@@ -580,6 +588,7 @@ padding: 6px;
 padding-left: 0px;
 margin-top: 0px;
 margin-right: 16px;
+color: #000000b5;
 
 }
 .custom-top-card{
@@ -590,7 +599,8 @@ margin-right: 16px;
     font-weight: 600;
 }
 .text-secteur{
-    font-size: 22px !important;
+    font-size: 18px !important;
+    color: #000000b5;
 }
 .activesecteur{
     color: #197d5c !important;
