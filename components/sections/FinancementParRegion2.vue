@@ -5,27 +5,10 @@
             <div class="row align-items-start d-flex">
                 <div class="col-lg-4 col-md-4 col-sm-12 mr-0 pr-0">
                     <div class="custom-top-card pt-15 pb-15 pl-50 pr-5">
-                        <!-- <div class="custom-bloc-chiffre d-flex justify-content-evenly border-green bg-green">
-                            <span>Tous les secteurs :</span> 
-                            <span class="custom-pourcent text-green"><i class="fa fa-arrow-circle-up bg-icon-green"></i> +4.7%</span> 
-                            <span class="custom-chiffre text-green">20 000 000 000</span>
-                        </div>  -->  
-                        <div class="custom-bloc-chiffre border-green bg-green">
-                            
-                            <span class="custom-chiffre text-green form-check-inline"></span>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">Secteur</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                <label class="form-check-label" for="inlineRadio2">Bailleur</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                <label class="form-check-label" for="inlineRadio2">Période</label>
-                            </div>
-                        </div>
+                        <div class="custom-bloc-chiffre d-flex justify-content-evenly border-green bg-green">
+                            <span class="custom-chiffre">NOMBRE DE POSTE DE PÉAGE :</span> 
+                            <span class="custom-chiffre text-green">11</span>
+                        </div> 
                     </div>
                     <ul class="list-group list-group-flush pl-50 scrollable-bloc">
                         <li class="list-group-item pl-0 font-weight-600 text-blue" v-for="(item,i) in this.secteurs" :key="i">

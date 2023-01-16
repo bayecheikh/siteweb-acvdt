@@ -87,12 +87,12 @@
                                     </caption>
                                     <thead>
                                         <tr>
-                                        <th scope="col">Référence</th>
-                                        <th scope="col">Objet</th>
-                                        <th scope="col">Type de marché</th>
-                                        <th scope="col">Publié</th>
-                                        <th scope="col">Date limite</th>
-                                        <th scope="col">Détail</th>
+                                            <th scope="col">Référence</th>
+                                            <th scope="col">Objet</th>
+                                            <th scope="col">Type de marché</th>
+                                            <th scope="col">Publié</th>
+                                            <th scope="col">Date limite</th>
+                                            <th scope="col">Détail</th>
                                         </tr>
                                     </thead>
                                     <tbody>
