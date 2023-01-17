@@ -44,7 +44,49 @@
                                             <td>{{ item.type_marche }}</td>
                                             <td>{{ item.date_publication}}</td>
                                             <td>{{ item.date_limite }}</td>
-                                            <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
+                                            <td>
+                                                <button type="button" class="btn btn_consulter" @click="onClickConsulter('modal_'+item.id)">
+                                                    Consulter</button>
+                                                <modal :name="'modal_'+item.id" width="50%" :scrollable="true" height=auto>
+                                                    <div class="container pt-15 pb-15" v-if="isPageLoad">
+                                                        <div class="custom-row-2">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="custom-bloc-mp">
+                                                                    <div class="custom-bloc-head">
+                                                                        <div class="ref_">
+                                                                            <p>Ref</p>
+                                                                            <p class="">{{ item.reference }}</p>
+                                                                        </div>
+                                                                        <div class="del_">
+                                                                            <p>Type de marché</p>
+                                                                            <p>{{ item.type_marche }}</p>
+                                                                        </div>
+                                                                        <div class="ref_">
+                                                                            <p>Date de publication</p>
+                                                                            <p>{{ item.date_publication}}</p>
+                                                                        </div>
+                                                                        <div class="del_">
+                                                                            <p>Date limite de dépot</p>
+                                                                            <p>{{ item.date_limite }}</p>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="custom-bloc-content">
+                                                                        <h4>Objet</h4>
+                                                                        <hr>
+                                                                        <div class="card-text" v-html="item.objet"></div>
+                                                                    </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <a target="_blank" :href="item.lien" class="custom-center-box">
+                                                                            <p class="text-center btn ref_">Télécharger</p>
+                                                                        </a>          
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </modal>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -73,7 +115,49 @@
                                             <td>{{ item.type_marche }}</td>
                                             <td>{{ item.date_publication}}</td>
                                             <td>{{ item.date_limite }}</td>
-                                            <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
+                                            <td>
+                                                <button type="button" class="btn btn_consulter" @click="onClickConsulter('modal_'+item.id)">
+                                                    Consulter</button>
+                                                <modal :name="'modal_'+item.id" width="50%" :scrollable="true" height=auto>
+                                                    <div class="container pt-15 pb-15" v-if="isPageLoad">
+                                                        <div class="custom-row-2">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="custom-bloc-mp">
+                                                                    <div class="custom-bloc-head">
+                                                                        <div class="ref_">
+                                                                            <p>Ref</p>
+                                                                            <p class="">{{ item.reference }}</p>
+                                                                        </div>
+                                                                        <div class="del_">
+                                                                            <p>Type de marché</p>
+                                                                            <p>{{ item.type_marche }}</p>
+                                                                        </div>
+                                                                        <div class="ref_">
+                                                                            <p>Date de publication</p>
+                                                                            <p>{{ item.date_publication}}</p>
+                                                                        </div>
+                                                                        <div class="del_">
+                                                                            <p>Date limite de dépot</p>
+                                                                            <p>{{ item.date_limite }}</p>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="custom-bloc-content">
+                                                                        <h4>Objet</h4>
+                                                                        <hr>
+                                                                        <div class="card-text" v-html="item.objet"></div>
+                                                                    </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <a target="_blank" :href="item.lien" class="custom-center-box">
+                                                                            <p class="text-center btn ref_">Télécharger</p>
+                                                                        </a>          
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </modal>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -98,11 +182,53 @@
                                     <tbody>
                                         <tr v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'avis-d-appel-a-concurence')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
-                                            <td><div class="card-text" v-html="item.objet"></div></td>
+                                            <td><div class="card-text" v-html="$truncate(item.objet,200)"></div></td>
                                             <td>{{ item.type_marche }}</td>
                                             <td>{{ item.date_publication}}</td>
                                             <td>{{ item.date_limite }}</td>
-                                            <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
+                                            <td>
+                                                <button type="button" class="btn btn_consulter" @click="onClickConsulter('modal_'+item.id)">
+                                                    Consulter</button>
+                                                <modal :name="'modal_'+item.id" width="50%" :scrollable="true" height=auto>
+                                                    <div class="container pt-15 pb-15" v-if="isPageLoad">
+                                                        <div class="custom-row-2">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="custom-bloc-mp">
+                                                                    <div class="custom-bloc-head">
+                                                                        <div class="ref_">
+                                                                            <p>Ref</p>
+                                                                            <p class="">{{ item.reference }}</p>
+                                                                        </div>
+                                                                        <div class="del_">
+                                                                            <p>Type de marché</p>
+                                                                            <p>{{ item.type_marche }}</p>
+                                                                        </div>
+                                                                        <div class="ref_">
+                                                                            <p>Date de publication</p>
+                                                                            <p>{{ item.date_publication}}</p>
+                                                                        </div>
+                                                                        <div class="del_">
+                                                                            <p>Date limite de dépot</p>
+                                                                            <p>{{ item.date_limite }}</p>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="custom-bloc-content">
+                                                                        <h4>Objet</h4>
+                                                                        <hr>
+                                                                        <div class="card-text" v-html="item.objet"></div>
+                                                                    </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <a target="_blank" :href="item.lien" class="custom-center-box">
+                                                                            <p class="text-center btn ref_">Télécharger</p>
+                                                                        </a>          
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </modal>
+                                            </td>                              
                                         </tr>
                                     </tbody>
                                 </table>
@@ -126,10 +252,16 @@ import { mapMutations, mapGetters } from 'vuex'
             getUrlImage(url){
                 return url.substring(str.indexOf('drupal-api') + 1);
             },
+            onClickConsulter(item) {
+                //alert('click')
+                this.isPageLoad=true
+                this.$modal.show(item);
+            },
             
         },
         data() {
             return {
+                isPageLoad:false,
                 siteUrl:process.env.siteUrl,
                 fileUrl:process.env.fileUrl,
                 missions: [],
@@ -153,5 +285,38 @@ import { mapMutations, mapGetters } from 'vuex'
     font-weight: 500;
     color: #0060a8;
     font-size: 16px !important;
+}
+.custom-bloc-mp {
+    background: #fff;
+    margin: 8px;
+}
+.custom-bloc-head {
+    display: flex;
+    justify-content: space-between;
+}
+.ref_ {
+    background: #0D6E77;
+    width: 100%;
+    padding-left: 15px;
+    color: #fff;
+}
+.del_ {
+    background: #0d6e77de;
+    width: 100%;
+    padding-left: 15px;
+    color: #fff;
+}
+.ref_ p,.del_ p{
+    color: #fff;
+}
+.custom-bloc-content {
+    padding: 36px;
+    border-bottom: solid 1px #dee2e6;
+}
+.custom-bloc-bottom {
+    padding: 26px;
+}
+.grey-bg{
+    background-color: #dbe3eba1;
 }
 </style>

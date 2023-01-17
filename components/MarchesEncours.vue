@@ -30,18 +30,18 @@
                                     <p class="text-center btn ref_">Consulter</p>
                                 </n-link>
                                 <n-link to="" class="custom-center-box">
-                                    <p class="text-center btn ref_">Message</p>
+                                    <p class="text-center btn ref_">Télécharger</p>
                                 </n-link>
                             </div>
                         </div>
                     </swiper-slide>
                 </swiper>
-                <!-- <div class="hero-slider-nav swiper-button-prev custom-nav">
+                <div class="hero-slider-nav swiper-button-prev custom-nav">
                 <i class="pe-7s-angle-left"></i>
                 </div>
                 <div class="hero-slider-nav swiper-button-next custom-nav">
                     <i class="pe-7s-angle-right"></i>
-                </div> -->
+                </div> 
             </div>
         </div>
     </div>
