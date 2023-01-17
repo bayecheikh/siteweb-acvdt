@@ -13,6 +13,7 @@
                     <div class="custom-top-card pt-15 pb-15 pl-80 pr-5">
                         <ul class="list-group list-group-flush pl-48 scrollable-bloc">
                             <li class="list-group-item pl-0 pt-3 pb-3 font-weight-600 text-blue" v-for="(item,i) in this.peages" :key="i">
+                                <img src='route-a-peage.png' style='vertical-align:center; margin-right: 6px; width:30px; height:30px;'>
                                 <button :class="'text-peage '+ (isActivepeage==item.id?'activepeage':'')" @click="postepeageBypeage(item)">
                                         {{item.titre}}
                                 </button>    
@@ -21,7 +22,7 @@
                     </div>
                     
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 m-0 pt-15 pl-15 pb-30 d-flex flex-column align-items-center" style="background-color: #0060a8;background-repeat: no-repeat; background-size: cover; height: 700px;">
+                <div class="col-lg-6 col-md-6 col-sm-12 m-0 pt-15 pl-15 pb-30 d-flex flex-column align-items-center" style="background-color: #0060a8;background-repeat: no-repeat; background-size: cover; height: 740px;">
 
                     <button class="btn btn-success" type="button" disabled style="position: absolute; z-index: 100; top: 90%; left: 50%;" v-if="isloading">
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -128,9 +129,23 @@ import { mapMutations, mapGetters } from 'vuex'
                     // Bind "fill" property to "fill" key in data
                     polygonTemplate.propertyFields.fill = "fill";
 
+                    
+
                     // Create image series
                     var imageSeries = map.series.push(new am4maps.MapImageSeries());
                     
+                    // Add data for the three cities
+                    let tablepostepeages = []
+                    let i = 0
+                    await response.data.map((item)=>{
+                        let latitude = parseFloat(item?.latitude)
+                        let longitude = parseFloat(item?.longitude)
+                        let titre = item?.titre                      
+                        tablepostepeages.push({"latitude":latitude,"longitude":longitude,"titre":titre,"showTooltip":i==3?"always":"hover"})
+                        i++
+                    })
+                    imageSeries.data = tablepostepeages
+
                     // Create a circle image in image series template so it gets replicated to all new images
                     var imageSeriesTemplate = imageSeries.mapImages.template;
                     var circle = imageSeriesTemplate.createChild(am4core.Circle);
@@ -139,21 +154,16 @@ import { mapMutations, mapGetters } from 'vuex'
                     circle.stroke = am4core.color("#00B42D");
                     circle.strokeWidth = 4;
                     circle.nonScaling = true;
-                    circle.tooltipText = "{titre}";
+                    //circle.tooltipText = "{titre}\nLatitude : {latitude} , Longitude : {longitude}";
+                    circle.tooltipHTML = "<img src='route-a-peage.png' style='vertical-align:center; margin-right: 6px; width:21px; height:21px;'><span style='font-size:14px; color:#000000;'><b>{titre}</b></span>";
+                    circle.propertyFields.showTooltipOn = "showTooltip";
+                    
 
                     // Set property fields
                     imageSeriesTemplate.propertyFields.latitude = "latitude";
                     imageSeriesTemplate.propertyFields.longitude = "longitude";
 
-                    // Add data for the three cities
-                    let tablepostepeages = []
-                    await response.data.map((item)=>{
-                        let latitude = parseFloat(item?.latitude)
-                        let longitude = parseFloat(item?.longitude)
-                        let titre = item?.titre                      
-                        tablepostepeages.push({"latitude":latitude,"longitude":longitude,"titre":titre})
-                    })
-                    imageSeries.data = tablepostepeages
+                    
 
                     
 
