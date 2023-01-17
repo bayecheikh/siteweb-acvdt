@@ -18,7 +18,7 @@
                                 <p class="card-text pb-10">{{item.resume}}</p>
                             </n-link>
                             <n-link :to="`/missions/`+item.id">
-                                <img class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
+                                <img height="300" width="auto" class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
                             </n-link>
                         </div>
                         <!-- <n-link :to="`/missions/`+item.nid" class="btn btn-success">

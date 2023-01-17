@@ -2,7 +2,7 @@
     <div class="support-area pt-60 pb-40">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-12 mt-0" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'activites')" :key="index">
+                <div class="col-lg-4 col-sm-12 mt-0 mb-4" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'activites')" :key="index">
                     <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
                             <n-link :to="`/missions/`+item.id">
@@ -12,7 +12,7 @@
                                 <p class="card-text pb-10">{{truncate(item.resume,140)}}</p>
                             </n-link>
                             <n-link :to="`/missions/`+item.id">
-                                <img class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
+                                <img height="100" class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
                             </n-link>
                         </div>
                         <!-- <n-link :to="`/missions/`+item.id" class="btn btn-success">
