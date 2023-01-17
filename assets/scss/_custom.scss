@@ -43,3 +43,16 @@
     padding-left: 15px;
     color: #fff;
   }
+  .table > :not(:first-child) {
+    border-top: 0px currentColor !important;
+  }
+    .table > thead {
+      vertical-align: center !important;
+      background-color: #dde0e291 !important;
+    }
+    .table > :not(caption) > * > * {
+      padding: 1rem 1rem !important;
+      background-color: var(--bs-table-bg);
+      border-bottom-width: 1px;
+      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    }

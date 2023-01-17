@@ -23,11 +23,8 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             
                             <div class="table-responsive">
-                                <table class="table table-striped">
-                                    <caption>
-                                        
-                                    </caption>
-                                    <thead>
+                                <table class="table">
+                                    <thead class="thead-ligth">
                                         <tr>
                                         <th scope="col">Référence</th>
                                         <th scope="col">Objet</th>
@@ -38,7 +35,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation')" :key="index">
+                                        <tr class="custom_margin" v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="item.objet"></div></td>
                                             <td>{{ item.type_marche }}</td>
@@ -94,7 +91,7 @@
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="table-responsive">
-                                <table class="table table-striped">
+                                <table class="table">
                                     <caption>
                                         
                                     </caption>
@@ -165,7 +162,7 @@
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                             <div class="table-responsive">
-                                <table class="table table-striped">
+                                <table class="table">
                                     <caption>
                                         
                                     </caption>
