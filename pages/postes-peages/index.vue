@@ -5,6 +5,7 @@
         <!--<MotDuPresident />-->
         <IntroPostePeage />
         <FinancementParRegion />
+        <InfoUtiles />
         <TheFooter />
     </div>
 </template>
@@ -18,6 +19,7 @@
             HeaderWithTopbar: () => import('@/components/HeaderWithTopbar'),
             FinancementParRegion : () => import('@/components/sections/FinancementParRegion'),
             IntroPostePeage : () => import('@/components/IntroPostePeage'),
+            InfoUtiles : () => import('@/components/InfoUtiles'),
             TheFooter: () => import('@/components/TheFooter'),
         },
         

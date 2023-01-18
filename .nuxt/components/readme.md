@@ -22,6 +22,7 @@ You can directly use them in pages and other components without the need to impo
 - `<HeaderOffcanvasMenuWithTransparent>` | `<header-offcanvas-menu-with-transparent>` (components/HeaderOffcanvasMenuWithTransparent.vue)
 - `<HeaderWithTopbar>` | `<header-with-topbar>` (components/HeaderWithTopbar.vue)
 - `<HomeSidebarMenu>` | `<home-sidebar-menu>` (components/HomeSidebarMenu.vue)
+- `<InfoUtiles>` | `<info-utiles>` (components/InfoUtiles.vue)
 - `<InstagramPostWrapper>` | `<instagram-post-wrapper>` (components/InstagramPostWrapper.vue)
 - `<IntroPostePeage>` | `<intro-poste-peage>` (components/IntroPostePeage.vue)
 - `<Login>` | `<login>` (components/Login.vue)

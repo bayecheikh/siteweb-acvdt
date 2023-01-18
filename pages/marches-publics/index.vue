@@ -13,6 +13,7 @@
     export default {
         mounted: function() {
             this.$store.dispatch('contenus/getList')
+            this.$store.dispatch('marchepublics/getList')
         },
         components: {
             TheHeader: () => import('@/components/TheHeader'),

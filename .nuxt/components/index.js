@@ -14,6 +14,7 @@ export { default as HeaderLogoCenterWithTransparent } from '../..\\components\\H
 export { default as HeaderOffcanvasMenuWithTransparent } from '../..\\components\\HeaderOffcanvasMenuWithTransparent.vue'
 export { default as HeaderWithTopbar } from '../..\\components\\HeaderWithTopbar.vue'
 export { default as HomeSidebarMenu } from '../..\\components\\HomeSidebarMenu.vue'
+export { default as InfoUtiles } from '../..\\components\\InfoUtiles.vue'
 export { default as InstagramPostWrapper } from '../..\\components\\InstagramPostWrapper.vue'
 export { default as IntroPostePeage } from '../..\\components\\IntroPostePeage.vue'
 export { default as Login } from '../..\\components\\Login.vue'

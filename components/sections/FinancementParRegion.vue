@@ -1,6 +1,6 @@
 <template>
 
-    <div class="support-area pt-0 pb-90">
+    <div class="support-area pt-0 pb-0">
         <div class="bg-white">            
             <div class="row align-items-start d-flex">
                 <div class="col-lg-6 col-md-6 col-sm-12 mr-0 pr-0">

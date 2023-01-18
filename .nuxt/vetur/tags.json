@@ -47,6 +47,9 @@
   "HomeSidebarMenu": {
     "description": "Auto imported from components/HomeSidebarMenu.vue"
   },
+  "InfoUtiles": {
+    "description": "Auto imported from components/InfoUtiles.vue"
+  },
   "InstagramPostWrapper": {
     "description": "Auto imported from components/InstagramPostWrapper.vue"
   },
