@@ -6,6 +6,7 @@
         <IntroPostePeage />
         <FinancementParRegion />
         <InfoUtiles />
+        <TarifPenalites />
         <TheFooter />
     </div>
 </template>
@@ -20,6 +21,7 @@
             FinancementParRegion : () => import('@/components/sections/FinancementParRegion'),
             IntroPostePeage : () => import('@/components/IntroPostePeage'),
             InfoUtiles : () => import('@/components/InfoUtiles'),
+            TarifPenalites : () => import('@/components/TarifPenalites'),
             TheFooter: () => import('@/components/TheFooter'),
         },
         

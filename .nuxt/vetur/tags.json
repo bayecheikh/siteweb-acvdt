@@ -104,6 +104,9 @@
   "StatistiqueMarches": {
     "description": "Auto imported from components/StatistiqueMarches.vue"
   },
+  "TarifPenalites": {
+    "description": "Auto imported from components/TarifPenalites.vue"
+  },
   "TeamMembers": {
     "description": "Auto imported from components/TeamMembers.vue"
   },
@@ -118,21 +121,6 @@
   },
   "WelcomeMessage": {
     "description": "Auto imported from components/WelcomeMessage.vue"
-  },
-  "BannerItem": {
-    "description": "Auto imported from components/banner/BannerItem.vue"
-  },
-  "BannerStyleFour": {
-    "description": "Auto imported from components/banner/BannerStyleFour.vue"
-  },
-  "BannerStyleOne": {
-    "description": "Auto imported from components/banner/BannerStyleOne.vue"
-  },
-  "BannerStyleThree": {
-    "description": "Auto imported from components/banner/BannerStyleThree.vue"
-  },
-  "BannerStyleTwo": {
-    "description": "Auto imported from components/banner/BannerStyleTwo.vue"
   },
   "HeroSlider": {
     "description": "Auto imported from components/hero/HeroSlider.vue"
@@ -157,6 +145,21 @@
   },
   "HeroSliderTwo": {
     "description": "Auto imported from components/hero/HeroSliderTwo.vue"
+  },
+  "BannerItem": {
+    "description": "Auto imported from components/banner/BannerItem.vue"
+  },
+  "BannerStyleFour": {
+    "description": "Auto imported from components/banner/BannerStyleFour.vue"
+  },
+  "BannerStyleOne": {
+    "description": "Auto imported from components/banner/BannerStyleOne.vue"
+  },
+  "BannerStyleThree": {
+    "description": "Auto imported from components/banner/BannerStyleThree.vue"
+  },
+  "BannerStyleTwo": {
+    "description": "Auto imported from components/banner/BannerStyleTwo.vue"
   },
   "PolicyServicePolicy": {
     "description": "Auto imported from components/policy/ServicePolicy.vue"
