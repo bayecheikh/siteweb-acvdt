@@ -104,9 +104,18 @@ import { mapMutations, mapGetters } from 'vuex'
                     // Set projection
                     map.projection = new am4maps.projections.Miller();
                     
-                    // Zoom control
-                    map.zoomControl = new am4maps.ZoomControl();
+                    // Desable Zoom control on click, on scroll
+                    //map.zoomControl = new am4maps.ZoomControl();
+                    map.seriesContainer.draggable = false;
+                    map.seriesContainer.resizable = false;
+                    map.seriesContainer.events.disableType("doublehit");
+                    map.chartContainer.background.events.disableType("doublehit");
+                    map.chartContainer.wheelable = false;
                     map.paddingBottom = 5;
+                    //hide logo
+                    if(map.logo) {
+                    map.logo.disabled = true;
+                    }
                         
                     // The world
                     let polygonSeries = map.series.push(new am4maps.MapPolygonSeries());    
