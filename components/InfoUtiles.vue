@@ -118,7 +118,8 @@ import { mapMutations, mapGetters } from 'vuex'
 }
 .custom-title{
     font-weight: 600;
-    color: #08b708;
+    font-size: 26px !important;
+    color: #0060a8;
 }
 .custom-sub-title{
     font-weight: 500;

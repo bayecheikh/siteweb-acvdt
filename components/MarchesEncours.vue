@@ -27,10 +27,10 @@
                             </div>
                             <div class="custom-bloc-bottom d-flex justify-content-between">
                                 <n-link to="" class="custom-center-box">
-                                    <p class="text-center btn ref_">Consulter</p>
+                                    <p class="text-center btn ref_btn_">Consulter</p>
                                 </n-link>
                                 <n-link to="" class="custom-center-box">
-                                    <p class="text-center btn ref_">Télécharger</p>
+                                    <p class="text-center btn ref_btn_">Télécharger</p>
                                 </n-link>
                             </div>
                         </div>
@@ -117,11 +117,12 @@
 }
 .custom-title{
     font-weight: 600;
-    color: #08b708;
+    font-size: 26px !important;
+    color: #0060a8;
 }
 .custom-sub-title{
     font-weight: 500;
-    color: #08b708;
+    color: #1f8389;
     font-size: 20px;
 }
 .custom-center-box{
@@ -140,13 +141,18 @@
     justify-content: space-between;
 }
 .ref_ {
-    background: #0D6E77;
+    background: #0061A8;;
     width: 100%;
     padding-left: 15px;
     color: #fff;
 }
+.ref_btn_ {
+    width: 100%;
+    padding-left: 15px;
+    border: solid 1px grey;
+}
 .del_ {
-    background: #0d6e77de;
+    background: #0061A8D6;
     width: 100%;
     padding-left: 15px;
     color: #fff;
