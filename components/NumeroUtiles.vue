@@ -12,8 +12,13 @@
                 <div class="col-lg-6 col-sm-6 mt-0 height-102 custom-col ">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-sm-6 custom-padding-white text-sm-center" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'numeros-utiles')" :key="index">
-                        <h1 class="card-title custom-title text-green">{{item.titre}}</h1>
-                        <div class="card-text numero" v-html="item.body"></div>  
+                            <h1 class="card-title custom-title text-green text-sm-center">{{item.titre}}</h1>
+                            <div class="card-text numero text-sm-center" v-html="item.body"></div>  
+                        </div>
+                        <div class="col-lg-12 col-sm-12 d-flex custom-padding-white text-sm-center" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'numero-vert')" :key="index">
+                            <span><h1 class="card-title custom-title text-white text-sm-center bg-green-call">{{item.titre}}</h1></span>
+                             <span><h1 class="card-title custom-title text-white text-sm-center bg-blue-call">{{item.resume}}</h1></span>
+                             
                         </div>
                     </div>
                 </div>
@@ -100,14 +105,21 @@ padding-left: 47px !important;
   padding: 0px;
 }
 .bg-green{
-    background-color:#00C48D ;
+    background-color:#08b708 ;
 }
 .margin-left-0{
     margin-left: 0px !important;
     margin-right: -30px !important;
 }
 .text-green {
-  color: green !important;
+  color: #08b708 !important;
 }
-
+.bg-green-call{
+  background-color: #08b708;
+  padding: 17px;
+}
+.bg-blue-call{
+  background-color: #0060a8;
+  padding: 17px;
+}
 </style>

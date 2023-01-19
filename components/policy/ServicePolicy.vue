@@ -70,6 +70,6 @@ import { mapMutations, mapGetters } from 'vuex'
     font-size: 16px !important;
 }
 .border-bottom-green{
-  border-bottom: solid 3px #41AB34 !important;
+  border-bottom: solid 3px #08b708!important;
 }
 </style>

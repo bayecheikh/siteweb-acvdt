@@ -262,18 +262,18 @@ path:hover {
   display: block;
   font-weight: 400;
 
-  color: #2E495E;
+  color: #08b708;
   letter-spacing: 1px;
   font-size: 6em;
 }
 .green {
-  color: #00C48D;
+  color: #08b708;
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 1em;
-  color: #2E495E;
+  color: #08b708;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
@@ -308,7 +308,7 @@ path:hover {
     background-color: #EEF3FB;
 }
 .text-green{
-color: #197d5c;
+color: #08b708;
 }
 .border-green{
 border: solid 1px #00B42D;
@@ -340,7 +340,7 @@ color: #000000b5;
     color: #000000b5;
 }
 .activepeage{
-    color: #197d5c !important;
+    color: #08b708 !important;
 }
 .scrollable-bloc{
     max-height: 100%;

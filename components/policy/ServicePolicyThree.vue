@@ -292,13 +292,13 @@ import { mapMutations, mapGetters } from 'vuex'
     justify-content: space-between;
 }
 .ref_ {
-    background: #0D6E77;
+    background: #08b708;
     width: 100%;
     padding-left: 15px;
     color: #fff;
 }
 .del_ {
-    background: #0d6e77de;
+    background: #08b708de;
     width: 100%;
     padding-left: 15px;
     color: #fff;

@@ -108,7 +108,7 @@ padding-left: 47px !important;
   padding: 0px;
 }
 .bg-green{
-    background-color:#00C48D ;
+    background-color:#08b708 ;
 }
 .margin-left-0{
     margin-left: 0px !important;

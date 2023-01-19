@@ -117,11 +117,11 @@
 }
 .custom-title{
     font-weight: 600;
-    color: #1f8389;
+    color: #08b708;
 }
 .custom-sub-title{
     font-weight: 500;
-    color: #1f8389;
+    color: #08b708;
     font-size: 20px;
 }
 .custom-center-box{
