@@ -1,19 +1,20 @@
 <template>
     <div class="support-area pt-60 pb-40">
         <div class="container">
-            <div class="row justify-content-center custom-row margin-left-0 border-grey" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'service-abonnement')" :key="index">
+            <div class="row justify-content-center custom-row margin-left-0 border-grey width-100" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'service-abonnement')" :key="index">
                 <div class="col-lg-12 col-sm-12 mt-0 height-102 custom-col ">
                     <div class="row justify-content-center">
                         <div class="col-lg-12 col-sm-12 custom-padding-white" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'foire-aux-questions-intro')" :key="index">
-                            <h1 class="card-title custom-title">{{item.titre}}</h1> 
-                            <div class="accordion " id="accordionFlushExample">
+                            <h1 class="card-title custom-title">{{item.titre}}</h1>
+                            <hr style="width:100px;background-color:#000; height:6px;"> 
+                            <div class="accordion mt-4" id="accordionFlushExample">
                                 <div class="accordion-item" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'foire-aux-questions')" :key="index">
                                     <h2 class="accordion-header" :id="'headingOne'+item.id">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" :data-bs-target="'#collapseOne'+item.id" aria-expanded="true" :aria-controls="'collapseOne'+item.id">
                                             {{item.titre}}
                                         </button>
                                     </h2>
-                                    <div :id="'collapseOne'+item.id" class="accordion-collapse collapse show" :aria-labelledby="'headingOne'+item.id" data-bs-parent="#accordionExample">
+                                    <div :id="'collapseOne'+item.id" class="accordion-collapse collapse" :aria-labelledby="'headingOne'+item.id" data-bs-parent="#accordionExample">
                                         <div class="accordion-body" v-html="item.body">
                                             
                                         </div>
@@ -113,5 +114,17 @@ padding-left: 47px !important;
     margin-left: 0px !important;
     margin-right: -30px !important;
 }
-
+.width-100{
+    width: 100%;
+}
+.accordion-item {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-top: 33px !important;
+}
+.accordion-button:not(.collapsed) {
+  color: #0060a8;
+  background-color: #f1f4f7;
+  box-shadow: unset !important;
+}
 </style>
