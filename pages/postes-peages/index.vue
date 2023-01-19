@@ -9,6 +9,7 @@
         <TarifPenalites />
         <ServiceAbonnement />
         <Faq />
+        <NumeroUtiles />
         <TheFooter />
     </div>
 </template>
@@ -25,6 +26,7 @@
             InfoUtiles : () => import('@/components/InfoUtiles'),
             TarifPenalites : () => import('@/components/TarifPenalites'),
             ServiceAbonnement : () => import('@/components/ServiceAbonnement'),
+            NumeroUtiles : () => import('@/components/NumeroUtiles'),
             Faq : () => import('@/components/Faq'),
             TheFooter: () => import('@/components/TheFooter'),
         },

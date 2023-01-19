@@ -80,6 +80,9 @@
   "NewsletterStyleTwo": {
     "description": "Auto imported from components/NewsletterStyleTwo.vue"
   },
+  "NumeroUtiles": {
+    "description": "Auto imported from components/NumeroUtiles.vue"
+  },
   "OffCanvasMobileMenu": {
     "description": "Auto imported from components/OffCanvasMobileMenu.vue"
   },

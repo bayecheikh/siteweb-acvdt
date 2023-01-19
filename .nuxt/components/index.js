@@ -25,6 +25,7 @@ export { default as MotDuPresident } from '../..\\components\\MotDuPresident.vue
 export { default as Navigation } from '../..\\components\\Navigation.vue'
 export { default as NewsletterStyleOne } from '../..\\components\\NewsletterStyleOne.vue'
 export { default as NewsletterStyleTwo } from '../..\\components\\NewsletterStyleTwo.vue'
+export { default as NumeroUtiles } from '../..\\components\\NumeroUtiles.vue'
 export { default as OffCanvasMobileMenu } from '../..\\components\\OffCanvasMobileMenu.vue'
 export { default as ProductDetailsDescriptionReview } from '../..\\components\\ProductDetailsDescriptionReview.vue'
 export { default as QuickView } from '../..\\components\\QuickView.vue'

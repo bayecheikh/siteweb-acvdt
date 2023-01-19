@@ -33,6 +33,7 @@ You can directly use them in pages and other components without the need to impo
 - `<Navigation>` | `<navigation>` (components/Navigation.vue)
 - `<NewsletterStyleOne>` | `<newsletter-style-one>` (components/NewsletterStyleOne.vue)
 - `<NewsletterStyleTwo>` | `<newsletter-style-two>` (components/NewsletterStyleTwo.vue)
+- `<NumeroUtiles>` | `<numero-utiles>` (components/NumeroUtiles.vue)
 - `<OffCanvasMobileMenu>` | `<off-canvas-mobile-menu>` (components/OffCanvasMobileMenu.vue)
 - `<ProductDetailsDescriptionReview>` | `<product-details-description-review>` (components/ProductDetailsDescriptionReview.vue)
 - `<QuickView>` | `<quick-view>` (components/QuickView.vue)
