@@ -2,7 +2,6 @@
     <div class="home-page-wrapper bg-grey">
         <TheHeader />
         <Breadcrumb pageTitle="Postes de péages" />
-        <!--<MotDuPresident />-->
         <IntroPostePeage />
         <FinancementParRegion />
         <InfoUtiles />
