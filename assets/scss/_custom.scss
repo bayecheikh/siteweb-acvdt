@@ -35,7 +35,7 @@
     font-weight: 600 !important;
   }
   .container {
-    max-width: 1390px !important;
+    max-width: 1320px !important;
   }
   .btn_consulter{
     background: #868C8D;
@@ -59,3 +59,39 @@
     .grey-bg{
       background-color: #dbe3eba1;
   }
+  .border-bottom-green{
+    border-bottom: solid 3px #41AB34 !important;
+  }
+  .header-padding-1 .container-fluid, .header-padding-1 .container-sm, .header-padding-1 .container-md, .header-padding-1 .container-lg, .header-padding-1 .container-xl, .header-padding-1 .container-xxl {
+    padding: 0 108px;
+  }
+  .main-menu nav ul li > a {
+    font-size: 14px;
+    color: #555252;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    display: inline-block;
+    line-height: 90px;
+  }
+  .custom-text-white {
+    p {
+      color: #fff !important;
+    }
+  }
+  .custom-padding-white{
+    padding: 33px !important;
+    padding-left: 58px !important;
+  }
+.custom-row {
+    display: table;
+}
+.custom-row-2{
+  display: table;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-left: 0px;
+}
+.margin-left-0{
+  margin-left: 0px !important;
+  margin-right: -30px !important;
+}

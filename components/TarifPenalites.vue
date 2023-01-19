@@ -50,7 +50,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
                 <div class="col-lg-6 col-sm-6 mt-0 height-100 custom-col bg-white">
                     <div class="row justify-content-center">
                         <div class="col-lg-12 col-sm-12 custom-padding" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'penalites-intro')" :key="index">

@@ -4,13 +4,13 @@
         <div class="bg-white">            
             <div class="row align-items-start d-flex">
                 <div class="col-lg-6 col-md-6 col-sm-12 mr-0 pr-0">
-                    <div class="custom-top-card pt-15 pb-15 pl-80 pr-5">
+                    <div class="custom-top-card pt-15 pb-15 pl-115 pr-5">
                         <div class="custom-bloc-chiffre d-flex justify-content-evenly border-green bg-green">
                             <span class="custom-chiffre">NOMBRE DE POSTE DE PÉAGE :</span> 
                             <span class="custom-chiffre text-green">{{ this.peages.length }}</span>
                         </div> 
                     </div>
-                    <div class="custom-top-card pt-15 pb-15 pl-80 pr-5">
+                    <div class="custom-top-card pt-15 pb-15 pl-115 pr-5">
                         <ul class="list-group list-group-flush pl-48 scrollable-bloc">
                             <li class="list-group-item pl-0 pt-3 pb-3 font-weight-600 text-blue" v-for="(item,i) in this.peages" :key="i">
                                 <img src='route-a-peage.png' style='vertical-align:center; margin-right: 6px; width:30px; height:30px;'>
@@ -349,5 +349,8 @@ color: #000000b5;
 }
 .loading{
 
+}
+.pl-115{
+    padding-left: 115px !important;
 }
 </style>

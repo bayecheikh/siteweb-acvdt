@@ -29,6 +29,9 @@
   "DealWithCountdown": {
     "description": "Auto imported from components/DealWithCountdown.vue"
   },
+  "Faq": {
+    "description": "Auto imported from components/Faq.vue"
+  },
   "FooterStyleTwo": {
     "description": "Auto imported from components/FooterStyleTwo.vue"
   },
@@ -98,6 +101,9 @@
   "SectionTitleWithSubTitle": {
     "description": "Auto imported from components/SectionTitleWithSubTitle.vue"
   },
+  "ServiceAbonnement": {
+    "description": "Auto imported from components/ServiceAbonnement.vue"
+  },
   "ShopSidebar": {
     "description": "Auto imported from components/ShopSidebar.vue"
   },
@@ -122,6 +128,21 @@
   "WelcomeMessage": {
     "description": "Auto imported from components/WelcomeMessage.vue"
   },
+  "BannerItem": {
+    "description": "Auto imported from components/banner/BannerItem.vue"
+  },
+  "BannerStyleFour": {
+    "description": "Auto imported from components/banner/BannerStyleFour.vue"
+  },
+  "BannerStyleOne": {
+    "description": "Auto imported from components/banner/BannerStyleOne.vue"
+  },
+  "BannerStyleThree": {
+    "description": "Auto imported from components/banner/BannerStyleThree.vue"
+  },
+  "BannerStyleTwo": {
+    "description": "Auto imported from components/banner/BannerStyleTwo.vue"
+  },
   "HeroSlider": {
     "description": "Auto imported from components/hero/HeroSlider.vue"
   },
@@ -145,21 +166,6 @@
   },
   "HeroSliderTwo": {
     "description": "Auto imported from components/hero/HeroSliderTwo.vue"
-  },
-  "BannerItem": {
-    "description": "Auto imported from components/banner/BannerItem.vue"
-  },
-  "BannerStyleFour": {
-    "description": "Auto imported from components/banner/BannerStyleFour.vue"
-  },
-  "BannerStyleOne": {
-    "description": "Auto imported from components/banner/BannerStyleOne.vue"
-  },
-  "BannerStyleThree": {
-    "description": "Auto imported from components/banner/BannerStyleThree.vue"
-  },
-  "BannerStyleTwo": {
-    "description": "Auto imported from components/banner/BannerStyleTwo.vue"
   },
   "PolicyServicePolicy": {
     "description": "Auto imported from components/policy/ServicePolicy.vue"

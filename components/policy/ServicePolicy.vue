@@ -9,7 +9,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-sm-12 mt-0" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'mission-section')" :key="index">
-                    <div class="blog-wrap-2 mb-0 height-100">   
+                    <div class="blog-wrap-2 mb-0 height-100 border-bottom-green">   
                         <div class="card-body">
                             <n-link :to="`/missions/`+item.id">
                                 <h2 class="card-title custom-sub-title">{{item.titre}}</h2>
@@ -68,5 +68,8 @@ import { mapMutations, mapGetters } from 'vuex'
     font-weight: 500;
     color: #0060a8;
     font-size: 16px !important;
+}
+.border-bottom-green{
+  border-bottom: solid 3px #41AB34 !important;
 }
 </style>
