@@ -1,5 +1,5 @@
 <template>
-    <div class="support-area pt-60 pb-40">
+    <div class="support-area pt-60 pb-40 grey-bg">
         <div class="container">
             <div class="row justify-content-center custom-row">
                 <div class="col-lg-6 col-sm-6 mt-0 custom-col">
@@ -28,7 +28,7 @@
                     </div>
                     <div class="row justify-content-center mb-0" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'tarifs-peages')" :key="index">
                         <div class="col-lg-6 col-sm-6 mt-0" >
-                            <div class="border-grey-tarif height-101">   
+                            <div class="border-grey-tarif height-101 bg-white d-flex align-items-center">   
                                 <div class="card-body text-sm-center">
                                     <img width="80" class="" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
                                 </div>
@@ -38,7 +38,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6 mt-0" >
-                            <div class="mb-0 border-grey-tarif height-101">   
+                            <div class="mb-0 border-grey-tarif height-101 bg-white d-flex align-items-center">   
                                 <div class="card-body text-sm-center">
                                         <h2 class="card-title custom-title-dark">
                                             {{item.resume}}    
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6 mt-0 height-100 custom-col">
+                <div class="col-lg-6 col-sm-6 mt-0 height-100 custom-col bg-white">
                     <div class="row justify-content-center">
                         <div class="col-lg-12 col-sm-12 custom-padding" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'penalites-intro')" :key="index">
                         <h1 class="card-title custom-title">{{item.titre}}</h1>

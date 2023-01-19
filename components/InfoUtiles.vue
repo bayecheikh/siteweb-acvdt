@@ -1,5 +1,5 @@
 <template>
-    <div class="support-area pt-60 pb-90 grey-bg">
+    <div class="support-area pt-60 pb-90">
         <div class="container">
             <div class="row justify-content-center mb-30">
                 <div class="col-lg-12 col-sm-12">
