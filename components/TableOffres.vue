@@ -32,7 +32,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="custom_margin" v-for="(item, index) in listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'plan-de-passation')" :key="index">
+                                        <tr class="custom_margin" v-for="(item, index) in listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'emplois')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="item.objet"></div></td>
                                             <td>{{ item.secteur }}</td>
@@ -103,7 +103,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="(item, index) in listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'emplois')" :key="index">
+                                        <tr v-for="(item, index) in listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'stages')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="item.objet"></div></td>
                                             <td>{{ item.secteur }}</td>
