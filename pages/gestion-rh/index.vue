@@ -13,7 +13,7 @@
     export default {
         mounted: function() {
             this.$store.dispatch('contenus/getList')
-            this.$store.dispatch('marchepublics/getList')
+            this.$store.dispatch('gestionrhs/getList')
         },
         components: {
             TheHeader: () => import('@/components/TheHeader'),

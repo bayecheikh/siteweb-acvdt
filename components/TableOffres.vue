@@ -32,10 +32,10 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="custom_margin" v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation')" :key="index">
+                                        <tr class="custom_margin" v-for="(item, index) in listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'plan-de-passation')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="item.objet"></div></td>
-                                            <td>{{ item.type_marche }}</td>
+                                            <td>{{ item.secteur }}</td>
                                             <td>{{ item.date_publication}}</td>
                                             <td>{{ item.date_limite }}</td>
                                             <td>
@@ -53,7 +53,7 @@
                                                                         </div>
                                                                         <div class="del_">
                                                                             <p>Secteur</p>
-                                                                            <p>{{ item.type_marche }}</p>
+                                                                            <p>{{ item.secteur }}</p>
                                                                         </div>
                                                                         <div class="ref_">
                                                                             <p>Date de publication</p>
@@ -103,10 +103,10 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'avis-generaux')" :key="index">
+                                        <tr v-for="(item, index) in listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'emplois')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="item.objet"></div></td>
-                                            <td>{{ item.type_marche }}</td>
+                                            <td>{{ item.secteur }}</td>
                                             <td>{{ item.date_publication}}</td>
                                             <td>{{ item.date_limite }}</td>
                                             <td>
@@ -124,7 +124,7 @@
                                                                         </div>
                                                                         <div class="del_">
                                                                             <p>Secteur</p>
-                                                                            <p>{{ item.type_marche }}</p>
+                                                                            <p>{{ item.secteur }}</p>
                                                                         </div>
                                                                         <div class="ref_">
                                                                             <p>Date de publication</p>
@@ -174,10 +174,10 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'avis-d-appel-a-concurence')" :key="index">
+                                        <tr v-for="(item, index) in listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'stages')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="$truncate(item.objet,200)"></div></td>
-                                            <td>{{ item.type_marche }}</td>
+                                            <td>{{ item.secteur }}</td>
                                             <td>{{ item.date_publication}}</td>
                                             <td>{{ item.date_limite }}</td>
                                             <td>
@@ -195,7 +195,7 @@
                                                                         </div>
                                                                         <div class="del_">
                                                                             <p>Secteur</p>
-                                                                            <p>{{ item.type_marche }}</p>
+                                                                            <p>{{ item.secteur }}</p>
                                                                         </div>
                                                                         <div class="ref_">
                                                                             <p>Date de publication</p>
@@ -240,7 +240,7 @@
 import { mapMutations, mapGetters } from 'vuex'
     export default {
         computed: mapGetters({
-            listmarchepublics: 'marchepublics/listmarchepublics',
+            listgestionrhs: 'gestionrhs/listgestionrhs',
         }),
         methods: {
             getUrlImage(url){

@@ -16,7 +16,7 @@
                                 <p class="card-text  text-center pt-15">Plan de passation</p>
                             </n-link>
                             <n-link to="" class="custom-center-box">
-                                <h2 class="card-title custom-sub-title pb-10 text-center">223</h2>
+                                <h2 class="card-title custom-sub-title pb-10 text-center">{{listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation').length}}</h2>
                             </n-link>   
                         </div>
                     </div>
@@ -28,7 +28,7 @@
                                 <p class="card-text  text-center pt-15">Avis généraux</p>
                             </n-link>
                             <n-link to="" class="custom-center-box">
-                                <h2 class="card-title custom-sub-title pb-10 text-center">223</h2>
+                                <h2 class="card-title custom-sub-title pb-10 text-center">{{listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'avis-generaux').length}}</h2>
                             </n-link>   
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                                 <p class="card-text  text-center pt-15">Avis d'appel à concurence</p>
                             </n-link>
                             <n-link to="" class="custom-center-box">
-                                <h2 class="card-title custom-sub-title pb-10 text-center">223</h2>
+                                <h2 class="card-title custom-sub-title pb-10 text-center">{{listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation').length}}</h2>
                             </n-link>   
                         </div>
                     </div>
@@ -51,7 +51,12 @@
 </template>
 
 <script>
+import { mapMutations, mapGetters } from 'vuex'
     export default {
+        
+        computed: mapGetters({
+            listmarchepublics: 'marchepublics/listmarchepublics',
+        }),
         mounted: function() {
             //this.getListStatistique()
         },

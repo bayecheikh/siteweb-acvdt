@@ -16,7 +16,7 @@
                                 <p class="card-text  text-center pt-15">Nombre d'offres d'emplois</p>
                             </n-link>
                             <n-link to="" class="custom-center-box">
-                                <h2 class="card-title custom-sub-title pb-10 text-center">223</h2>
+                                <h2 class="card-title custom-sub-title pb-10 text-center">{{listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'emplois').length}}</h2>
                             </n-link>   
                         </div>
                     </div>
@@ -28,7 +28,7 @@
                                 <p class="card-text  text-center pt-15">Nombre d'offres d'emplois</p>
                             </n-link>
                             <n-link to="" class="custom-center-box">
-                                <h2 class="card-title custom-sub-title pb-10 text-center">223</h2>
+                                <h2 class="card-title custom-sub-title pb-10 text-center">{{listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'stages').length}}</h2>
                             </n-link>   
                         </div>
                     </div>
@@ -39,7 +39,12 @@
 </template>
 
 <script>
+    import { mapMutations, mapGetters } from 'vuex'
     export default {
+        
+        computed: mapGetters({
+            listgestionrhs: 'gestionrhs/listgestionrhs',
+        }),
         mounted: function() {
             //this.getListStatistique()
         },
