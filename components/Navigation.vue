@@ -283,7 +283,7 @@
                         title: 'Postes de péage'
                     },
                     {
-                        url: '#',
+                        url: '/gestion-rh',
                         title: 'Gestion RH'
                     }/* ,
                     {

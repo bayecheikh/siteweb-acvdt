@@ -86,6 +86,9 @@
   "OffCanvasMobileMenu": {
     "description": "Auto imported from components/OffCanvasMobileMenu.vue"
   },
+  "OffreEncours": {
+    "description": "Auto imported from components/OffreEncours.vue"
+  },
   "ProductDetailsDescriptionReview": {
     "description": "Auto imported from components/ProductDetailsDescriptionReview.vue"
   },
@@ -112,6 +115,12 @@
   },
   "StatistiqueMarches": {
     "description": "Auto imported from components/StatistiqueMarches.vue"
+  },
+  "StatistiqueOffres": {
+    "description": "Auto imported from components/StatistiqueOffres.vue"
+  },
+  "TableOffres": {
+    "description": "Auto imported from components/TableOffres.vue"
   },
   "TarifPenalites": {
     "description": "Auto imported from components/TarifPenalites.vue"

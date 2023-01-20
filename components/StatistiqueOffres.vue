@@ -9,11 +9,11 @@
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-4 col-sm-12 mt-0">
+                <div class="col-lg-6 col-md-6 col-sm-12 mt-0">
                     <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
                             <n-link to="" class="custom-center-box">
-                                <p class="card-text  text-center pt-15">Plan de passation</p>
+                                <p class="card-text  text-center pt-15">Nombre d'offres d'emplois</p>
                             </n-link>
                             <n-link to="" class="custom-center-box">
                                 <h2 class="card-title custom-sub-title pb-10 text-center">223</h2>
@@ -21,23 +21,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 mt-0">
+                <div class="col-lg-6 col-md-6 col-sm-12 mt-0">
                     <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
                             <n-link to="" class="custom-center-box">
-                                <p class="card-text  text-center pt-15">Avis généraux</p>
-                            </n-link>
-                            <n-link to="" class="custom-center-box">
-                                <h2 class="card-title custom-sub-title pb-10 text-center">223</h2>
-                            </n-link>   
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 mt-0">
-                    <div class="blog-wrap-2 mb-0 height-100">   
-                        <div class="card-body">
-                            <n-link to="" class="custom-center-box">
-                                <p class="card-text  text-center pt-15">Avis d'appel à concurence</p>
+                                <p class="card-text  text-center pt-15">Nombre d'offres d'emplois</p>
                             </n-link>
                             <n-link to="" class="custom-center-box">
                                 <h2 class="card-title custom-sub-title pb-10 text-center">223</h2>

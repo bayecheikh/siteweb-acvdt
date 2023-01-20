@@ -49,6 +49,13 @@
     "_name": "_cc3ed362"
   },
   {
+    "name": "gestion-rh",
+    "path": "/gestion-rh",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\gestion-rh\\\\index.vue",
+    "chunkName": "pages/gestion-rh/index",
+    "_name": "_3aceaee7"
+  },
+  {
     "name": "home-cosmetics",
     "path": "/home-cosmetics",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-cosmetics.vue",
@@ -224,6 +231,27 @@
     "_name": "_99033122"
   },
   {
+    "name": "gestion-rh-decret-statut",
+    "path": "/gestion-rh/decret-statut",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\gestion-rh\\\\decret-statut.vue",
+    "chunkName": "pages/gestion-rh/decret-statut",
+    "_name": "_52ce1db6"
+  },
+  {
+    "name": "gestion-rh-mission",
+    "path": "/gestion-rh/mission",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\gestion-rh\\\\mission.vue",
+    "chunkName": "pages/gestion-rh/mission",
+    "_name": "_0331ef61"
+  },
+  {
+    "name": "gestion-rh-organnigramme",
+    "path": "/gestion-rh/organnigramme",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\gestion-rh\\\\organnigramme.vue",
+    "chunkName": "pages/gestion-rh/organnigramme",
+    "_name": "_b8fcfd60"
+  },
+  {
     "name": "marches-publics-decret-statut",
     "path": "/marches-publics/decret-statut",
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\marches-publics\\\\decret-statut.vue",
@@ -320,6 +348,13 @@
     "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\_slug.vue",
     "chunkName": "pages/blog/_slug",
     "_name": "_ac52ae52"
+  },
+  {
+    "name": "gestion-rh-slug",
+    "path": "/gestion-rh/:slug?",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\gestion-rh\\\\_slug.vue",
+    "chunkName": "pages/gestion-rh/_slug",
+    "_name": "_39180d9f"
   },
   {
     "name": "marches-publics-slug",
