@@ -6,21 +6,42 @@
         <div class="Blog-details-inner pt-60 pb-100">
             <div class="container">
                 <div class="row justify-content-center ">
-                    <div class="col-lg-9 ">
+                    <div class="col-lg-11">
                         <div class="blog-details-wrapper ml-20">
                             <div class="blog-details-top">
                                 <div class="row border-grey pl-30 pt-40 pb-30 pr-30 height-100">
-                                    <div class="col-lg-4 ">
+                                    <div class="col-lg-12 ">
                                         <div class="blog-details-img">
                                             <img class="card-img-top" :src="fileUrl+(mission.futured_images && mission.futured_images[0] && mission.futured_images[0].name)" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-12">
                                         <h2 class="card-title custom-sub-title pt-30">{{mission.titre}}</h2>
                                         <div class="blog-details-content">
                                             <div v-html="mission && mission.body"></div>
                                         </div>
                                     </div>
+     
+                                    <hr class="mt-5">
+                                    <template>
+                                        <div id="share-network" class="d-flex justify-content-between">
+                                            <span>Partager sur les réseaux sociaux : </span>
+                                            <ShareNetwork
+                                            v-for="network in networks"
+                                            :network="network.network"
+                                            :key="network.network"
+                                            :style="{backgroundColor: network.color}"
+                                            :url="sharing.url"
+                                            :title="sharing.title"
+                                            :description="sharing.description"
+                                            :quote="sharing.quote"
+                                            :hashtags="''"
+                                            :twitterUser="sharing.twitterUser">
+                                            <i :class="network.icon+' ml-5'"></i>
+                                            </ShareNetwork>
+                                        </div>
+                                    </template>
+                
                                 </div>
                             </div>
 <!--                             <div class="next-previous-post">
@@ -53,6 +74,19 @@
                 slug: this.$route.params.slug,
                 mission:{},
                 siteUrl:process.env.siteUrl,
+                sharing: {
+                    url: process.env.siteUrl + this.$route.fullPath,
+                    title: '',
+                    description: '',
+                    quote: '',
+                    hashtags: '',
+                    twitterUser: 'zemna'
+                },
+                networks: [
+                    { network: 'facebook', icon: 'fa fa-facebook', color: '' },
+                    { network: 'twitter', icon: 'fa fa-twitter', color: '' },
+                    { network: 'whatsapp', icon: 'fa fa-whatsapp', color: '' },
+                ]
             }
         },
 
@@ -66,6 +100,8 @@
                     //this.$toast.success(response.message).goAway(2000)
                     console.log('Données detail Reçu ++++++: ', response.data)
                     this.mission = response.data
+                    this.sharing.title = response.data.titre
+                    this.sharing.description = response.data.resume
 
                 }).catch((error) => {
                     console.log('Code error ++++++: ', error?.response?.data?.message)
@@ -94,5 +130,8 @@
 .custom-sub-title{
     font-weight: 500;
     color: #1f8389;
+}
+#share-network .fa{
+    font-size: 28px !important;
 }
 </style>

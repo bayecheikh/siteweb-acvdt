@@ -14,11 +14,13 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_93c31d1c from 'nuxt_plugin_plugin_93c31d1c' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_vuesocialsharingplugin_e009c1e4 from 'nuxt_plugin_vuesocialsharingplugin_e009c1e4' // Source: .\\vue-social-sharing-plugin.js (mode: 'all')
 import nuxt_plugin_axios_3eef0095 from 'nuxt_plugin_axios_3eef0095' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_vueawesomeswiper_5ce03f58 from 'nuxt_plugin_vueawesomeswiper_5ce03f58' // Source: ..\\plugins\\vue-awesome-swiper.js (mode: 'all')
 import nuxt_plugin_vuejspagiante_7edc93b2 from 'nuxt_plugin_vuejspagiante_7edc93b2' // Source: ..\\plugins\\vuejs-pagiante.js (mode: 'all')
 import nuxt_plugin_observevisibility_b986de04 from 'nuxt_plugin_observevisibility_b986de04' // Source: ..\\plugins\\observe-visibility.js (mode: 'all')
 import nuxt_plugin_helpers_1c816d70 from 'nuxt_plugin_helpers_1c816d70' // Source: ..\\plugins\\helpers.js (mode: 'all')
+import nuxt_plugin_vuesocialsharing_216967be from 'nuxt_plugin_vuesocialsharing_216967be' // Source: ..\\plugins\\vue-social-sharing.js (mode: 'all')
 import nuxt_plugin_bootstrap_68fdc73f from 'nuxt_plugin_bootstrap_68fdc73f' // Source: ..\\plugins\\bootstrap.js (mode: 'client')
 import nuxt_plugin_vuejsmodal_f50827f4 from 'nuxt_plugin_vuejsmodal_f50827f4' // Source: ..\\plugins\\vue-js-modal (mode: 'client')
 import nuxt_plugin_notificationsclient_f727f91e from 'nuxt_plugin_notificationsclient_f727f91e' // Source: ..\\plugins\\notifications-client.js (mode: 'client')
@@ -223,6 +225,10 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_plugin_93c31d1c(app.context, inject)
   }
 
+  if (typeof nuxt_plugin_vuesocialsharingplugin_e009c1e4 === 'function') {
+    await nuxt_plugin_vuesocialsharingplugin_e009c1e4(app.context, inject)
+  }
+
   if (typeof nuxt_plugin_axios_3eef0095 === 'function') {
     await nuxt_plugin_axios_3eef0095(app.context, inject)
   }
@@ -241,6 +247,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_helpers_1c816d70 === 'function') {
     await nuxt_plugin_helpers_1c816d70(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_vuesocialsharing_216967be === 'function') {
+    await nuxt_plugin_vuesocialsharing_216967be(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_bootstrap_68fdc73f === 'function') {

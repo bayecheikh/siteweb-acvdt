@@ -32,6 +32,7 @@ export default {
         '~/plugins/vuejs-pagiante.js',
         '~/plugins/observe-visibility.js',
         "~/plugins/helpers.js",
+        '~/plugins/vue-social-sharing.js',
         { 
             src: '~/plugins/bootstrap.js', 
             mode: 'client'
@@ -61,6 +62,7 @@ export default {
     modules: [
         '@nuxtjs/style-resources',
         '@nuxtjs/axios',
+        'vue-social-sharing/nuxt',
     ],
 
     axios: {

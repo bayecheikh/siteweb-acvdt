@@ -54,7 +54,7 @@ import { mapMutations, mapGetters } from 'vuex'
                     slidesPerView: 1,
                     spaceBetween: 10,
                     autoplay: {
-                        delay: 6000
+                        delay: 10000
                     },
                     effect: "fade",
                     fadeEffect: { 

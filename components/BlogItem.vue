@@ -12,7 +12,7 @@
         <div class="blog-content-wrap">
             <div class="blog-content text-center">
                 <h4>
-                    <n-link :to="`#`">{{truncate(blog.titre,60)  }}</n-link>
+                    <n-link :to="`/contenus/`+blog.id">{{truncate(blog.titre,60)  }}</n-link>
                     <!--<n-link :to="`/blog/${slugify(blog.titre)}`">{{ blog.titre }}</n-link>-->
                 </h4>
                 <!--<span>Par <n-link to="">{{ blog.author }}</n-link></span>-->
