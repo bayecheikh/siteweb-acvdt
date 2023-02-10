@@ -24,7 +24,7 @@
      
                                     <hr class="mt-5">
                                     <template>
-                                        <div id="share-network" class="d-flex justify-content-between">
+                                        <div id="share-network" class="d-flex justify-content-between pt-3">
                                             <span>Partager sur les réseaux sociaux : </span>
                                             <ShareNetwork
                                             v-for="network in networks"
