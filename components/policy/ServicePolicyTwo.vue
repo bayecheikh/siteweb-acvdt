@@ -7,11 +7,11 @@
                         <div class="col-lg-6 col-sm-12 mt-0" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'projets')" :key="index">
                             <div class="mb-0 height-100">   
                                 <div class="">
-                                    <n-link :to="`/missions/`+item.id">
+                                    <n-link :to="`/contenus/`+item.id">
                                         <img class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
                                     </n-link>
                                 </div>
-                                <!-- <n-link :to="`/missions/`+item.id" class="btn btn-success">
+                                <!-- <n-link :to="`/contenus/`+item.id" class="btn btn-success">
                                     Lire la suite
                                 </n-link> -->
                             </div>
@@ -19,11 +19,11 @@
                         <div class="col-lg-6 col-sm-12 mt-0" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'projets')" :key="index">
                             <div class="mb-0 height-100">   
                                 <div class="">
-                                    <n-link :to="`/missions/`+item.id">
+                                    <n-link :to="`/contenus/`+item.id">
                                         <img height="150" class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
                                     </n-link>
                                 </div>
-                                <!-- <n-link :to="`/missions/`+item.id" class="btn btn-success">
+                                <!-- <n-link :to="`/contenus/`+item.id" class="btn btn-success">
                                     Lire la suite
                                 </n-link> -->
                             </div>
@@ -42,14 +42,14 @@
                         <div class="col-lg-12 col-sm-12 mt-0" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'projets')" :key="index">
                             <div class="mb-10 ">   
                                 <div class="">
-                                    <n-link :to="`/missions/`+item.id">
+                                    <n-link :to="`/contenus/`+item.id">
                                         <h2 class="card-title custom-sub-title">{{item.titre}}</h2>
                                     </n-link>
-                                    <n-link :to="`/missions/`+item.id">
+                                    <n-link :to="`/contenus/`+item.id">
                                         <p class="card-text custom-body pb-10">{{$truncate(item.resume,200)}}</p>
                                     </n-link>
                                 </div>
-                                <!-- <n-link :to="`/missions/`+item.id" class="btn btn-success">
+                                <!-- <n-link :to="`/contenus/`+item.id" class="btn btn-success">
                                     Lire la suite
                                 </n-link> -->
                             </div>

@@ -11,6 +11,7 @@ const _09ac64fe = () => interopDefault(import('..\\pages\\cart.vue' /* webpackCh
 const _a053dfb2 = () => interopDefault(import('..\\pages\\checkout.vue' /* webpackChunkName: "pages/checkout" */))
 const _7edcc494 = () => interopDefault(import('..\\pages\\compare.vue' /* webpackChunkName: "pages/compare" */))
 const _cc3ed362 = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages/contact" */))
+const _07c9e6a8 = () => interopDefault(import('..\\pages\\contenus\\index.vue' /* webpackChunkName: "pages/contenus/index" */))
 const _3aceaee7 = () => interopDefault(import('..\\pages\\gestion-rh\\index.vue' /* webpackChunkName: "pages/gestion-rh/index" */))
 const _1cdc3f92 = () => interopDefault(import('..\\pages\\home-cosmetics.vue' /* webpackChunkName: "pages/home-cosmetics" */))
 const _6fd85ec4 = () => interopDefault(import('..\\pages\\home-fashion-five.vue' /* webpackChunkName: "pages/home-fashion-five" */))
@@ -37,6 +38,8 @@ const _6fec46c2 = () => interopDefault(import('..\\pages\\terms-conditions.vue' 
 const _47082126 = () => interopDefault(import('..\\pages\\wishlist.vue' /* webpackChunkName: "pages/wishlist" */))
 const _1a75ea7a = () => interopDefault(import('..\\pages\\blog\\blog-right-sidebar.vue' /* webpackChunkName: "pages/blog/blog-right-sidebar" */))
 const _99033122 = () => interopDefault(import('..\\pages\\blog\\blog-without-sidebar.vue' /* webpackChunkName: "pages/blog/blog-without-sidebar" */))
+const _5e96d4da = () => interopDefault(import('..\\pages\\contenus\\blog-right-sidebar.vue' /* webpackChunkName: "pages/contenus/blog-right-sidebar" */))
+const _720607c6 = () => interopDefault(import('..\\pages\\contenus\\blog-without-sidebar.vue' /* webpackChunkName: "pages/contenus/blog-without-sidebar" */))
 const _52ce1db6 = () => interopDefault(import('..\\pages\\gestion-rh\\decret-statut.vue' /* webpackChunkName: "pages/gestion-rh/decret-statut" */))
 const _0331ef61 = () => interopDefault(import('..\\pages\\gestion-rh\\mission.vue' /* webpackChunkName: "pages/gestion-rh/mission" */))
 const _b8fcfd60 = () => interopDefault(import('..\\pages\\gestion-rh\\organnigramme.vue' /* webpackChunkName: "pages/gestion-rh/organnigramme" */))
@@ -54,6 +57,7 @@ const _7792385a = () => interopDefault(import('..\\pages\\qui-sommes-nous\\missi
 const _def44f7c = () => interopDefault(import('..\\pages\\qui-sommes-nous\\organnigramme.vue' /* webpackChunkName: "pages/qui-sommes-nous/organnigramme" */))
 const _0e49cc13 = () => interopDefault(import('..\\pages\\activites\\_slug.vue' /* webpackChunkName: "pages/activites/_slug" */))
 const _ac52ae52 = () => interopDefault(import('..\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
+const _06134560 = () => interopDefault(import('..\\pages\\contenus\\_slug.vue' /* webpackChunkName: "pages/contenus/_slug" */))
 const _39180d9f = () => interopDefault(import('..\\pages\\gestion-rh\\_slug.vue' /* webpackChunkName: "pages/gestion-rh/_slug" */))
 const _fa5c4e46 = () => interopDefault(import('..\\pages\\marches-publics\\_slug.vue' /* webpackChunkName: "pages/marches-publics/_slug" */))
 const _2e74f11c = () => interopDefault(import('..\\pages\\missions\\_slug.vue' /* webpackChunkName: "pages/missions/_slug" */))
@@ -101,6 +105,10 @@ export const routerOptions = {
     path: "/contact",
     component: _cc3ed362,
     name: "contact"
+  }, {
+    path: "/contenus",
+    component: _07c9e6a8,
+    name: "contenus"
   }, {
     path: "/gestion-rh",
     component: _3aceaee7,
@@ -206,6 +214,14 @@ export const routerOptions = {
     component: _99033122,
     name: "blog-blog-without-sidebar"
   }, {
+    path: "/contenus/blog-right-sidebar",
+    component: _5e96d4da,
+    name: "contenus-blog-right-sidebar"
+  }, {
+    path: "/contenus/blog-without-sidebar",
+    component: _720607c6,
+    name: "contenus-blog-without-sidebar"
+  }, {
     path: "/gestion-rh/decret-statut",
     component: _52ce1db6,
     name: "gestion-rh-decret-statut"
@@ -273,6 +289,10 @@ export const routerOptions = {
     path: "/blog/:slug",
     component: _ac52ae52,
     name: "blog-slug"
+  }, {
+    path: "/contenus/:slug",
+    component: _06134560,
+    name: "contenus-slug"
   }, {
     path: "/gestion-rh/:slug?",
     component: _39180d9f,
