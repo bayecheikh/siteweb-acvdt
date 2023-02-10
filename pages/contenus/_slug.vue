@@ -75,7 +75,7 @@
                 mission:{},
                 siteUrl:process.env.siteUrl,
                 sharing: {
-                    url: process.env.siteUrl + this.$route.fullPath,
+                    url: process.env.frontUrl + this.$route.fullPath,
                     title: '',
                     description: '',
                     quote: '',
