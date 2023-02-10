@@ -37,7 +37,7 @@
                                             :quote="sharing.quote"
                                             :hashtags="''"
                                             :twitterUser="sharing.twitterUser">
-                                            <i :class="network.icon+' ml-5'"></i>
+                                            <i :class="network.icon"></i>
                                             </ShareNetwork>
                                         </div>
                                     </template>
