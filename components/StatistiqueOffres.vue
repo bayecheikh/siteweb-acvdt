@@ -2,9 +2,9 @@
     <div class="support-area pt-60 pb-90">
         <div class="container">
             <div class="row justify-content-center mb-30">
-                <div class="col-lg-12 col-sm-12">
-                  <h1 class="card-title custom-title">Statistiques</h1>
-                  <p class="card-text">Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a. Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a.</p>  
+                <div class="col-lg-12 col-sm-12" v-for="(item, index) in listgestionrhs.filter(contenu => contenu.categories[0].slug === 'offre-emploi-intro')" :key="index">
+                  <h1 class="card-title custom-title">{{item.titre}}</h1>
+                  <div class="card-text " v-html="item.resume"></div>  
                 </div>
             </div>
 

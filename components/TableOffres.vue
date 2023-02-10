@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row justify-content-center mb-30">
                 <div class="col-lg-12 col-sm-12">
-                  <h1 class="card-title custom-title">Tous les offres</h1> 
+                  <h1 class="card-title custom-title">Toutes les offres</h1> 
                 </div>
             </div>
             <div class="row justify-content-center mb-30 blog-wrap-2 mb-0 height-100 border-grey">

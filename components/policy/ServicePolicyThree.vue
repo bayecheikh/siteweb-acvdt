@@ -34,7 +34,7 @@
                                         <th scope="col">Détail</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody class="tbodyDiv">
                                         <tr class="custom_margin" v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="item.objet"></div></td>
@@ -315,5 +315,9 @@ import { mapMutations, mapGetters } from 'vuex'
 }
 .grey-bg{
     background-color: #dbe3eba1;
+}
+.tbodyDiv{
+max-height: 600px;
+overflow: auto;
 }
 </style>
