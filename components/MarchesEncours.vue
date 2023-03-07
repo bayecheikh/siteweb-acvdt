@@ -7,28 +7,29 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <swiper :options="marcheCarousel">
+                    <swiper :options="marcheCarousel">
 
-                    <swiper-slide class="col-lg-4 col-sm-12 mt-0">
+                    <swiper-slide v-for="(marche, index) in listmarchepublics" :key="index" class="col-lg-4 col-sm-12 mt-0">
                         <div class="custom-bloc-mp">
                             <div class="custom-bloc-head">
                                 <div class="ref_">
-                                    <p>Ref</p>
-                                    <p class="">#SIRAT_12</p>
+                                    <p><B>Réf.</B></p>
+                                    <p class="">{{marche.reference}}</p>
                                 </div>
                                 <div class="del_">
-                                    <p>Date limite</p>
-                                    <p>12-12-2023</p>
+                                    <p><B>Date limite</B></p>
+                                    <p>{{marche.date_limite}}</p>
                                 </div>
                             </div>
                             <div class="custom-bloc-content">
-                                <p>Objet</p>
-                                <p>Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p><B>Objet</B></p>
+                                <p class ="custom-bloc-content-height" v-html="$truncate(marche.objet, 256)"></p>
                             </div>
                             <div class="custom-bloc-bottom d-flex justify-content-between">
-                                <n-link to="" class="custom-center-box">
+                                <button type="button" @click="onClickConsulter(marche)">
                                     <p class="text-center btn ref_btn_">Consulter</p>
-                                </n-link>
+                                </button>
+                    
                                 <n-link to="" class="custom-center-box">
                                     <p class="text-center btn ref_btn_">Télécharger</p>
                                 </n-link>
@@ -44,33 +45,82 @@
                 </div> 
             </div>
         </div>
+        <div v-if="marcheObject">
+            <modal :name="'modal_'+marcheObject.id" width="50%" :scrollable="true" height=auto>
+            <div class="container pt-15 pb-15">
+                <div class="custom-row-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="custom-bloc-mp">
+                            <div class="custom-bloc-head">
+                                <div class="ref_">
+                                    <p>Ref</p>
+                                    <p >{{ marcheObject.reference }} </p>
+                                </div>
+                                <div class="del_">
+                                    <p>Type de marché</p>
+                                    <p>{{marcheObject.type_marche }}</p>
+                                </div>
+                                <div class="del_">
+                                    <p>Catégorie</p>
+                                    <p>{{  formatCategorie(marcheObject.categorie) }}</p>
+                                </div>
+                            
+                                <div class="ref_">
+                                    <p>Date de publication</p>
+                                    <p>{{ marcheObject.date_publication}}</p>
+                                </div>
+                                <div class="del_">
+                                    <p>Date limite de dépot</p>
+                                    <p>{{ marcheObject.date_limite }}</p>
+                                </div>
+                            </div>
+                            <div class="custom-bloc-content">
+                                <h4>Objet</h4>
+                                <hr>
+                                <div class="card-text" v-html="marcheObject.objet"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </modal>
+        </div>
     </div>
 </template>
 
 <script>
+    import { mapGetters } from 'vuex'
     export default {
         mounted: function() {
-            //this.getListMarche()
+           this.$store.dispatch('marchepublics/getList')
         },
+        computed: mapGetters({
+            listmarchepublics: 'marchepublics/listmarchepublics',
+        }),
         methods: {
-            getListMarche(){
-                this.progress=true
-                this.$axios.$get('/api/marches-publics?_format=json')
-                .then(async (response) => {
-                    //this.$toast.success(response.message).goAway(2000)
-                    console.log('Données Reçu ++++++: ', response)
-                    this.marches = response
+            formatCategorie(slug){
+                if(slug==="plan_de_passation"){
+                    return "Plan de passation"
+                }
+                if(slug==="avis-d-appel-a-concurence"){
+                    return "Avis d'appel à concurrence"
+                }
+                if(slug==="avis-generaux"){
+                    return "Avis généraux"
+                }
 
-                }).catch((error) => {
-                    console.log('Code error ++++++: ', error?.response?.data?.message)
-                }).finally(() => {
-                    console.log('Requette envoyé ')
-                });
-            }
+            },
+            async onClickConsulter(marche) {
+               this.marcheObject = marche
+                this.isPageLoad=true
+              await this.$modal.show('modal_'+marche.id)
+             
+            },
         },
         data() {
             return {
                 siteUrl:process.env.siteUrl,
+                marcheObject:null,
                 marches: [],
                 marcheCarousel: {
                     loop: true,
@@ -169,5 +219,10 @@
 }
 .grey-bg{
     background-color: #dbe3eba1;
+}
+
+.custom-bloc-content-height {
+  height: 160px; 
+  overflow: hidden;
 }
 </style>
