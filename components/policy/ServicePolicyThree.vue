@@ -6,9 +6,9 @@
                   <h1 class="card-title custom-title">Marchés publics</h1> 
                 </div>
             </div>
-            <div class="row justify-content-center mb-30 blog-wrap-2 mb-0 height-100">
+            <div class="row justify-content-center mb-30 blog-wrap-2 mb-0 height-100 border-grey">
                 <div class="col-lg-12 col-sm-12">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Plan de passation</button>
                         </li>
@@ -23,7 +23,75 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             
                             <div class="table-responsive">
-                                <table class="table table-striped">
+                                <table class="table">
+                                    <thead class="thead-ligth">
+                                        <tr>
+                                        <th scope="col">Référence</th>
+                                        <th scope="col">Objet</th>
+                                        <th scope="col">Type de marché</th>
+                                        <th scope="col">Publié</th>
+                                        <th scope="col">Date limite</th>
+                                        <th scope="col">Détail</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbodyDiv">
+                                        <tr class="custom_margin" v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation')" :key="index">
+                                            <th scope="row">{{ item.reference }}</th>
+                                            <td><div class="card-text" v-html="item.objet"></div></td>
+                                            <td>{{ item.type_marche }}</td>
+                                            <td>{{ item.date_publication}}</td>
+                                            <td>{{ item.date_limite }}</td>
+                                            <td>
+                                                <button type="button" class="btn btn_consulter" @click="onClickConsulter('modal_'+item.id)">
+                                                    Consulter</button>
+                                                <modal :name="'modal_'+item.id" width="50%" :scrollable="true" height=auto>
+                                                    <div class="container pt-15 pb-15" v-if="isPageLoad">
+                                                        <div class="custom-row-2">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="custom-bloc-mp">
+                                                                    <div class="custom-bloc-head">
+                                                                        <div class="ref_">
+                                                                            <p>Ref</p>
+                                                                            <p class="">{{ item.reference }}</p>
+                                                                        </div>
+                                                                        <div class="del_">
+                                                                            <p>Type de marché</p>
+                                                                            <p>{{ item.type_marche }}</p>
+                                                                        </div>
+                                                                        <div class="ref_">
+                                                                            <p>Date de publication</p>
+                                                                            <p>{{ item.date_publication}}</p>
+                                                                        </div>
+                                                                        <div class="del_">
+                                                                            <p>Date limite de dépot</p>
+                                                                            <p>{{ item.date_limite }}</p>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="custom-bloc-content">
+                                                                        <h4>Objet</h4>
+                                                                        <hr>
+                                                                        <div class="card-text" v-html="item.objet"></div>
+                                                                    </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <a target="_blank" :href="item.lien" class="custom-center-box">
+                                                                            <p class="text-center btn ref_">Télécharger</p>
+                                                                        </a>          
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </modal>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="table-responsive">
+                                <table class="table">
                                     <caption>
                                         
                                     </caption>
@@ -31,51 +99,138 @@
                                         <tr>
                                         <th scope="col">Référence</th>
                                         <th scope="col">Objet</th>
-                                        <th scope="col">Autorité contractante</th>
+                                        <th scope="col">Type de marché</th>
                                         <th scope="col">Publié</th>
                                         <th scope="col">Date limite</th>
                                         <th scope="col">Détail</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <th scope="row">#SIRAT/BJ_12</th>
-                                            <td>Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a.</td>
-                                            <td>Société des infrastructures routières et de l'aménagement du territoire</td>
-                                            <td>12-12-2022</td>
-                                            <td>12-04-2023</td>
-                                            <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">#SIRAT/BJ_13</th>
-                                            <td>Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a.</td>
-                                            <td>Société des infrastructures routières et de l'aménagement du territoire</td>
-                                            <td>12-12-2022</td>
-                                            <td>12-04-2023</td>
-                                            <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">#SIRAT/BJ_14</th>
-                                            <td>Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a.</td>
-                                            <td>Société des infrastructures routières et de l'aménagement du territoire</td>
-                                            <td>12-12-2022</td>
-                                            <td>12-04-2023</td>
-                                            <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">#SIRAT/BJ_15</th>
-                                            <td>Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit sagittis mi, eu tincidunt mauris placerat a.</td>
-                                            <td>Société des infrastructures routières et de l'aménagement du territoire</td>
-                                            <td>12-12-2022</td>
-                                            <td>12-04-2023</td>
-                                            <td><button type="button" class="btn btn-outline-secondary">Consulter</button></td>
+                                        <tr v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'avis-generaux')" :key="index">
+                                            <th scope="row">{{ item.reference }}</th>
+                                            <td><div class="card-text" v-html="item.objet"></div></td>
+                                            <td>{{ item.type_marche }}</td>
+                                            <td>{{ item.date_publication}}</td>
+                                            <td>{{ item.date_limite }}</td>
+                                            <td>
+                                                <button type="button" class="btn btn_consulter" @click="onClickConsulter('modal_'+item.id)">
+                                                    Consulter</button>
+                                                <modal :name="'modal_'+item.id" width="50%" :scrollable="true" height=auto>
+                                                    <div class="container pt-15 pb-15" v-if="isPageLoad">
+                                                        <div class="custom-row-2">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="custom-bloc-mp">
+                                                                    <div class="custom-bloc-head">
+                                                                        <div class="ref_">
+                                                                            <p>Ref</p>
+                                                                            <p class="">{{ item.reference }}</p>
+                                                                        </div>
+                                                                        <div class="del_">
+                                                                            <p>Type de marché</p>
+                                                                            <p>{{ item.type_marche }}</p>
+                                                                        </div>
+                                                                        <div class="ref_">
+                                                                            <p>Date de publication</p>
+                                                                            <p>{{ item.date_publication}}</p>
+                                                                        </div>
+                                                                        <div class="del_">
+                                                                            <p>Date limite de dépot</p>
+                                                                            <p>{{ item.date_limite }}</p>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="custom-bloc-content">
+                                                                        <h4>Objet</h4>
+                                                                        <hr>
+                                                                        <div class="card-text" v-html="item.objet"></div>
+                                                                    </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <a target="_blank" :href="item.lien" class="custom-center-box">
+                                                                            <p class="text-center btn ref_">Télécharger</p>
+                                                                        </a>          
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </modal>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <caption>
+                                        
+                                    </caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Référence</th>
+                                            <th scope="col">Objet</th>
+                                            <th scope="col">Type de marché</th>
+                                            <th scope="col">Publié</th>
+                                            <th scope="col">Date limite</th>
+                                            <th scope="col">Détail</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'avis-d-appel-a-concurence')" :key="index">
+                                            <th scope="row">{{ item.reference }}</th>
+                                            <td><div class="card-text" v-html="$truncate(item.objet,200)"></div></td>
+                                            <td>{{ item.type_marche }}</td>
+                                            <td>{{ item.date_publication}}</td>
+                                            <td>{{ item.date_limite }}</td>
+                                            <td>
+                                                <button type="button" class="btn btn_consulter" @click="onClickConsulter('modal_'+item.id)">
+                                                    Consulter</button>
+                                                <modal :name="'modal_'+item.id" width="50%" :scrollable="true" height=auto>
+                                                    <div class="container pt-15 pb-15" v-if="isPageLoad">
+                                                        <div class="custom-row-2">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <div class="custom-bloc-mp">
+                                                                    <div class="custom-bloc-head">
+                                                                        <div class="ref_">
+                                                                            <p>Ref</p>
+                                                                            <p class="">{{ item.reference }}</p>
+                                                                        </div>
+                                                                        <div class="del_">
+                                                                            <p>Type de marché</p>
+                                                                            <p>{{ item.type_marche }}</p>
+                                                                        </div>
+                                                                        <div class="ref_">
+                                                                            <p>Date de publication</p>
+                                                                            <p>{{ item.date_publication}}</p>
+                                                                        </div>
+                                                                        <div class="del_">
+                                                                            <p>Date limite de dépot</p>
+                                                                            <p>{{ item.date_limite }}</p>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="custom-bloc-content">
+                                                                        <h4>Objet</h4>
+                                                                        <hr>
+                                                                        <div class="card-text" v-html="item.objet"></div>
+                                                                    </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <a target="_blank" :href="item.lien" class="custom-center-box">
+                                                                            <p class="text-center btn ref_">Télécharger</p>
+                                                                        </a>          
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </modal>
+                                            </td>                              
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div> 
                 </div>
             </div>
@@ -88,16 +243,22 @@
 import { mapMutations, mapGetters } from 'vuex'
     export default {
         computed: mapGetters({
-            listcontenus: 'contenus/listcontenus',
+            listmarchepublics: 'marchepublics/listmarchepublics',
         }),
         methods: {
             getUrlImage(url){
                 return url.substring(str.indexOf('drupal-api') + 1);
             },
+            onClickConsulter(item) {
+                //alert('click')
+                this.isPageLoad=true
+                this.$modal.show(item);
+            },
             
         },
         data() {
             return {
+                isPageLoad:false,
                 siteUrl:process.env.siteUrl,
                 fileUrl:process.env.fileUrl,
                 missions: [],
@@ -121,5 +282,42 @@ import { mapMutations, mapGetters } from 'vuex'
     font-weight: 500;
     color: #0060a8;
     font-size: 16px !important;
+}
+.custom-bloc-mp {
+    background: #fff;
+    margin: 8px;
+}
+.custom-bloc-head {
+    display: flex;
+    justify-content: space-between;
+}
+.ref_ {
+    background: #08b708;
+    width: 100%;
+    padding-left: 15px;
+    color: #fff;
+}
+.del_ {
+    background: #08b708de;
+    width: 100%;
+    padding-left: 15px;
+    color: #fff;
+}
+.ref_ p,.del_ p{
+    color: #fff;
+}
+.custom-bloc-content {
+    padding: 36px;
+    border-bottom: solid 1px #dee2e6;
+}
+.custom-bloc-bottom {
+    padding: 26px;
+}
+.grey-bg{
+    background-color: #dbe3eba1;
+}
+.tbodyDiv{
+max-height: 600px;
+overflow: auto;
 }
 </style>

@@ -11,7 +11,7 @@
                                 <p class="custom-text-slider" v-html="item.resume">
                                 </p>
                                 <div class="slider-btn btn-hover">
-                                    <n-link :to="item.id">EN SAVOIR</n-link>
+                                    <n-link :to="item.id">EN SAVOIR PLUS</n-link>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +54,7 @@ import { mapMutations, mapGetters } from 'vuex'
                     slidesPerView: 1,
                     spaceBetween: 10,
                     autoplay: {
-                        delay: 6000
+                        delay: 10000
                     },
                     effect: "fade",
                     fadeEffect: { 

@@ -23,6 +23,14 @@ let store = {};
   resolveStoreModules(require('..\\store\\contenus\\getters.js'), 'contenus/getters.js')
   resolveStoreModules(require('..\\store\\contenus\\mutations.js'), 'contenus/mutations.js')
   resolveStoreModules(require('..\\store\\contenus\\state.js'), 'contenus/state.js')
+  resolveStoreModules(require('..\\store\\gestionrhs\\actions.js'), 'gestionrhs/actions.js')
+  resolveStoreModules(require('..\\store\\gestionrhs\\getters.js'), 'gestionrhs/getters.js')
+  resolveStoreModules(require('..\\store\\gestionrhs\\mutations.js'), 'gestionrhs/mutations.js')
+  resolveStoreModules(require('..\\store\\gestionrhs\\state.js'), 'gestionrhs/state.js')
+  resolveStoreModules(require('..\\store\\marchepublics\\actions.js'), 'marchepublics/actions.js')
+  resolveStoreModules(require('..\\store\\marchepublics\\getters.js'), 'marchepublics/getters.js')
+  resolveStoreModules(require('..\\store\\marchepublics\\mutations.js'), 'marchepublics/mutations.js')
+  resolveStoreModules(require('..\\store\\marchepublics\\state.js'), 'marchepublics/state.js')
 
   // If the environment supports hot reloading...
 
@@ -34,6 +42,14 @@ let store = {};
       '..\\store\\contenus\\getters.js',
       '..\\store\\contenus\\mutations.js',
       '..\\store\\contenus\\state.js',
+      '..\\store\\gestionrhs\\actions.js',
+      '..\\store\\gestionrhs\\getters.js',
+      '..\\store\\gestionrhs\\mutations.js',
+      '..\\store\\gestionrhs\\state.js',
+      '..\\store\\marchepublics\\actions.js',
+      '..\\store\\marchepublics\\getters.js',
+      '..\\store\\marchepublics\\mutations.js',
+      '..\\store\\marchepublics\\state.js',
     ], () => {
       // Update `root.modules` with the latest definitions.
       updateModules()

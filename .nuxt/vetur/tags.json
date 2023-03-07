@@ -29,6 +29,9 @@
   "DealWithCountdown": {
     "description": "Auto imported from components/DealWithCountdown.vue"
   },
+  "Faq": {
+    "description": "Auto imported from components/Faq.vue"
+  },
   "FooterStyleTwo": {
     "description": "Auto imported from components/FooterStyleTwo.vue"
   },
@@ -47,8 +50,14 @@
   "HomeSidebarMenu": {
     "description": "Auto imported from components/HomeSidebarMenu.vue"
   },
+  "InfoUtiles": {
+    "description": "Auto imported from components/InfoUtiles.vue"
+  },
   "InstagramPostWrapper": {
     "description": "Auto imported from components/InstagramPostWrapper.vue"
+  },
+  "IntroPostePeage": {
+    "description": "Auto imported from components/IntroPostePeage.vue"
   },
   "Login": {
     "description": "Auto imported from components/Login.vue"
@@ -71,8 +80,14 @@
   "NewsletterStyleTwo": {
     "description": "Auto imported from components/NewsletterStyleTwo.vue"
   },
+  "NumeroUtiles": {
+    "description": "Auto imported from components/NumeroUtiles.vue"
+  },
   "OffCanvasMobileMenu": {
     "description": "Auto imported from components/OffCanvasMobileMenu.vue"
+  },
+  "OffreEncours": {
+    "description": "Auto imported from components/OffreEncours.vue"
   },
   "ProductDetailsDescriptionReview": {
     "description": "Auto imported from components/ProductDetailsDescriptionReview.vue"
@@ -92,11 +107,23 @@
   "SectionTitleWithSubTitle": {
     "description": "Auto imported from components/SectionTitleWithSubTitle.vue"
   },
+  "ServiceAbonnement": {
+    "description": "Auto imported from components/ServiceAbonnement.vue"
+  },
   "ShopSidebar": {
     "description": "Auto imported from components/ShopSidebar.vue"
   },
   "StatistiqueMarches": {
     "description": "Auto imported from components/StatistiqueMarches.vue"
+  },
+  "StatistiqueOffres": {
+    "description": "Auto imported from components/StatistiqueOffres.vue"
+  },
+  "TableOffres": {
+    "description": "Auto imported from components/TableOffres.vue"
+  },
+  "TarifPenalites": {
+    "description": "Auto imported from components/TarifPenalites.vue"
   },
   "TeamMembers": {
     "description": "Auto imported from components/TeamMembers.vue"
@@ -197,7 +224,7 @@
   "ProductWrapperTwo": {
     "description": "Auto imported from components/product/ProductWrapperTwo.vue"
   },
-  "SectionsFinancementParRegion2": {
-    "description": "Auto imported from components/sections/FinancementParRegion2.vue"
+  "SectionsFinancementParRegion": {
+    "description": "Auto imported from components/sections/FinancementParRegion.vue"
   }
 }

@@ -15,13 +15,13 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-widget mb-30 ml-30">
                         <div class="footer-title">
-                            <h3>APROPOS</h3>
+                            <h3>À PROPOS</h3>
                         </div>
                         <div class="footer-list">
                             <ul>
                                 <li><n-link to="/">Qui sommes-nous ?</n-link></li>
-                                <li><n-link to="/">Decret/Statut</n-link></li>
-                                <li><n-link to="/">Oraganigramme</n-link></li>
+                                <li><n-link to="/">Décret/Statut</n-link></li>
+                                <li><n-link to="/">Organigramme</n-link></li>
                             </ul>
                         </div>
                     </div>
@@ -29,12 +29,12 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="footer-widget mb-30 ml-50">
                         <div class="footer-title">
-                            <h3>LIENS UTILS</h3>
+                            <h3>LIENS UTILES</h3>
                         </div>
                         <div class="footer-list">
                             <ul>
-                                <li><n-link to="/">Marchés public</n-link></li>
-                                <li><n-link to="/">Comment postuler à une demande</n-link></li>
+                                <li><n-link to="/">Marchés publics</n-link></li>
+                                <li><n-link to="/">Comment postuler à une demande ?</n-link></li>
                                 <li><n-link to="/">FAQs</n-link></li>
                             </ul>
                         </div>
@@ -43,13 +43,13 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-widget mb-30 ml-75">
                         <div class="footer-title">
-                            <h3>Suivez nous</h3>
+                            <h3>SUIVEZ-NOUS</h3>
                         </div>
                         <div class="footer-list">
                             <ul>
                                 <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
                                 <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-                                <li><a href="https://www.linkedin.com/" target="_blank">Linkedin</a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
                             </ul>
                         </div>
                     </div>

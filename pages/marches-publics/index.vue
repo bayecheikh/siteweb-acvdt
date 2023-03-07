@@ -1,7 +1,7 @@
 <template>
     <div class="shop-page-wrapper">
         <TheHeader />
-        <Breadcrumb pageTitle="Qui sommes-nous ?" />
+        <Breadcrumb pageTitle="Marchés publics" />
         <StatistiqueMarches />
         <MarchesEncours />
         <ServicePolicyThree />
@@ -13,6 +13,7 @@
     export default {
         mounted: function() {
             this.$store.dispatch('contenus/getList')
+            this.$store.dispatch('marchepublics/getList')
         },
         components: {
             TheHeader: () => import('@/components/TheHeader'),

@@ -5,16 +5,22 @@
 
         <div class="Blog-details-inner pt-60 pb-100">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-9 ">
                         <div class="blog-details-wrapper ml-20">
                             <div class="blog-details-top">
-                                <div class="blog-details-img">
-                                    <img class="card-img-top" :src="fileUrl+(mission.futured_images && mission.futured_images[0] && mission.futured_images[0].name)" alt="">
-                                </div>
-                                <h2 class="card-title custom-sub-title pt-30">{{mission.titre}}</h2>
-                                <div class="blog-details-content">
-                                    <div v-html="mission && mission.body"></div>
+                                <div class="row border-grey pl-30 pt-40 pb-30 pr-30 height-100">
+                                    <div class="col-lg-4 ">
+                                        <div class="blog-details-img">
+                                            <img class="card-img-top" :src="fileUrl+(mission.futured_images && mission.futured_images[0] && mission.futured_images[0].name)" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h2 class="card-title custom-sub-title pt-30">{{mission.titre}}</h2>
+                                        <div class="blog-details-content">
+                                            <div v-html="mission && mission.body"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 <!--                             <div class="next-previous-post">

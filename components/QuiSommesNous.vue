@@ -11,17 +11,17 @@
                 <div class="col-lg-4 col-sm-12 mt-0" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'qui-sommes-nous')" :key="index">
                     <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
-                            <n-link :to="`/missions/`+item.id">
+                            <n-link :to="`/contenus/`+item.id">
                                 <h2 class="card-title custom-sub-title">{{item.titre}}</h2>
                             </n-link>
-                            <n-link :to="`/missions/`+item.id">
+                            <n-link :to="`/contenus/`+item.id">
                                 <p class="card-text pb-10">{{item.resume}}</p>
                             </n-link>
-                            <n-link :to="`/missions/`+item.id">
-                                <img class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
+                            <n-link :to="`/contenus/`+item.id">
+                                <img height="300" width="auto" class="card-img-top" :src="fileUrl+(item.futured_images[0] && item.futured_images[0].name)" alt="image">
                             </n-link>
                         </div>
-                        <!-- <n-link :to="`/missions/`+item.nid" class="btn btn-success">
+                        <!-- <n-link :to="`/contenus/`+item.nid" class="btn btn-success">
                             Lire la suite
                         </n-link> -->
                     </div>

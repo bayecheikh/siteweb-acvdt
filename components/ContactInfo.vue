@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <div class="contact-social text-center">
-                            <h3>Suivez nous</h3>
+                            <h3>SUIVEZ-NOUS</h3>
                             <ul>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>

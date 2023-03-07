@@ -25,6 +25,7 @@
         },
         mounted: function() {
             this.$store.dispatch('contenus/getList')
+            this.$store.dispatch('marchepublics/getList')
         },
         
         head() {

@@ -31,6 +31,8 @@ export default {
         '~/plugins/vue-awesome-swiper.js',
         '~/plugins/vuejs-pagiante.js',
         '~/plugins/observe-visibility.js',
+        "~/plugins/helpers.js",
+        '~/plugins/vue-social-sharing.js',
         { 
             src: '~/plugins/bootstrap.js', 
             mode: 'client'
@@ -60,6 +62,7 @@ export default {
     modules: [
         '@nuxtjs/style-resources',
         '@nuxtjs/axios',
+        'vue-social-sharing/nuxt',
     ],
 
     axios: {
@@ -85,6 +88,7 @@ export default {
     env: {
         baseUrl: 'https://ip3dev.com/api-sirat/public/api',
         siteUrl:'https://ip3dev.com',
+        frontUrl:'https://siteweb-sirat.vercel.app',
         fileUrl:'https://ip3dev.com/api-sirat/public/upload/'
     }
 }
