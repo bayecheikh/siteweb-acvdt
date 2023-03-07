@@ -18,7 +18,6 @@
                     </ul>
                     <div class="tab-content mt-4" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead class="thead-ligth">
@@ -85,6 +84,7 @@
                                     </tbody>
                                 </table>
                             </div>
+                     
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="table-responsive">

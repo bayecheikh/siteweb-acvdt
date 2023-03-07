@@ -121,11 +121,11 @@
                     },
                     {
                         url: '/qui-sommes-nous',
-                        title: 'Qui sommes nous ?',
+                        title: 'Qui sommes-nous ?',
                         submenu: [
                             {
                                 url: '/qui-sommes-nous/decret-statut',
-                                title: 'Decret/Statut',
+                                title: 'Décret/Statut',
                             },
                             {
                                 url: '/qui-sommes-nous/organnigramme',
@@ -219,7 +219,7 @@
                     },
                     {
                         url: '/marches-publics',
-                        title: 'Marché public',
+                        title: 'Marchés publics',
                         submenu: [
                             {
                                 url: '/',
@@ -227,7 +227,7 @@
                                 submenu: [
                                     {
                                         url: '/',
-                                        title: 'La déontologie des marchés publics à l\'agence',
+                                        title: 'La déontologie des marchés publics à l\'Agence',
 
                                     },
                                     {
@@ -236,7 +236,7 @@
                                     },
                                     {
                                         url: '/',
-                                        title: 'PRMP j\'ai une question!',
+                                        title: 'PRMP, j\'ai une question !',
                                     }
                                 ]
 
@@ -247,7 +247,7 @@
                                 submenu: [
                                     {
                                         url: '/',
-                                        title: 'Déja inscrit',
+                                        title: 'Déjà inscrit',
 
                                     },
                                     {
@@ -256,7 +256,7 @@
                                     },
                                     {
                                         url: '/',
-                                        title: 'Je soumet mon dossier',
+                                        title: 'Je soumets mon dossier',
                                     }
                                 ]
                             },
@@ -284,7 +284,7 @@
                     },
                     {
                         url: '/gestion-rh',
-                        title: 'Gestion RH'
+                        title: 'Carrières'
                     }/* ,
                     {
                         url: '/contact',

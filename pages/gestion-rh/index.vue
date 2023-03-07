@@ -1,8 +1,8 @@
 <template>
     <div class="shop-page-wrapper">
         <TheHeader />
-        <Breadcrumb pageTitle="GESTION RH" />
         <StatistiqueOffres />
+        <Breadcrumb pageTitle="CARRIÈRES" />
         <OffreEncours />
         <TableOffres />
         <TheFooter />

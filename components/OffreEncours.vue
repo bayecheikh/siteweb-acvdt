@@ -3,32 +3,33 @@
         <div class="container">
             <div class="row justify-content-center mb-30">
                 <div class="col-lg-12 col-sm-12">
-                  <h1 class="card-title custom-title">Derniéres offres d'emploi</h1>  
+                  <h1 class="card-title custom-title">Dernières offres d'emploi</h1>  
                 </div>
             </div>
             <div class="row justify-content-center">
-                <swiper :options="marcheCarousel">
+                <swiper :options="offreCarousel">
 
-                    <swiper-slide class="col-lg-4 col-sm-12 mt-0">
+                    <swiper-slide v-for="(offre, index) in listemplois" :key="index" class="col-lg-4 col-sm-12 mt-0">
                         <div class="custom-bloc-mp">
                             <div class="custom-bloc-head">
                                 <div class="ref_">
-                                    <p>Ref</p>
-                                    <p class="">#SIRAT_12</p>
+                                    <p><B>Réf.</B></p>
+                                    <p class="">{{offre.reference}}</p>
                                 </div>
                                 <div class="del_">
-                                    <p>Date limite</p>
-                                    <p>12-12-2023</p>
+                                    <p><B>Date limite</B></p>
+                                    <p>{{offre.date_limite}}</p>
                                 </div>
                             </div>
                             <div class="custom-bloc-content">
-                                <p>Objet</p>
-                                <p>Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p><B>Objet</B></p>
+                                <p v-html="offre.objet"></p>
                             </div>
                             <div class="custom-bloc-bottom d-flex justify-content-between">
-                                <n-link to="" class="custom-center-box">
+                                <button type="button" @click="onClickConsulter(offre)">
                                     <p class="text-center btn ref_btn_">Consulter</p>
-                                </n-link>
+                                </button>
+                    
                                 <n-link to="" class="custom-center-box">
                                     <p class="text-center btn ref_btn_">Télécharger</p>
                                 </n-link>
@@ -45,37 +46,38 @@
             </div>
             <div class="row justify-content-center mb-30 mt-40">
                 <div class="col-lg-12 col-sm-12">
-                  <h1 class="card-title custom-title">Derniéres offres de stage</h1>  
+                  <h1 class="card-title custom-title">Dernières offres de stage</h1>  
                 </div>
             </div>
             <div class="row justify-content-center">
-                <swiper :options="marcheCarousel">
+                <swiper :options="offreCarousel">
 
-                    <swiper-slide class="col-lg-4 col-sm-12 mt-0">
+                    <swiper-slide v-for="(offre, index) in liststages" :key="index" class="col-lg-4 col-sm-12 mt-0">
                         <div class="custom-bloc-mp">
                             <div class="custom-bloc-head">
                                 <div class="ref_">
-                                    <p>Ref</p>
-                                    <p class="">#SIRAT_12</p>
+                                    <p><B>Réf.</B></p>
+                                    <p class="">{{offre.reference}}</p>
                                 </div>
                                 <div class="del_">
-                                    <p>Date limite</p>
-                                    <p>12-12-2023</p>
+                                    <p><B>Date limite</B></p>
+                                    <p>{{offre.date_limite}}</p>
                                 </div>
                             </div>
                             <div class="custom-bloc-content">
-                                <p>Objet</p>
-                                <p>Lorum Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p><B>Objet</B></p>
+                                <p v-html="offre.objet"></p>
                             </div>
                             <div class="custom-bloc-bottom d-flex justify-content-between">
-                                <n-link to="" class="custom-center-box">
-                                    <p class="text-center btn ref_btn_">Consulter</p>
-                                </n-link>
-                                <n-link to="" class="custom-center-box">
+                                <button type="button" @click="onClickConsulter(offre)">
+                                    <p class="text-center btn ref_btn_">Consulter</p></button>
+                                            <n-link to="" class="custom-center-box">
                                     <p class="text-center btn ref_btn_">Télécharger</p>
                                 </n-link>
+
                             </div>
                         </div>
+                      
                     </swiper-slide>
                 </swiper>
                 <div class="hero-slider-nav swiper-button-prev custom-nav">
@@ -86,41 +88,76 @@
                 </div> 
             </div>
         </div>
+        <div v-if="offreObject">
+            <modal :name="'modal_'+offreObject.id" width="50%" :scrollable="true" height=auto>
+            <div class="container pt-15 pb-15">
+                <div class="custom-row-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="custom-bloc-mp">
+                            <div class="custom-bloc-head">
+                                <div class="ref_">
+                                    <p>Ref</p>
+                                    <p >{{ offreObject.reference }} </p>
+                                </div>
+                                <div class="del_">
+                                    <p>Secteur</p>
+                                    <p>{{ offreObject.secteur }}</p>
+                                </div>
+                                <div class="ref_">
+                                    <p>Date de publication</p>
+                                    <p>{{ offreObject.date_publication}}</p>
+                                </div>
+                                <div class="del_">
+                                    <p>Date limite de dépot</p>
+                                    <p>{{ offreObject.date_limite }}</p>
+                                </div>
+                            </div>
+                            <div class="custom-bloc-content">
+                                <h4>Objet</h4>
+                                <hr>
+                                <div class="card-text" v-html="offreObject.objet"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </modal>
+        </div>
+       
     </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
     export default {
         mounted: function() {
-            //this.getListMarche()
+            this.$store.dispatch('gestionrhs/getList')
         },
+        computed: mapGetters({
+            listoffres: 'gestionrhs/listgestionrhs',
+            listemplois: 'gestionrhs/listemplois',
+            liststages: 'gestionrhs/liststages'
+        }),
         methods: {
-            getListMarche(){
-                this.progress=true
-                this.$axios.$get('/api/marches-publics?_format=json')
-                .then(async (response) => {
-                    //this.$toast.success(response.message).goAway(2000)
-                    console.log('Données Reçu ++++++: ', response)
-                    this.marches = response
-
-                }).catch((error) => {
-                    console.log('Code error ++++++: ', error?.response?.data?.message)
-                }).finally(() => {
-                    console.log('Requette envoyé ')
-                });
-            }
+            async onClickConsulter(offre) {
+               this.offreObject = offre
+                this.isPageLoad=true
+              await this.$modal.show('modal_'+offre.id)
+             
+            },
         },
         data() {
             return {
+                offreObject:null,
+                isPageLoad: false,
                 siteUrl:process.env.siteUrl,
-                marches: [],
-                marcheCarousel: {
-                    loop: true,
+                offreCarousel: {
+                    loop: false,
                     speed: 750,
                     spaceBetween: 30,
                     slidesPerView: 5,
-                    autoplay: true,
-                     navigation: {
+                    autoplay: false,
+                    navigation: {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
                     },
@@ -212,4 +249,53 @@
 .grey-bg{
     background-color: #dbe3eba1;
 }
+.height-100{
+    height: 100% !important;
+    box-shadow: 0px -6px 22px 0 #e9ecef;
+    padding: 14px;
+}
+.custom-title{
+    font-weight: 600;
+    font-size: 26px !important;
+    color: #0060a8;
+}
+.custom-sub-title{
+    font-weight: 500;
+    color: #0060a8;
+    font-size: 16px !important;
+}
+.custom-bloc-mp {
+    background: #fff;
+    margin: 8px;
+}
+.custom-bloc-head {
+    display: flex;
+    justify-content: space-between;
+}
+.ref_ {
+    background: #08b708;
+    width: 100%;
+    padding-left: 15px;
+    color: #fff;
+}
+.del_ {
+    background: #08b708de;
+    width: 100%;
+    padding-left: 15px;
+    color: #fff;
+}
+.ref_ p,.del_ p{
+    color: #fff;
+}
+.custom-bloc-content {
+    padding: 36px;
+    border-bottom: solid 1px #dee2e6;
+}
+.custom-bloc-bottom {
+    padding: 26px;
+}
+.grey-bg{
+    background-color: #dbe3eba1;
+}
+
 </style>

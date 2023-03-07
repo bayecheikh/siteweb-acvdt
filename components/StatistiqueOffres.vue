@@ -13,7 +13,7 @@
                     <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
                             <n-link to="" class="custom-center-box">
-                                <p class="card-text  text-center pt-15">Nombre d'offres d'emplois</p>
+                                <p class="card-text  text-center pt-15">Nombre d'offres d'emploi</p>
                             </n-link>
                             <n-link to="" class="custom-center-box">
                                 <h2 class="card-title custom-sub-title pb-10 text-center">{{listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'emplois').length}}</h2>
@@ -25,7 +25,7 @@
                     <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
                             <n-link to="" class="custom-center-box">
-                                <p class="card-text  text-center pt-15">Nombre d'offres d'emplois</p>
+                                <p class="card-text  text-center pt-15">Nombre d'offres de stage</p>
                             </n-link>
                             <n-link to="" class="custom-center-box">
                                 <h2 class="card-title custom-sub-title pb-10 text-center">{{listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'stages').length}}</h2>
