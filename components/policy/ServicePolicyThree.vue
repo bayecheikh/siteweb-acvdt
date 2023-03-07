@@ -51,7 +51,7 @@
                                                                 <div class="custom-bloc-mp">
                                                                     <div class="custom-bloc-head">
                                                                         <div class="ref_">
-                                                                            <p>Ref</p>
+                                                                            <p>Réf.</p>
                                                                             <p class="">{{ item.reference }}</p>
                                                                         </div>
                                                                         <div class="del_">
@@ -63,7 +63,7 @@
                                                                             <p>{{ item.date_publication}}</p>
                                                                         </div>
                                                                         <div class="del_">
-                                                                            <p>Date limite de dépot</p>
+                                                                            <p>Date limite de dépôt</p>
                                                                             <p>{{ item.date_limite }}</p>
                                                                         </div>
                                                                         
@@ -122,7 +122,7 @@
                                                                 <div class="custom-bloc-mp">
                                                                     <div class="custom-bloc-head">
                                                                         <div class="ref_">
-                                                                            <p>Ref</p>
+                                                                            <p>Réf.</p>
                                                                             <p class="">{{ item.reference }}</p>
                                                                         </div>
                                                                         <div class="del_">
@@ -134,7 +134,7 @@
                                                                             <p>{{ item.date_publication}}</p>
                                                                         </div>
                                                                         <div class="del_">
-                                                                            <p>Date limite de dépot</p>
+                                                                            <p>Date limite de dépôt</p>
                                                                             <p>{{ item.date_limite }}</p>
                                                                         </div>
                                                                         
@@ -193,7 +193,7 @@
                                                                 <div class="custom-bloc-mp">
                                                                     <div class="custom-bloc-head">
                                                                         <div class="ref_">
-                                                                            <p>Ref</p>
+                                                                            <p>Réf.</p>
                                                                             <p class="">{{ item.reference }}</p>
                                                                         </div>
                                                                         <div class="del_">
@@ -205,7 +205,7 @@
                                                                             <p>{{ item.date_publication}}</p>
                                                                         </div>
                                                                         <div class="del_">
-                                                                            <p>Date limite de dépot</p>
+                                                                            <p>Date limite de dépôt</p>
                                                                             <p>{{ item.date_limite }}</p>
                                                                         </div>
                                                                         

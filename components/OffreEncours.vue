@@ -23,16 +23,16 @@
                             </div>
                             <div class="custom-bloc-content">
                                 <p><B>Objet</B></p>
-                                <p v-html="offre.objet"></p>
+                                <p v-html="$truncate(offre.objet, 256)"></p>
                             </div>
                             <div class="custom-bloc-bottom d-flex justify-content-between">
                                 <button type="button" @click="onClickConsulter(offre)">
                                     <p class="text-center btn ref_btn_">Consulter</p>
                                 </button>
                     
-                                <n-link to="" class="custom-center-box">
+                                <a :href=offre.lien target="_blank" class="custom-center-box">
                                     <p class="text-center btn ref_btn_">Télécharger</p>
-                                </n-link>
+                                </a>
                             </div>
                         </div>
                     </swiper-slide>
@@ -66,14 +66,15 @@
                             </div>
                             <div class="custom-bloc-content">
                                 <p><B>Objet</B></p>
-                                <p v-html="offre.objet"></p>
+                                <p v-html="$truncate(offre.objet, 256)"></p>
                             </div>
                             <div class="custom-bloc-bottom d-flex justify-content-between">
                                 <button type="button" @click="onClickConsulter(offre)">
                                     <p class="text-center btn ref_btn_">Consulter</p></button>
-                                            <n-link to="" class="custom-center-box">
+                                
+                                <a :href=offre.lien target="_blank" class="custom-center-box">
                                     <p class="text-center btn ref_btn_">Télécharger</p>
-                                </n-link>
+                                </a>
 
                             </div>
                         </div>
@@ -96,7 +97,7 @@
                         <div class="custom-bloc-mp">
                             <div class="custom-bloc-head">
                                 <div class="ref_">
-                                    <p>Ref</p>
+                                    <p>Réf.</p>
                                     <p >{{ offreObject.reference }} </p>
                                 </div>
                                 <div class="del_">
@@ -108,7 +109,7 @@
                                     <p>{{ offreObject.date_publication}}</p>
                                 </div>
                                 <div class="del_">
-                                    <p>Date limite de dépot</p>
+                                    <p>Date limite de dépôt</p>
                                     <p>{{ offreObject.date_limite }}</p>
                                 </div>
                             </div>
