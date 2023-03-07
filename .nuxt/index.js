@@ -13,9 +13,9 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_93c31d1c from 'nuxt_plugin_plugin_93c31d1c' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_vuesocialsharingplugin_e009c1e4 from 'nuxt_plugin_vuesocialsharingplugin_e009c1e4' // Source: .\\vue-social-sharing-plugin.js (mode: 'all')
-import nuxt_plugin_axios_3eef0095 from 'nuxt_plugin_axios_3eef0095' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_01d8cee8 from 'nuxt_plugin_plugin_01d8cee8' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_vuesocialsharingplugin_94d8b2f8 from 'nuxt_plugin_vuesocialsharingplugin_94d8b2f8' // Source: .\\vue-social-sharing-plugin.js (mode: 'all')
+import nuxt_plugin_axios_4e3d41ea from 'nuxt_plugin_axios_4e3d41ea' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_vueawesomeswiper_5ce03f58 from 'nuxt_plugin_vueawesomeswiper_5ce03f58' // Source: ..\\plugins\\vue-awesome-swiper.js (mode: 'all')
 import nuxt_plugin_vuejspagiante_7edc93b2 from 'nuxt_plugin_vuejspagiante_7edc93b2' // Source: ..\\plugins\\vuejs-pagiante.js (mode: 'all')
 import nuxt_plugin_observevisibility_b986de04 from 'nuxt_plugin_observevisibility_b986de04' // Source: ..\\plugins\\observe-visibility.js (mode: 'all')
@@ -221,16 +221,16 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_93c31d1c === 'function') {
-    await nuxt_plugin_plugin_93c31d1c(app.context, inject)
+  if (typeof nuxt_plugin_plugin_01d8cee8 === 'function') {
+    await nuxt_plugin_plugin_01d8cee8(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_vuesocialsharingplugin_e009c1e4 === 'function') {
-    await nuxt_plugin_vuesocialsharingplugin_e009c1e4(app.context, inject)
+  if (typeof nuxt_plugin_vuesocialsharingplugin_94d8b2f8 === 'function') {
+    await nuxt_plugin_vuesocialsharingplugin_94d8b2f8(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_3eef0095 === 'function') {
-    await nuxt_plugin_axios_3eef0095(app.context, inject)
+  if (typeof nuxt_plugin_axios_4e3d41ea === 'function') {
+    await nuxt_plugin_axios_4e3d41ea(app.context, inject)
   }
 
   if (typeof nuxt_plugin_vueawesomeswiper_5ce03f58 === 'function') {
