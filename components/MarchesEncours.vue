@@ -30,9 +30,9 @@
                                     <p class="text-center btn ref_btn_">Consulter</p>
                                 </button>
                     
-                                <n-link to="" class="custom-center-box">
+                                <a :href=marche.lien target="_blank" class="custom-center-box">
                                     <p class="text-center btn ref_btn_">Télécharger</p>
-                                </n-link>
+                                </a>
                             </div>
                         </div>
                     </swiper-slide>
@@ -53,7 +53,7 @@
                         <div class="custom-bloc-mp">
                             <div class="custom-bloc-head">
                                 <div class="ref_">
-                                    <p>Ref</p>
+                                    <p>Réf.</p>
                                     <p >{{ marcheObject.reference }} </p>
                                 </div>
                                 <div class="del_">
@@ -70,7 +70,7 @@
                                     <p>{{ marcheObject.date_publication}}</p>
                                 </div>
                                 <div class="del_">
-                                    <p>Date limite de dépot</p>
+                                    <p>Date limite de dépôt</p>
                                     <p>{{ marcheObject.date_limite }}</p>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@
         }),
         methods: {
             formatCategorie(slug){
-                if(slug==="plan_de_passation"){
+                if(slug==="plan-de-passation"){
                     return "Plan de passation"
                 }
                 if(slug==="avis-d-appel-a-concurence"){
