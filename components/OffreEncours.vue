@@ -23,7 +23,7 @@
                             </div>
                             <div class="custom-bloc-content">
                                 <p><B>Objet</B></p>
-                                <p v-html="offre.objet"></p>
+                                <p v-html="$truncate(offre.objet,256)"></p>
                             </div>
                             <div class="custom-bloc-bottom d-flex justify-content-between">
                                 <button type="button" @click="onClickConsulter(offre)">
@@ -66,7 +66,7 @@
                             </div>
                             <div class="custom-bloc-content">
                                 <p><B>Objet</B></p>
-                                <p v-html="offre.objet"></p>
+                                <p v-html="$truncate(offre.objet,256)"></p>
                             </div>
                             <div class="custom-bloc-bottom d-flex justify-content-between">
                                 <button type="button" @click="onClickConsulter(offre)">

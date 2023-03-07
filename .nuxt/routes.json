@@ -2,367 +2,367 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\about.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\about.vue",
     "chunkName": "pages/about"
   },
   {
     "name": "activites",
     "path": "/activites",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\activites\\\\index.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\activites\\\\index.vue",
     "chunkName": "pages/activites/index"
   },
   {
     "name": "blog",
     "path": "/blog",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\blog\\\\index.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\index.vue",
     "chunkName": "pages/blog/index"
   },
   {
     "name": "cart",
     "path": "/cart",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\cart.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\cart.vue",
     "chunkName": "pages/cart"
   },
   {
     "name": "checkout",
     "path": "/checkout",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\checkout.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\checkout.vue",
     "chunkName": "pages/checkout"
   },
   {
     "name": "compare",
     "path": "/compare",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\compare.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\compare.vue",
     "chunkName": "pages/compare"
   },
   {
     "name": "contact",
     "path": "/contact",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\contact.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\contact.vue",
     "chunkName": "pages/contact"
   },
   {
     "name": "contenus",
     "path": "/contenus",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\contenus\\\\index.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\contenus\\\\index.vue",
     "chunkName": "pages/contenus/index"
   },
   {
     "name": "gestion-rh",
     "path": "/gestion-rh",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\gestion-rh\\\\index.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\gestion-rh\\\\index.vue",
     "chunkName": "pages/gestion-rh/index"
   },
   {
     "name": "home-cosmetics",
     "path": "/home-cosmetics",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-cosmetics.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-cosmetics.vue",
     "chunkName": "pages/home-cosmetics"
   },
   {
     "name": "home-fashion-five",
     "path": "/home-fashion-five",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-fashion-five.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-five.vue",
     "chunkName": "pages/home-fashion-five"
   },
   {
     "name": "home-fashion-four",
     "path": "/home-fashion-four",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-fashion-four.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-four.vue",
     "chunkName": "pages/home-fashion-four"
   },
   {
     "name": "home-fashion-seven",
     "path": "/home-fashion-seven",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-fashion-seven.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-seven.vue",
     "chunkName": "pages/home-fashion-seven"
   },
   {
     "name": "home-fashion-six",
     "path": "/home-fashion-six",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-fashion-six.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-six.vue",
     "chunkName": "pages/home-fashion-six"
   },
   {
     "name": "home-fashion-three",
     "path": "/home-fashion-three",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-fashion-three.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-three.vue",
     "chunkName": "pages/home-fashion-three"
   },
   {
     "name": "home-fashion-two",
     "path": "/home-fashion-two",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-fashion-two.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\home-fashion-two.vue",
     "chunkName": "pages/home-fashion-two"
   },
   {
     "name": "login-register",
     "path": "/login-register",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\login-register.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\login-register.vue",
     "chunkName": "pages/login-register"
   },
   {
     "name": "marches-publics",
     "path": "/marches-publics",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\marches-publics\\\\index.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\marches-publics\\\\index.vue",
     "chunkName": "pages/marches-publics/index"
   },
   {
     "name": "missions",
     "path": "/missions",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\missions\\\\index.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\missions\\\\index.vue",
     "chunkName": "pages/missions/index"
   },
   {
     "name": "my-account",
     "path": "/my-account",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\my-account.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\my-account.vue",
     "chunkName": "pages/my-account"
   },
   {
     "name": "postes-peages",
     "path": "/postes-peages",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\postes-peages\\\\index.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\index.vue",
     "chunkName": "pages/postes-peages/index"
   },
   {
     "name": "privacy-policy",
     "path": "/privacy-policy",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\privacy-policy.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\privacy-policy.vue",
     "chunkName": "pages/privacy-policy"
   },
   {
     "name": "qui-sommes-nous",
     "path": "/qui-sommes-nous",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\qui-sommes-nous\\\\index.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\index.vue",
     "chunkName": "pages/qui-sommes-nous/index"
   },
   {
     "name": "shop",
     "path": "/shop",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop.vue",
     "chunkName": "pages/shop"
   },
   {
     "name": "shop-grid-full-width",
     "path": "/shop-grid-full-width",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop-grid-full-width.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-grid-full-width.vue",
     "chunkName": "pages/shop-grid-full-width"
   },
   {
     "name": "shop-grid-no-sidebar",
     "path": "/shop-grid-no-sidebar",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop-grid-no-sidebar.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-grid-no-sidebar.vue",
     "chunkName": "pages/shop-grid-no-sidebar"
   },
   {
     "name": "shop-grid-right-sidebar",
     "path": "/shop-grid-right-sidebar",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop-grid-right-sidebar.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-grid-right-sidebar.vue",
     "chunkName": "pages/shop-grid-right-sidebar"
   },
   {
     "name": "shop-grid-two-column",
     "path": "/shop-grid-two-column",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop-grid-two-column.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-grid-two-column.vue",
     "chunkName": "pages/shop-grid-two-column"
   },
   {
     "name": "shop-list-full-width",
     "path": "/shop-list-full-width",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop-list-full-width.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-list-full-width.vue",
     "chunkName": "pages/shop-list-full-width"
   },
   {
     "name": "shop-list-standard",
     "path": "/shop-list-standard",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop-list-standard.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\shop-list-standard.vue",
     "chunkName": "pages/shop-list-standard"
   },
   {
     "name": "terms-conditions",
     "path": "/terms-conditions",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\terms-conditions.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\terms-conditions.vue",
     "chunkName": "pages/terms-conditions"
   },
   {
     "name": "wishlist",
     "path": "/wishlist",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\wishlist.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\wishlist.vue",
     "chunkName": "pages/wishlist"
   },
   {
     "name": "blog-blog-right-sidebar",
     "path": "/blog/blog-right-sidebar",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\blog\\\\blog-right-sidebar.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\blog-right-sidebar.vue",
     "chunkName": "pages/blog/blog-right-sidebar"
   },
   {
     "name": "blog-blog-without-sidebar",
     "path": "/blog/blog-without-sidebar",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\blog\\\\blog-without-sidebar.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\blog-without-sidebar.vue",
     "chunkName": "pages/blog/blog-without-sidebar"
   },
   {
     "name": "contenus-blog-right-sidebar",
     "path": "/contenus/blog-right-sidebar",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\contenus\\\\blog-right-sidebar.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\contenus\\\\blog-right-sidebar.vue",
     "chunkName": "pages/contenus/blog-right-sidebar"
   },
   {
     "name": "contenus-blog-without-sidebar",
     "path": "/contenus/blog-without-sidebar",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\contenus\\\\blog-without-sidebar.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\contenus\\\\blog-without-sidebar.vue",
     "chunkName": "pages/contenus/blog-without-sidebar"
   },
   {
     "name": "gestion-rh-decret-statut",
     "path": "/gestion-rh/decret-statut",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\gestion-rh\\\\decret-statut.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\gestion-rh\\\\decret-statut.vue",
     "chunkName": "pages/gestion-rh/decret-statut"
   },
   {
     "name": "gestion-rh-mission",
     "path": "/gestion-rh/mission",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\gestion-rh\\\\mission.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\gestion-rh\\\\mission.vue",
     "chunkName": "pages/gestion-rh/mission"
   },
   {
     "name": "gestion-rh-organnigramme",
     "path": "/gestion-rh/organnigramme",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\gestion-rh\\\\organnigramme.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\gestion-rh\\\\organnigramme.vue",
     "chunkName": "pages/gestion-rh/organnigramme"
   },
   {
     "name": "marches-publics-decret-statut",
     "path": "/marches-publics/decret-statut",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\marches-publics\\\\decret-statut.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\marches-publics\\\\decret-statut.vue",
     "chunkName": "pages/marches-publics/decret-statut"
   },
   {
     "name": "marches-publics-mission",
     "path": "/marches-publics/mission",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\marches-publics\\\\mission.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\marches-publics\\\\mission.vue",
     "chunkName": "pages/marches-publics/mission"
   },
   {
     "name": "marches-publics-organnigramme",
     "path": "/marches-publics/organnigramme",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\marches-publics\\\\organnigramme.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\marches-publics\\\\organnigramme.vue",
     "chunkName": "pages/marches-publics/organnigramme"
   },
   {
     "name": "missions-blog-right-sidebar",
     "path": "/missions/blog-right-sidebar",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\missions\\\\blog-right-sidebar.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\missions\\\\blog-right-sidebar.vue",
     "chunkName": "pages/missions/blog-right-sidebar"
   },
   {
     "name": "missions-blog-without-sidebar",
     "path": "/missions/blog-without-sidebar",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\missions\\\\blog-without-sidebar.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\missions\\\\blog-without-sidebar.vue",
     "chunkName": "pages/missions/blog-without-sidebar"
   },
   {
     "name": "postes-peages-decret-statut",
     "path": "/postes-peages/decret-statut",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\postes-peages\\\\decret-statut.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\decret-statut.vue",
     "chunkName": "pages/postes-peages/decret-statut"
   },
   {
     "name": "postes-peages-mission",
     "path": "/postes-peages/mission",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\postes-peages\\\\mission.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\mission.vue",
     "chunkName": "pages/postes-peages/mission"
   },
   {
     "name": "postes-peages-organnigramme",
     "path": "/postes-peages/organnigramme",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\postes-peages\\\\organnigramme.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\organnigramme.vue",
     "chunkName": "pages/postes-peages/organnigramme"
   },
   {
     "name": "product-product-affiliate",
     "path": "/product/product-affiliate",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\product\\\\product-affiliate.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\product\\\\product-affiliate.vue",
     "chunkName": "pages/product/product-affiliate"
   },
   {
     "name": "qui-sommes-nous-decret-statut",
     "path": "/qui-sommes-nous/decret-statut",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\qui-sommes-nous\\\\decret-statut.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\decret-statut.vue",
     "chunkName": "pages/qui-sommes-nous/decret-statut"
   },
   {
     "name": "qui-sommes-nous-mission",
     "path": "/qui-sommes-nous/mission",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\qui-sommes-nous\\\\mission.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\mission.vue",
     "chunkName": "pages/qui-sommes-nous/mission"
   },
   {
     "name": "qui-sommes-nous-organnigramme",
     "path": "/qui-sommes-nous/organnigramme",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\qui-sommes-nous\\\\organnigramme.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\organnigramme.vue",
     "chunkName": "pages/qui-sommes-nous/organnigramme"
   },
   {
     "name": "activites-slug",
     "path": "/activites/:slug",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\activites\\\\_slug.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\activites\\\\_slug.vue",
     "chunkName": "pages/activites/_slug"
   },
   {
     "name": "blog-slug",
     "path": "/blog/:slug",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\blog\\\\_slug.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\blog\\\\_slug.vue",
     "chunkName": "pages/blog/_slug"
   },
   {
     "name": "contenus-slug",
     "path": "/contenus/:slug",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\contenus\\\\_slug.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\contenus\\\\_slug.vue",
     "chunkName": "pages/contenus/_slug"
   },
   {
     "name": "gestion-rh-slug",
     "path": "/gestion-rh/:slug?",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\gestion-rh\\\\_slug.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\gestion-rh\\\\_slug.vue",
     "chunkName": "pages/gestion-rh/_slug"
   },
   {
     "name": "marches-publics-slug",
     "path": "/marches-publics/:slug?",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\marches-publics\\\\_slug.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\marches-publics\\\\_slug.vue",
     "chunkName": "pages/marches-publics/_slug"
   },
   {
     "name": "missions-slug",
     "path": "/missions/:slug",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\missions\\\\_slug.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\missions\\\\_slug.vue",
     "chunkName": "pages/missions/_slug"
   },
   {
     "name": "postes-peages-slug",
     "path": "/postes-peages/:slug?",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\postes-peages\\\\_slug.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\postes-peages\\\\_slug.vue",
     "chunkName": "pages/postes-peages/_slug"
   },
   {
     "name": "product-slug",
     "path": "/product/:slug?",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\product\\\\_slug.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\product\\\\_slug.vue",
     "chunkName": "pages/product/_slug"
   },
   {
     "name": "qui-sommes-nous-slug",
     "path": "/qui-sommes-nous/:slug?",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\qui-sommes-nous\\\\_slug.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\qui-sommes-nous\\\\_slug.vue",
     "chunkName": "pages/qui-sommes-nous/_slug"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\index.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\BENIN\\\\siteweb\\\\pages\\\\index.vue",
     "chunkName": "pages/index"
   }
 ]
