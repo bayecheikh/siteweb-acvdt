@@ -74,6 +74,11 @@
                                                                             <p class="text-center btn ref_">Télécharger</p>
                                                                         </a>          
                                                                     </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <n-link :to="{ path: '/candidatures', query: { reference: `${item.reference}` } }">
+                                                                            <p class="text-center btn ref_">Postuler</p>
+                                                                        </n-link>     
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -105,7 +110,7 @@
                                     <tbody>
                                         <tr v-for="(item, index) in listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'stages')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
-                                            <td><div class="card-text" v-html="item.objet"></div></td>
+                                            <td><div class="card-text" v-html="$truncate(item.objet,256)"></div></td>
                                             <td>{{ item.secteur }}</td>
                                             <td>{{ item.date_publication}}</td>
                                             <td>{{ item.date_limite }}</td>
@@ -144,6 +149,16 @@
                                                                     <div class="custom-bloc-bottom d-flex justify-content-between">
                                                                         <a target="_blank" :href="item.lien" class="custom-center-box">
                                                                             <p class="text-center btn ref_">Télécharger</p>
+                                                                        </a>          
+                                                                    </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <a target="_blank" :href="item.lien" class="custom-center-box">
+                                                                            <p class="text-center btn ref_">Télécharger</p>
+                                                                        </a>          
+                                                                    </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <a target="_blank" :href="item.lien" class="custom-center-box">
+                                                                            <p class="text-center btn ref_">Postuler</p>
                                                                         </a>          
                                                                     </div>
                                                                 </div>
@@ -215,6 +230,11 @@
                                                                     <div class="custom-bloc-bottom d-flex justify-content-between">
                                                                         <a target="_blank" :href="item.lien" class="custom-center-box">
                                                                             <p class="text-center btn ref_">Télécharger</p>
+                                                                        </a>          
+                                                                    </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <a target="_blank" :href="item.lien" class="custom-center-box">
+                                                                            <p class="text-center btn ref_">Postuler</p>
                                                                         </a>          
                                                                     </div>
                                                                 </div>

@@ -124,15 +124,15 @@
                         title: 'Qui sommes-nous ?',
                         submenu: [
                             {
-                                url: '/qui-sommes-nous/decret-statut',
+                                url: '/contenus/18',
                                 title: 'Décret/Statut',
                             },
                             {
-                                url: '/qui-sommes-nous/organnigramme',
+                                url: '/contenus/17',
                                 title: 'Organigramme',
                             },
                             {
-                                url: '/qui-sommes-nous/mission',
+                                url: '/contenus/16',
                                 title: 'Mission',
                             }
                         ]

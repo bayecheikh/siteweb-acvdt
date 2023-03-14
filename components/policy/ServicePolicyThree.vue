@@ -7,6 +7,10 @@
                 </div>
             </div>
             <div class="row justify-content-center mb-30 blog-wrap-2 mb-0 height-100 border-grey">
+                <input type="text" v-model="input" placeholder="Rechercher..." />
+            </div>
+         
+            <div class="row justify-content-center mb-30 blog-wrap-2 mb-0 height-100 border-grey">
                 <div class="col-lg-12 col-sm-12">
                     <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -16,13 +20,14 @@
                             <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Avis généraux</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Avis d'appel à concurence</button>
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Avis d'appel à concurrence</button>
                         </li>
                     </ul>
                     <div class="tab-content mt-4" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            
+                 
                             <div class="table-responsive">
+                                
                                 <table class="table">
                                     <thead class="thead-ligth">
                                         <tr>
@@ -35,7 +40,7 @@
                                         </tr>
                                     </thead>
                                     <tbody class="tbodyDiv">
-                                        <tr class="custom_margin" v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation')" :key="index">
+                                        <tr class="custom_margin" v-for="(item, index) in filteredList().filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="item.objet"></div></td>
                                             <td>{{ item.type_marche }}</td>
@@ -71,7 +76,7 @@
                                                                     <div class="custom-bloc-content">
                                                                         <h4>Objet</h4>
                                                                         <hr>
-                                                                        <div class="card-text" v-html="item.objet"></div>
+                                                                        <div class="card-text" v-html="$truncate(item.objet, 256)"></div>
                                                                     </div>
                                                                     <div class="custom-bloc-bottom d-flex justify-content-between">
                                                                         <a target="_blank" :href="item.lien" class="custom-center-box">
@@ -85,6 +90,9 @@
                                                 </modal>
                                             </td>
                                         </tr>
+                                       <div  v-if="input&&!filteredList().length">
+                                        <p>Aucun résultat</p>
+                                    </div>
                                     </tbody>
                                 </table>
                             </div>
@@ -106,7 +114,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'avis-generaux')" :key="index">
+                                        <tr v-for="(item, index) in filteredList().filter(marchepublic => marchepublic.categories[0].slug === 'avis-generaux')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="item.objet"></div></td>
                                             <td>{{ item.type_marche }}</td>
@@ -156,6 +164,9 @@
                                                 </modal>
                                             </td>
                                         </tr>
+                                        <div v-if="input&&!filteredList().length">
+                                        <p>Aucun résultat</p>
+                                    </div>
                                     </tbody>
                                 </table>
                             </div>
@@ -177,7 +188,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="(item, index) in listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'avis-d-appel-a-concurence')" :key="index">
+                                        <tr v-for="(item, index) in filteredList().filter(marchepublic => marchepublic.categories[0].slug === 'avis-d-appel-a-concurence')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="$truncate(item.objet,200)"></div></td>
                                             <td>{{ item.type_marche }}</td>
@@ -227,6 +238,9 @@
                                                 </modal>
                                             </td>                              
                                         </tr>
+                                        <div v-if="input&&!filteredList().length">
+                                        <p>Aucun résultat</p>
+                                    </div>
                                     </tbody>
                                 </table>
                             </div>
@@ -246,6 +260,11 @@ import { mapMutations, mapGetters } from 'vuex'
             listmarchepublics: 'marchepublics/listmarchepublics',
         }),
         methods: {
+            filteredList(){
+                return ( this.listmarchepublics.filter((component) => 
+                    component.reference.toLowerCase().includes(this.input.toLowerCase()) ||   component.objet.toLowerCase().includes(this.input.toLowerCase())
+                ))
+            },
             getUrlImage(url){
                 return url.substring(str.indexOf('drupal-api') + 1);
             },
@@ -258,6 +277,8 @@ import { mapMutations, mapGetters } from 'vuex'
         },
         data() {
             return {
+                input: '',
+                search: '',
                 isPageLoad:false,
                 siteUrl:process.env.siteUrl,
                 fileUrl:process.env.fileUrl,
@@ -320,4 +341,9 @@ import { mapMutations, mapGetters } from 'vuex'
 max-height: 600px;
 overflow: auto;
 }
+input[type="text"] {
+  background-color: #fff;
+}
+
+
 </style>

@@ -37,7 +37,7 @@
                     <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
                             <n-link to="" class="custom-center-box">
-                                <p class="card-text  text-center pt-15">Avis d'appel à concurence</p>
+                                <p class="card-text  text-center pt-15">Avis d'appel à concurrence</p>
                             </n-link>
                             <n-link to="" class="custom-center-box">
                                 <h2 class="card-title custom-sub-title pb-10 text-center">{{listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation').length}}</h2>

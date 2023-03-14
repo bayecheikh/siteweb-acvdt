@@ -1,5 +1,5 @@
 <template>
-    <div class="support-area pt-60 pb-40">
+    <div class="support-area pt-60 pb-40" id="faq">
         <div class="container">
             <div class="row justify-content-center custom-row margin-left-0 border-grey width-100" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'service-abonnement')" :key="index">
                 <div class="col-lg-12 col-sm-12 mt-0 height-102 custom-col ">

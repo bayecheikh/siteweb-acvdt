@@ -90,7 +90,7 @@
             </div>
         </div>
         <div v-if="offreObject">
-            <modal :name="'modal_'+offreObject.id" width="50%" :scrollable="true" height=auto>
+            <modal :name="'modalOffreEnCours_'+offreObject.id" width="50%" :scrollable="true" height=auto>
             <div class="container pt-15 pb-15">
                 <div class="custom-row-2">
                     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -143,7 +143,7 @@ import { mapGetters } from 'vuex'
             async onClickConsulter(offre) {
                this.offreObject = offre
                 this.isPageLoad=true
-              await this.$modal.show('modal_'+offre.id)
+              await this.$modal.show('modalOffreEnCours_'+offre.id)
              
             },
         },

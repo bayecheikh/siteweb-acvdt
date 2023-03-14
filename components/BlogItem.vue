@@ -1,7 +1,7 @@
 <template>
     <div class="blog-wrap mb-25">
         <div class="blog-img">
-            <n-link :to="`#`">
+            <n-link :to="`/contenus/`+blog.id">
                 <img :src="fileUrl+(blog.futured_images[0] && blog.futured_images[0].name)" :alt="blog.title">
             </n-link>
             <!--<n-link :to="`/blog/${slugify(blog.titre)}`">

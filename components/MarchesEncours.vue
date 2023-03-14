@@ -46,7 +46,7 @@
             </div>
         </div>
         <div v-if="marcheObject">
-            <modal :name="'modal_'+marcheObject.id" width="50%" :scrollable="true" height=auto>
+            <modal :name="'modalMarcheEnCours_'+marcheObject.id" width="50%" :scrollable="true" height=auto>
             <div class="container pt-15 pb-15">
                 <div class="custom-row-2">
                     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -113,7 +113,7 @@
             async onClickConsulter(marche) {
                this.marcheObject = marche
                 this.isPageLoad=true
-              await this.$modal.show('modal_'+marche.id)
+              await this.$modal.show('modalMarcheEnCours_'+marche.id)
              
             },
         },

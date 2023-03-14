@@ -19,9 +19,9 @@
                         </div>
                         <div class="footer-list">
                             <ul>
-                                <li><n-link to="/">Qui sommes-nous ?</n-link></li>
-                                <li><n-link to="/">Décret/Statut</n-link></li>
-                                <li><n-link to="/">Organigramme</n-link></li>
+                                <li><n-link to="/qui-sommes-nous">Qui sommes-nous ?</n-link></li>
+                                <li><n-link to="/contenus/18">Décret/Statut</n-link></li>
+                                <li><n-link to="/contenus/17">Organigramme</n-link></li>
                             </ul>
                         </div>
                     </div>
@@ -33,9 +33,9 @@
                         </div>
                         <div class="footer-list">
                             <ul>
-                                <li><n-link to="/">Marchés publics</n-link></li>
+                                <li><n-link to="/marches-publics">Marchés publics</n-link></li>
                                 <li><n-link to="/">Comment postuler à une demande ?</n-link></li>
-                                <li><n-link to="/">FAQs</n-link></li>
+                                <li><n-link to="/postes-peages#faq">FAQ</n-link></li>
                             </ul>
                         </div>
                     </div>

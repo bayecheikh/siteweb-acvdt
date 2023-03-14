@@ -8,7 +8,7 @@
                             <div class="mb-0 border-grey-tarif bg-blue">   
                                 <div class="card-body text-sm-center">
                                         <h3 class="card-title custom-title-white">
-                                            CATEGORIES  
+                                            CATÉGORIES  
                                         </h3>
                                 </div>
                             </div>

@@ -3,7 +3,9 @@ export default {
     this.$axios.$get('/allgestionrhs')
       .then(async (response) => {
         console.log('Données reçu+++++++++++', response)
-        const nonExpiredGestionRhs = response.data.filter(gestionrh => new Date(gestionrh.date_limite) >= new Date())
+        const now = new Date
+        now.setHours(0, 0, 0, 0)
+        const nonExpiredGestionRhs = response.data.filter(gestionrh => new Date(gestionrh.date_limite) >= now)
         await commit('initlist', nonExpiredGestionRhs)
       }).catch((error) => {
         console.log('Code error ++++++: ', error?.response?.data?.message)

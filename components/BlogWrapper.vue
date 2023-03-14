@@ -8,6 +8,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-6" v-for="(blog, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'actualites')" :key="index">
+                    
                     <BlogItem :blog="blog" />
                 </div>
             </div>

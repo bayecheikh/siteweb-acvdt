@@ -1,7 +1,7 @@
 <template>
     <div class="home-page-wrapper bg-grey">
         <TheHeader />
-        <Breadcrumb pageTitle="Postes de péages" />
+        <Breadcrumb pageTitle="Postes de péage" />
         <IntroPostePeage />
         <FinancementParRegion />
         <InfoUtiles />

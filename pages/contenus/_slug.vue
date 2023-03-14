@@ -1,7 +1,7 @@
 <template>
     <div class="product-details-page-wrapper">
         <TheHeader />
-        <Breadcrumb :pageTitle="mission && mission.title" />
+        <Breadcrumb :pageTitle="mission.titre ? mission.categorie + ' > '+mission.titre : mission.categorie" />
 
         <div class="Blog-details-inner pt-60 pb-100">
             <div class="container">
@@ -72,7 +72,9 @@
             return {
                 fileUrl:process.env.fileUrl,
                 slug: this.$route.params.slug,
-                mission:{},
+                mission:{
+                    titre:''
+                },
                 siteUrl:process.env.siteUrl,
                 sharing: {
                     url: process.env.frontUrl + this.$route.fullPath,
