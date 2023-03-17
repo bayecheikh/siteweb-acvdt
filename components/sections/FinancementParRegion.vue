@@ -1,5 +1,9 @@
 <template>
+  <div>
+        <spinner class="square-loader" :width="'650px'" :height="'662px'" :margin="'0px'"  v-if="!showContent" ></spinner>
 
+
+    <div v-if="showContent">
     <div class="support-area pt-0 pb-0">
         <div class="bg-white">            
             <div class="row align-items-start d-flex">
@@ -13,7 +17,7 @@
                     <div class="custom-top-card pt-15 pb-15 pl-115 pr-5">
                         <ul class="list-group list-group-flush pl-48 scrollable-bloc">
                             <li class="list-group-item pl-0 pt-3 pb-3 font-weight-600 text-blue" v-for="(item,i) in this.peages" :key="i">
-                                <img src='route-a-peage.png' style='vertical-align:center; margin-right: 6px; width:30px; height:30px;'>
+                                <img src='route-a-peage.png' style='vertical-align:middle; margin-right: 6px; width:30px; height:30px;'>
                                 <button :class="'text-peage '+ (isActivepeage==item.id?'activepeage':'')" @click="postepeageBypeage(item)">
                                         {{item.titre}}
                                 </button>    
@@ -35,14 +39,19 @@
                 </div>
                 
             </div>
-        </div>              
+        </div>    
+    </div>          
     </div>
-
+</div>
 </template>
 
 <script>
+import Spinner from 'vue-spinner/src/SquareLoader.vue';
 import { mapMutations, mapGetters } from 'vuex'
     export default {
+        components: {
+            Spinner,
+        },
         computed: mapGetters({
             listcontenus: 'contenus/listcontenus',
         }),
@@ -61,6 +70,7 @@ import { mapMutations, mapGetters } from 'vuex'
         },
         data() {
             return {
+                showContent:false,
                 isloading:false,
                 tablepostepeages:[],
                 isActivepeage:0,
@@ -93,6 +103,7 @@ import { mapMutations, mapGetters } from 'vuex'
                     //this.$toast.success(response.message).goAway(2000)
                     console.log('Données peages Reçu ++++++: ', response)
                     this.peages = response.data
+                    this.showContent = true
                    // Create chart instance
                    let {am4core, am4charts,am4maps,senegalHigh, am4themes_animated, am4themes_dark} = this.$am4core();
                     // Create map instance
@@ -352,5 +363,23 @@ color: #000000b5;
 }
 .pl-115{
     padding-left: 115px !important;
+}
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

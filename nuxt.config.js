@@ -1,3 +1,4 @@
+
 export default {
     generate: {
         fallback: true
@@ -33,6 +34,7 @@ export default {
         '~/plugins/observe-visibility.js',
         "~/plugins/helpers.js",
         '~/plugins/vue-social-sharing.js',
+        '~/plugins/vue-loading-overlay',
         { 
             src: '~/plugins/bootstrap.js', 
             mode: 'client'
