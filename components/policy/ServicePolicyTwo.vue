@@ -1,7 +1,9 @@
 <template>
      <div>
-        <spinner class="square-loader" :width="'1290px'" :height="'996.283px'" :margin="'0px'"   v-if="!showContent" ></spinner>
-
+        <div style="display: flex;">
+        <spinner class="square-loader" :width="'645px'" :height="'996.283px'" :margin="'0px'" :marginTop="'50px'"    v-if="!showContent" ></spinner>
+         <spinner class="square-loader" :width="'645px'" :height="'996.283px'" :margin="'0px'" :marginLeft="'0px'" :marginTop="'50px'"    v-if="!showContent" ></spinner>
+        </div>
 
     <div v-if="showContent">
     <div class="support-area pt-40 pb-20">

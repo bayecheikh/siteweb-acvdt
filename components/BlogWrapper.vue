@@ -1,6 +1,6 @@
 <template>
      <div>
-        <spinner class="square-loader" :width="'1290px'" :height="'454.9px'" :margin="'0px'"   v-if="!showContent" ></spinner>
+        <spinner class="square-loader" :width="'1290px'" :height="'454.9px'" :margin="'0px'" :marginBottom="'50px'"     v-if="!showContent" ></spinner>
 
 
     <div v-if="showContent">

@@ -1,6 +1,7 @@
 <template>
      <div>
-        <spinner class="square-loader" :width="'1290px'" :height="'666.2px'" :margin="'0px'"   v-if="!showContent" ></spinner>
+        <spinner class="square-loader" :width="'1290px'" :height="'170.6px'" :margin="'0px'" :marginTop="'30px'"   v-if="!showContent" ></spinner>
+        <spinner class="square-loader" :width="'1290px'" :height="'425.2px'" :margin="'0px'"   v-if="!showContent" ></spinner>
 
 
     <div v-if="showContent">

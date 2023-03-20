@@ -5,7 +5,7 @@
         <Breadcrumb :pageTitle="mission.titre ? mission.categorie + ' > '+mission.titre : mission.categorie" />
             <div>
         
-        <spinner class="square-loader" :width="'1290px'" :height="'1679px'" :margin="'0px'" :marginBottom="'50px'" :marginTop="'50px'"   v-if="!showContent" ></spinner>
+                <spinner class="square-loader" :width="'1300px'" :height="'1679px'" :margin="'0px'" :marginBottom="'50px'" :marginLeft="'130px'" :marginRight="'130px'"  :marginTop="'50px'"   v-if="!showContent" ></spinner>
     <div v-if="showContent">
         <div class="Blog-details-inner pt-60 pb-100">
             <div class="container">
