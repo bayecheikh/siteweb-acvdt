@@ -1,4 +1,9 @@
 <template>
+     <div>
+        <spinner class="square-loader" :width="'1290px'" :height="'996.283px'" :margin="'0px'"   v-if="!showContent" ></spinner>
+
+
+    <div v-if="showContent">
     <div class="support-area pt-40 pb-20">
         <div class="container">
             <div class="row">
@@ -56,17 +61,28 @@
                         </div>
                     </div>
                 </div>
+                </div>
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import Spinner from 'vue-spinner/src/SquareLoader.vue';
 import { mapMutations, mapGetters } from 'vuex'
     export default {
+        components: {
+            Spinner,
+        },
         computed: mapGetters({
             listcontenus: 'contenus/listcontenus',
         }),
+        mounted() {
+    this.$store.dispatch("contenus/getList").then(() => {
+        this.showContent = true;
+    });
+  },
         methods: {
             getUrlImage(url){
                 return url.substring(str.indexOf('drupal-api') + 1);
@@ -75,6 +91,7 @@ import { mapMutations, mapGetters } from 'vuex'
         },
         data() {
             return {
+                showContent: false,
                 siteUrl:process.env.siteUrl,
                 fileUrl:process.env.fileUrl,
                 missions: [],
@@ -107,4 +124,24 @@ import { mapMutations, mapGetters } from 'vuex'
     background-color: #0060a8;
     padding: 40px;
 }
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
+
+

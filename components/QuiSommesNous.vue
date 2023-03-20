@@ -1,4 +1,11 @@
 <template>
+    <div>
+        
+        <spinner class="square-loader" :width="'1290px'" :height="'108.6px'" :margin="'0px'" :marginTop="'50px'"   v-if="!showContent" ></spinner>
+        <spinner class="square-loader" :width="'1290px'" :height="'496px'" :margin="'0px'"  :marginBottom="'50px'"   v-if="!showContent" ></spinner>
+       
+
+    <div v-if="showContent">
     <div class="support-area pt-60 pb-90">
         <div class="container">
             <div class="row justify-content-center mb-30">
@@ -29,23 +36,32 @@
             </div>
         </div>
     </div>
+    </div>
+    </div>
 </template>
 
 <script>
+import Spinner from 'vue-spinner/src/SquareLoader.vue';
 import { mapMutations, mapGetters } from 'vuex'
     export default {
-        
+        components: {
+            Spinner,
+        },
         computed: mapGetters({
             listcontenus: 'contenus/listcontenus',
         }),
         mounted: function() {
-            this.$store.dispatch('contenus/getList')
+          
+            this.$store.dispatch("contenus/getList").then(() => {
+        this.showContent = true;
+    });
         },
         methods: {
             
         },
         data() {
             return {
+                showContent: false,
                 siteUrl:process.env.siteUrl,
                 fileUrl:process.env.fileUrl,
                 missions: [],
@@ -76,4 +92,23 @@ import { mapMutations, mapGetters } from 'vuex'
 .text-center{
     text-align: center;
 }
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
+

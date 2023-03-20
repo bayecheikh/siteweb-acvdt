@@ -1,4 +1,9 @@
 <template>
+     <div>
+        <spinner class="square-loader" :width="'1290px'" :height="'550px'" :margin="'0px'"   v-if="!showContent" ></spinner>
+
+
+    <div v-if="showContent">
     <div class="support-area pt-30 pb-40">
         <div class="container">
             <div class="row justify-content-center mb-30">
@@ -248,18 +253,31 @@
                     </div> 
                 </div>
             </div>
-            
+        </div>
+    </div>
         </div>
     </div>
 </template>
 
 <script>
+import Spinner from 'vue-spinner/src/SquareLoader.vue';
 import { mapMutations, mapGetters } from 'vuex'
     export default {
+        components: {
+            Spinner,
+        },
         computed: mapGetters({
             listmarchepublics: 'marchepublics/listmarchepublics',
         }),
+        mounted() {
+    this.$store.dispatch("marchepublics/getList").then(() => {
+        setTimeout(() => {
+      this.showContent = true;
+    }, 2000); 
+    });
+  },
         methods: {
+            
             filteredList(){
                 return ( this.listmarchepublics.filter((component) => 
                     component.reference.toLowerCase().includes(this.input.toLowerCase()) ||   component.objet.toLowerCase().includes(this.input.toLowerCase())
@@ -277,6 +295,7 @@ import { mapMutations, mapGetters } from 'vuex'
         },
         data() {
             return {
+                showContent: false,
                 input: '',
                 search: '',
                 isPageLoad:false,
@@ -346,4 +365,24 @@ input[type="text"] {
 }
 
 
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
+
+

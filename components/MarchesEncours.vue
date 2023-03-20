@@ -1,4 +1,10 @@
 <template>
+     <div>
+        
+        <spinner class="square-loader" :width="'1290px'" :height="'509px'" :margin="'0px'" :marginTop="'0px'" :marginBottom="'50px'"   v-if="!showContent" ></spinner>
+
+
+    <div v-if="showContent">
     <div class="support-area pt-60 pb-90 grey-bg">
         <div class="container">
             <div class="row justify-content-center mb-30">
@@ -86,14 +92,24 @@
         </modal>
         </div>
     </div>
+    </div>
+     </div>
 </template>
 
 <script>
+import Spinner from 'vue-spinner/src/SquareLoader.vue';
     import { mapGetters } from 'vuex'
     export default {
-        mounted: function() {
-           this.$store.dispatch('marchepublics/getList')
+        components: {
+            Spinner,
         },
+        mounted() {
+    this.$store.dispatch("marchepublics/getList").then(() => {
+        setTimeout(() => {
+      this.showContent = true;
+    }, 2000); 
+    });
+  },
         computed: mapGetters({
             listmarchepublics: 'marchepublics/listmarchepublics',
         }),
@@ -119,6 +135,7 @@
         },
         data() {
             return {
+                showContent: false,
                 siteUrl:process.env.siteUrl,
                 marcheObject:null,
                 marches: [],
@@ -225,4 +242,24 @@
   height: 160px; 
   overflow: hidden;
 }
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
+
+

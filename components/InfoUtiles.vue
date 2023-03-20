@@ -1,4 +1,7 @@
 <template>
+        <div>
+     <spinner class="square-loader" :width="'1296px'" :height="'350px'" :margin="'0px'"  v-if="!showContent" ></spinner>
+     <div v-if="showContent">
     <div class="support-area pt-60 pb-90">
         <div class="container">
             <div class="row justify-content-center mb-30">
@@ -41,16 +44,26 @@
             </div>
         </div>
     </div>
+</div>
+     </div>
 </template>
 
 <script>
+
+import Spinner from 'vue-spinner/src/SquareLoader.vue';
+
 import { mapMutations, mapGetters } from 'vuex'
     export default {
+        components: {
+            Spinner,
+        },
         computed: mapGetters({
             listcontenus: 'contenus/listcontenus',
         }),
         mounted: function() {
-            //this.getListMarche()
+            this.$store.dispatch("contenus/getList").then(() => {
+        this.showContent = true;
+    });
         },
         methods: {
             getListMarche(){
@@ -60,6 +73,7 @@ import { mapMutations, mapGetters } from 'vuex'
                     //this.$toast.success(response.message).goAway(2000)
                     console.log('Données Reçu ++++++: ', response)
                     this.marches = response
+           
 
                 }).catch((error) => {
                     console.log('Code error ++++++: ', error?.response?.data?.message)
@@ -70,6 +84,7 @@ import { mapMutations, mapGetters } from 'vuex'
         },
         data() {
             return {
+                showContent: false,
                 fileUrl:process.env.fileUrl,
                 siteUrl:process.env.siteUrl,
                 marches: [],
@@ -165,5 +180,23 @@ import { mapMutations, mapGetters } from 'vuex'
 }
 .grey-bg{
     background-color: #dbe3eba1;
+}
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

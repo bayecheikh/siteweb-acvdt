@@ -1,4 +1,10 @@
 <template>
+      <div>
+        
+        <spinner class="square-loader" :width="'1290px'" :height="'500px'" :margin="'0px'"  :marginTop="'30px'"   v-if="!showContent" ></spinner>
+
+        <spinner class="square-loader" :width="'1290px'" :height="'500px'" :margin="'0px'" :marginBottom="'30px'" :marginTop="'30px'"   v-if="!showContent" ></spinner>
+    <div v-if="showContent">
     <div class="support-area pt-60 pb-90 grey-bg">
         <div class="container">
             <div class="row justify-content-center mb-30">
@@ -124,16 +130,25 @@
             </div>
         </modal>
         </div>
-       
+    </div>
+    </div>
     </div>
 </template>
 
 <script>
+import Spinner from 'vue-spinner/src/SquareLoader.vue';
 import { mapGetters } from 'vuex'
     export default {
-        mounted: function() {
-            this.$store.dispatch('gestionrhs/getList')
+        components: {
+            Spinner,
         },
+        mounted() {
+    this.$store.dispatch("gestionrhs/getList").then(() => {
+        setTimeout(() => {
+      this.showContent = true;
+    }, 2000); 
+    });
+  },
         computed: mapGetters({
             listoffres: 'gestionrhs/listgestionrhs',
             listemplois: 'gestionrhs/listemplois',
@@ -149,6 +164,7 @@ import { mapGetters } from 'vuex'
         },
         data() {
             return {
+                showContent: false,
                 offreObject:null,
                 isPageLoad: false,
                 siteUrl:process.env.siteUrl,
@@ -299,4 +315,24 @@ import { mapGetters } from 'vuex'
     background-color: #dbe3eba1;
 }
 
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
+
+
