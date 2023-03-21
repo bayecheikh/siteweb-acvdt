@@ -3,434 +3,372 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\about.vue",
-    "chunkName": "pages/about",
-    "_name": "_618ac95e"
+    "chunkName": "pages/about"
   },
   {
     "name": "activites",
     "path": "/activites",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\activites\\\\index.vue",
-    "chunkName": "pages/activites/index",
-    "_name": "_b88ff88e"
+    "chunkName": "pages/activites/index"
   },
   {
     "name": "blog",
     "path": "/blog",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\blog\\\\index.vue",
-    "chunkName": "pages/blog/index",
-    "_name": "_d9a69dfe"
+    "chunkName": "pages/blog/index"
   },
   {
     "name": "candidatures",
     "path": "/candidatures",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\candidatures\\\\index.vue",
-    "chunkName": "pages/candidatures/index",
-    "_name": "_6a49e6d4"
+    "chunkName": "pages/candidatures/index"
   },
   {
     "name": "cart",
     "path": "/cart",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\cart.vue",
-    "chunkName": "pages/cart",
-    "_name": "_888cfe42"
+    "chunkName": "pages/cart"
   },
   {
     "name": "checkout",
     "path": "/checkout",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\checkout.vue",
-    "chunkName": "pages/checkout",
-    "_name": "_7080e485"
+    "chunkName": "pages/checkout"
   },
   {
     "name": "compare",
     "path": "/compare",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\compare.vue",
-    "chunkName": "pages/compare",
-    "_name": "_1176ec76"
+    "chunkName": "pages/compare"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_2c7abe31"
+    "chunkName": "pages/contact"
   },
   {
     "name": "contenus",
     "path": "/contenus",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\contenus\\\\index.vue",
-    "chunkName": "pages/contenus/index",
-    "_name": "_9c91e6ec"
+    "chunkName": "pages/contenus/index"
   },
   {
     "name": "gestion-rh",
     "path": "/gestion-rh",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\gestion-rh\\\\index.vue",
-    "chunkName": "pages/gestion-rh/index",
-    "_name": "_1e09e449"
+    "chunkName": "pages/gestion-rh/index"
   },
   {
     "name": "home-cosmetics",
     "path": "/home-cosmetics",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-cosmetics.vue",
-    "chunkName": "pages/home-cosmetics",
-    "_name": "_20577615"
+    "chunkName": "pages/home-cosmetics"
   },
   {
     "name": "home-fashion-five",
     "path": "/home-fashion-five",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-fashion-five.vue",
-    "chunkName": "pages/home-fashion-five",
-    "_name": "_53139426"
+    "chunkName": "pages/home-fashion-five"
   },
   {
     "name": "home-fashion-four",
     "path": "/home-fashion-four",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-fashion-four.vue",
-    "chunkName": "pages/home-fashion-four",
-    "_name": "_e1095ecc"
+    "chunkName": "pages/home-fashion-four"
   },
   {
     "name": "home-fashion-seven",
     "path": "/home-fashion-seven",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-fashion-seven.vue",
-    "chunkName": "pages/home-fashion-seven",
-    "_name": "_0a8de86e"
+    "chunkName": "pages/home-fashion-seven"
   },
   {
     "name": "home-fashion-six",
     "path": "/home-fashion-six",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-fashion-six.vue",
-    "chunkName": "pages/home-fashion-six",
-    "_name": "_3820a1c4"
+    "chunkName": "pages/home-fashion-six"
   },
   {
     "name": "home-fashion-three",
     "path": "/home-fashion-three",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-fashion-three.vue",
-    "chunkName": "pages/home-fashion-three",
-    "_name": "_1aed7e4c"
+    "chunkName": "pages/home-fashion-three"
   },
   {
     "name": "home-fashion-two",
     "path": "/home-fashion-two",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\home-fashion-two.vue",
-    "chunkName": "pages/home-fashion-two",
-    "_name": "_303aef88"
+    "chunkName": "pages/home-fashion-two"
   },
   {
     "name": "login-register",
     "path": "/login-register",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\login-register.vue",
-    "chunkName": "pages/login-register",
-    "_name": "_74cd03f4"
+    "chunkName": "pages/login-register"
   },
   {
     "name": "marches-publics",
     "path": "/marches-publics",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\marches-publics\\\\index.vue",
-    "chunkName": "pages/marches-publics/index",
-    "_name": "_f37d5bfa"
+    "chunkName": "pages/marches-publics/index"
   },
   {
     "name": "missions",
     "path": "/missions",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\missions\\\\index.vue",
-    "chunkName": "pages/missions/index",
-    "_name": "_d72d62c8"
+    "chunkName": "pages/missions/index"
   },
   {
     "name": "my-account",
     "path": "/my-account",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\my-account.vue",
-    "chunkName": "pages/my-account",
-    "_name": "_7cabf4ea"
+    "chunkName": "pages/my-account"
   },
   {
     "name": "postes-peages",
     "path": "/postes-peages",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\postes-peages\\\\index.vue",
-    "chunkName": "pages/postes-peages/index",
-    "_name": "_464c322e"
+    "chunkName": "pages/postes-peages/index"
   },
   {
     "name": "privacy-policy",
     "path": "/privacy-policy",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\privacy-policy.vue",
-    "chunkName": "pages/privacy-policy",
-    "_name": "_ef11ded4"
+    "chunkName": "pages/privacy-policy"
   },
   {
     "name": "qui-sommes-nous",
     "path": "/qui-sommes-nous",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\qui-sommes-nous\\\\index.vue",
-    "chunkName": "pages/qui-sommes-nous/index",
-    "_name": "_c27a2092"
+    "chunkName": "pages/qui-sommes-nous/index"
   },
   {
     "name": "shop",
     "path": "/shop",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop.vue",
-    "chunkName": "pages/shop",
-    "_name": "_b27df496"
+    "chunkName": "pages/shop"
   },
   {
     "name": "shop-grid-full-width",
     "path": "/shop-grid-full-width",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop-grid-full-width.vue",
-    "chunkName": "pages/shop-grid-full-width",
-    "_name": "_448480d7"
+    "chunkName": "pages/shop-grid-full-width"
   },
   {
     "name": "shop-grid-no-sidebar",
     "path": "/shop-grid-no-sidebar",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop-grid-no-sidebar.vue",
-    "chunkName": "pages/shop-grid-no-sidebar",
-    "_name": "_00dbcb1f"
+    "chunkName": "pages/shop-grid-no-sidebar"
   },
   {
     "name": "shop-grid-right-sidebar",
     "path": "/shop-grid-right-sidebar",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop-grid-right-sidebar.vue",
-    "chunkName": "pages/shop-grid-right-sidebar",
-    "_name": "_060a852c"
+    "chunkName": "pages/shop-grid-right-sidebar"
   },
   {
     "name": "shop-grid-two-column",
     "path": "/shop-grid-two-column",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop-grid-two-column.vue",
-    "chunkName": "pages/shop-grid-two-column",
-    "_name": "_f9b9fb74"
+    "chunkName": "pages/shop-grid-two-column"
   },
   {
     "name": "shop-list-full-width",
     "path": "/shop-list-full-width",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop-list-full-width.vue",
-    "chunkName": "pages/shop-list-full-width",
-    "_name": "_c10fff02"
+    "chunkName": "pages/shop-list-full-width"
   },
   {
     "name": "shop-list-standard",
     "path": "/shop-list-standard",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\shop-list-standard.vue",
-    "chunkName": "pages/shop-list-standard",
-    "_name": "_5caeeb74"
+    "chunkName": "pages/shop-list-standard"
   },
   {
     "name": "terms-conditions",
     "path": "/terms-conditions",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\terms-conditions.vue",
-    "chunkName": "pages/terms-conditions",
-    "_name": "_5bc172fd"
+    "chunkName": "pages/terms-conditions"
   },
   {
     "name": "wishlist",
     "path": "/wishlist",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\wishlist.vue",
-    "chunkName": "pages/wishlist",
-    "_name": "_07b2f584"
+    "chunkName": "pages/wishlist"
   },
   {
     "name": "blog-blog-right-sidebar",
     "path": "/blog/blog-right-sidebar",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\blog\\\\blog-right-sidebar.vue",
-    "chunkName": "pages/blog/blog-right-sidebar",
-    "_name": "_69a76321"
+    "chunkName": "pages/blog/blog-right-sidebar"
   },
   {
     "name": "blog-blog-without-sidebar",
     "path": "/blog/blog-without-sidebar",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\blog\\\\blog-without-sidebar.vue",
-    "chunkName": "pages/blog/blog-without-sidebar",
-    "_name": "_09a7bf66"
+    "chunkName": "pages/blog/blog-without-sidebar"
   },
   {
     "name": "contenus-blog-right-sidebar",
     "path": "/contenus/blog-right-sidebar",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\contenus\\\\blog-right-sidebar.vue",
-    "chunkName": "pages/contenus/blog-right-sidebar",
-    "_name": "_71b9ce38"
+    "chunkName": "pages/contenus/blog-right-sidebar"
   },
   {
     "name": "contenus-blog-without-sidebar",
     "path": "/contenus/blog-without-sidebar",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\contenus\\\\blog-without-sidebar.vue",
-    "chunkName": "pages/contenus/blog-without-sidebar",
-    "_name": "_485021a4"
+    "chunkName": "pages/contenus/blog-without-sidebar"
   },
   {
     "name": "gestion-rh-decret-statut",
     "path": "/gestion-rh/decret-statut",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\gestion-rh\\\\decret-statut.vue",
-    "chunkName": "pages/gestion-rh/decret-statut",
-    "_name": "_8f925dd0"
+    "chunkName": "pages/gestion-rh/decret-statut"
   },
   {
     "name": "gestion-rh-mission",
     "path": "/gestion-rh/mission",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\gestion-rh\\\\mission.vue",
-    "chunkName": "pages/gestion-rh/mission",
-    "_name": "_04755443"
+    "chunkName": "pages/gestion-rh/mission"
   },
   {
     "name": "gestion-rh-organnigramme",
     "path": "/gestion-rh/organnigramme",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\gestion-rh\\\\organnigramme.vue",
-    "chunkName": "pages/gestion-rh/organnigramme",
-    "_name": "_08ea34b2"
+    "chunkName": "pages/gestion-rh/organnigramme"
   },
   {
     "name": "marches-publics-decret-statut",
     "path": "/marches-publics/decret-statut",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\marches-publics\\\\decret-statut.vue",
-    "chunkName": "pages/marches-publics/decret-statut",
-    "_name": "_532c365c"
+    "chunkName": "pages/marches-publics/decret-statut"
   },
   {
     "name": "marches-publics-mission",
     "path": "/marches-publics/mission",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\marches-publics\\\\mission.vue",
-    "chunkName": "pages/marches-publics/mission",
-    "_name": "_3c883b7d"
+    "chunkName": "pages/marches-publics/mission"
   },
   {
     "name": "marches-publics-organnigramme",
     "path": "/marches-publics/organnigramme",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\marches-publics\\\\organnigramme.vue",
-    "chunkName": "pages/marches-publics/organnigramme",
-    "_name": "_271d486c"
+    "chunkName": "pages/marches-publics/organnigramme"
   },
   {
     "name": "missions-blog-right-sidebar",
     "path": "/missions/blog-right-sidebar",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\missions\\\\blog-right-sidebar.vue",
-    "chunkName": "pages/missions/blog-right-sidebar",
-    "_name": "_0fdaf966"
+    "chunkName": "pages/missions/blog-right-sidebar"
   },
   {
     "name": "missions-blog-without-sidebar",
     "path": "/missions/blog-without-sidebar",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\missions\\\\blog-without-sidebar.vue",
-    "chunkName": "pages/missions/blog-without-sidebar",
-    "_name": "_3a598d5c"
+    "chunkName": "pages/missions/blog-without-sidebar"
   },
   {
     "name": "postes-peages-decret-statut",
     "path": "/postes-peages/decret-statut",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\postes-peages\\\\decret-statut.vue",
-    "chunkName": "pages/postes-peages/decret-statut",
-    "_name": "_4aab9890"
+    "chunkName": "pages/postes-peages/decret-statut"
   },
   {
     "name": "postes-peages-mission",
     "path": "/postes-peages/mission",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\postes-peages\\\\mission.vue",
-    "chunkName": "pages/postes-peages/mission",
-    "_name": "_4f4f2ee3"
+    "chunkName": "pages/postes-peages/mission"
   },
   {
     "name": "postes-peages-organnigramme",
     "path": "/postes-peages/organnigramme",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\postes-peages\\\\organnigramme.vue",
-    "chunkName": "pages/postes-peages/organnigramme",
-    "_name": "_2b5d9752"
+    "chunkName": "pages/postes-peages/organnigramme"
   },
   {
     "name": "product-product-affiliate",
     "path": "/product/product-affiliate",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\product\\\\product-affiliate.vue",
-    "chunkName": "pages/product/product-affiliate",
-    "_name": "_d73720c2"
+    "chunkName": "pages/product/product-affiliate"
   },
   {
     "name": "qui-sommes-nous-decret-statut",
     "path": "/qui-sommes-nous/decret-statut",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\qui-sommes-nous\\\\decret-statut.vue",
-    "chunkName": "pages/qui-sommes-nous/decret-statut",
-    "_name": "_161c8e86"
+    "chunkName": "pages/qui-sommes-nous/decret-statut"
   },
   {
     "name": "qui-sommes-nous-mission",
     "path": "/qui-sommes-nous/mission",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\qui-sommes-nous\\\\mission.vue",
-    "chunkName": "pages/qui-sommes-nous/mission",
-    "_name": "_3b193c31"
+    "chunkName": "pages/qui-sommes-nous/mission"
   },
   {
     "name": "qui-sommes-nous-organnigramme",
     "path": "/qui-sommes-nous/organnigramme",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\qui-sommes-nous\\\\organnigramme.vue",
-    "chunkName": "pages/qui-sommes-nous/organnigramme",
-    "_name": "_66cff220"
+    "chunkName": "pages/qui-sommes-nous/organnigramme"
   },
   {
     "name": "activites-slug",
     "path": "/activites/:slug",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\activites\\\\_slug.vue",
-    "chunkName": "pages/activites/_slug",
-    "_name": "_bbfd3b1e"
+    "chunkName": "pages/activites/_slug"
   },
   {
     "name": "blog-slug",
     "path": "/blog/:slug",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\blog\\\\_slug.vue",
-    "chunkName": "pages/blog/_slug",
-    "_name": "_dd13e08e"
+    "chunkName": "pages/blog/_slug"
   },
   {
     "name": "contenus-slug",
     "path": "/contenus/:slug",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\contenus\\\\_slug.vue",
-    "chunkName": "pages/contenus/_slug",
-    "_name": "_9fff297c"
+    "chunkName": "pages/contenus/_slug"
   },
   {
     "name": "gestion-rh-slug",
     "path": "/gestion-rh/:slug?",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\gestion-rh\\\\_slug.vue",
-    "chunkName": "pages/gestion-rh/_slug",
-    "_name": "_1c534301"
+    "chunkName": "pages/gestion-rh/_slug"
   },
   {
     "name": "marches-publics-slug",
     "path": "/marches-publics/:slug?",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\marches-publics\\\\_slug.vue",
-    "chunkName": "pages/marches-publics/_slug",
-    "_name": "_f6ea9e8a"
+    "chunkName": "pages/marches-publics/_slug"
   },
   {
     "name": "missions-slug",
     "path": "/missions/:slug",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\missions\\\\_slug.vue",
-    "chunkName": "pages/missions/_slug",
-    "_name": "_da9aa558"
+    "chunkName": "pages/missions/_slug"
   },
   {
     "name": "postes-peages-slug",
     "path": "/postes-peages/:slug?",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\postes-peages\\\\_slug.vue",
-    "chunkName": "pages/postes-peages/_slug",
-    "_name": "_49b974be"
+    "chunkName": "pages/postes-peages/_slug"
   },
   {
     "name": "product-slug",
     "path": "/product/:slug?",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\product\\\\_slug.vue",
-    "chunkName": "pages/product/_slug",
-    "_name": "_e244488c"
+    "chunkName": "pages/product/_slug"
   },
   {
     "name": "qui-sommes-nous-slug",
     "path": "/qui-sommes-nous/:slug?",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\qui-sommes-nous\\\\_slug.vue",
-    "chunkName": "pages/qui-sommes-nous/_slug",
-    "_name": "_c5e76322"
+    "chunkName": "pages/qui-sommes-nous/_slug"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_fd7ab7ba"
+    "chunkName": "pages/index"
   }
 ]

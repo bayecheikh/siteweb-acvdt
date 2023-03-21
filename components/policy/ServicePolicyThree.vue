@@ -11,10 +11,19 @@
                   <h1 class="card-title custom-title">Marchés publics</h1> 
                 </div>
             </div>
-            <div class="row justify-content-center mb-30 blog-wrap-2 mb-0 height-100 border-grey">
-                <input type="text" v-model="input" placeholder="Rechercher..." />
+            <div class="d-flex justify-content-between">
+                <div class="row justify-content-center custom-input mb-30 blog-wrap-2 mb-0 height-100 border-grey">
+                    <input type="text" v-model="input" placeholder="Rechercher par référence, objet..." />
+                </div>
+                <div class="custom-select row justify-content-center mb-30 blog-wrap-2 mb-0 height-100 border-grey  input-group mb-3">
+                    <select v-model="selectedAnnee" @change="filterByAnnee" class="custom-select centered" id="inputGroupSelect02">
+                        <option value="">   Filtrer par année...</option>
+                        <option v-for="annee in annees" :key="annee.id" :value="annee.libelle">{{ annee.libelle }}</option>
+                    </select>
+                </div>
+                
             </div>
-         
+
             <div class="row justify-content-center mb-30 blog-wrap-2 mb-0 height-100 border-grey">
                 <div class="col-lg-12 col-sm-12">
                     <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
@@ -45,7 +54,7 @@
                                         </tr>
                                     </thead>
                                     <tbody class="tbodyDiv">
-                                        <tr class="custom_margin" v-for="(item, index) in filteredList().filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation')" :key="index">
+                                        <tr class="custom_margin" v-for="(item, index) in  combinedFilteredList().filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="item.objet"></div></td>
                                             <td>{{ item.type_marche }}</td>
@@ -95,9 +104,9 @@
                                                 </modal>
                                             </td>
                                         </tr>
-                                       <div  v-if="input&&!filteredList().length">
-                                        <p>Aucun résultat</p>
-                                    </div>
+                                        <div v-if="!combinedFilteredList().length">
+                                            <p>Aucun résultat</p>
+                                        </div>
                                     </tbody>
                                 </table>
                             </div>
@@ -119,7 +128,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="(item, index) in filteredList().filter(marchepublic => marchepublic.categories[0].slug === 'avis-generaux')" :key="index">
+                                        <tr v-for="(item, index) in  combinedFilteredList().filter(marchepublic => marchepublic.categories[0].slug === 'avis-generaux')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="item.objet"></div></td>
                                             <td>{{ item.type_marche }}</td>
@@ -169,9 +178,9 @@
                                                 </modal>
                                             </td>
                                         </tr>
-                                        <div v-if="input&&!filteredList().length">
-                                        <p>Aucun résultat</p>
-                                    </div>
+                                        <div v-if="!combinedFilteredList().length">
+                                            <p>Aucun résultat</p>
+                                        </div>
                                     </tbody>
                                 </table>
                             </div>
@@ -193,7 +202,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="(item, index) in filteredList().filter(marchepublic => marchepublic.categories[0].slug === 'avis-d-appel-a-concurence')" :key="index">
+                                        <tr v-for="(item, index) in  combinedFilteredList().filter(marchepublic => marchepublic.categories[0].slug === 'avis-d-appel-a-concurence')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
                                             <td><div class="card-text" v-html="$truncate(item.objet,200)"></div></td>
                                             <td>{{ item.type_marche }}</td>
@@ -243,9 +252,9 @@
                                                 </modal>
                                             </td>                              
                                         </tr>
-                                        <div v-if="input&&!filteredList().length">
-                                        <p>Aucun résultat</p>
-                                    </div>
+                                        <div v-if="!combinedFilteredList().length">
+                                            <p>Aucun résultat</p>
+                                        </div>
                                     </tbody>
                                 </table>
                             </div>
@@ -277,11 +286,38 @@ import { mapMutations, mapGetters } from 'vuex'
     });
   },
         methods: {
-            
-            filteredList(){
+            toggleAnneeList() {
+                this.anneeListVisible = !this.anneeListVisible;
+            },
+            selectAnnee(annee) {
+                this.selectedAnnee = annee.libelle;
+                this.anneeListVisible = false;
+            },
+            filterByAnnee() {
+                if (this.selectedAnnee) {
+                    this.filteredListByAnnee = this.listmarchepublics.filter(marchepublic => marchepublic.date_publication.split("-")[0] === this.selectedAnnee)
+                } 
+                else {
+                    this.filteredListByAnnee = this.listmarchepublics
+                }
+            },
+            filteredListByName(){
                 return ( this.listmarchepublics.filter((component) => 
                     component.reference.toLowerCase().includes(this.input.toLowerCase()) ||   component.objet.toLowerCase().includes(this.input.toLowerCase())
                 ))
+            },
+            combinedFilteredList() {
+               
+                const filteredByAnnee = this.filteredListByAnnee
+                const filteredByName = this.filteredListByName()
+                if(!this.selectedAnnee && !this.input)return this.listmarchepublics
+                if(!this.selectedAnnee && this.input)return this.filteredListByName()
+                if(this.selectedAnnee && !this.input)return this.filteredListByAnnee
+                // Utilisez la méthode filter() pour filtrer les objets qui sont dans les deux listes filtrées
+                if(this.selectedAnnee && this.input){
+                    const filteredList = filteredByAnnee.filter((component) => filteredByName.includes(component))
+                    return filteredList
+                }
             },
             getUrlImage(url){
                 return url.substring(str.indexOf('drupal-api') + 1);
@@ -295,6 +331,17 @@ import { mapMutations, mapGetters } from 'vuex'
         },
         data() {
             return {
+                anneeListVisible: false,
+                annees: [
+                    { id: 1, libelle: '2019', status: 'actif', created_at: '2022-10-20T12:47:48.000000Z', updated_at: '2022-10-20T12:47:48.000000Z' },
+                    { id: 2, libelle: '2020', status: 'actif', created_at: '2022-10-20T12:47:48.000000Z', updated_at: '2022-10-20T12:47:48.000000Z' },
+                    { id: 3, libelle: '2021', status: 'actif', created_at: '2022-10-20T12:47:48.000000Z', updated_at: '2022-10-20T12:47:48.000000Z' },
+                    { id: 4, libelle: '2022', status: 'actif', created_at: '2022-10-20T12:47:48.000000Z', updated_at: '2022-10-20T12:47:48.000000Z' },
+                    { id: 5, libelle: '2023', status: 'actif', created_at: '2022-10-20T12:47:48.000000Z', updated_at: '2022-10-20T12:47:48.000000Z' },
+                    // Ajoutez les années que vous voulez afficher ici
+                    ],
+                selectedAnnee: '',
+                filteredListByAnnee: [],
                 showContent: false,
                 input: '',
                 search: '',
@@ -307,7 +354,7 @@ import { mapMutations, mapGetters } from 'vuex'
         },
     };
 </script>
-<style scoped>
+<style >
 .height-100{
     height: 100% !important;
     box-shadow: 0px -6px 22px 0 #e9ecef;
@@ -343,6 +390,18 @@ import { mapMutations, mapGetters } from 'vuex'
     padding-left: 15px;
     color: #fff;
 }
+.custom-select {
+   height: 76.2px !important;
+   width: 256px !important;
+   margin-left: 50px;
+   appearance: none;
+   overflow: visible !important;
+}
+.custom-input {
+   height: 76.2px !important;
+   width: 437px !important;
+   
+}
 .ref_ p,.del_ p{
     color: #fff;
 }
@@ -371,7 +430,13 @@ input[type="text"] {
   animation: blink 1s infinite;
   
 }
-
+.centered {
+  text-align: left;
+  padding-bottom:30px;
+  padding-right:40px;
+  padding-left:0px;
+  color: #adb5bd;
+}
 @keyframes blink {
   0% {
     opacity: 1;
