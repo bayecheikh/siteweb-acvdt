@@ -190,7 +190,7 @@ import { mapMutations, mapGetters } from 'vuex'
                         circle.strokeWidth = 4;
                         circle.nonScaling = true;
                         //circle.tooltipText = "{titre}\nLatitude : {latitude} , Longitude : {longitude}";
-                        circle.tooltipHTML = "<img src='route-a-peage.png' style='vertical-align:center; margin-right: 6px; width:21px; height:21px;'><span style='font-size:14px; color:#000000;'><b>{titre}</b></span>";
+                      circle.tooltipHTML = "<img src='route-a-peage.png' class='tooltip' style='vertical-align:middle; margin-right: 6px; width:21px; height:21px;'><span style='font-size:14px; color:#000000;'><b>{titre}</b></span>";
                         circle.propertyFields.showTooltipOn = "showTooltip";
                         
     
@@ -220,6 +220,9 @@ import { mapMutations, mapGetters } from 'vuex'
 
   width: 100%;
   height: 600px;
+}
+.tooltip {
+  width: 200px;
 }
 path {
   fill: #ffffff;
@@ -292,6 +295,7 @@ path:hover {
   letter-spacing: 1px;
   font-size: 6em;
 }
+
 .green {
   color: #08b708;
 }
