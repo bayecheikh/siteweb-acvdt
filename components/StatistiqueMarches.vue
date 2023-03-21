@@ -1,4 +1,10 @@
 <template>
+     <div>
+        
+        <spinner class="square-loader" :width="'1290px'" :height="'250px'" :margin="'0px'" :marginTop="'50px'" :marginBottom="'50px'"   v-if="!showContent" ></spinner>
+
+
+    <div v-if="showContent">
     <div class="support-area pt-60 pb-90">
         <div class="container">
             <div class="row justify-content-center mb-30">
@@ -37,7 +43,7 @@
                     <div class="blog-wrap-2 mb-0 height-100">   
                         <div class="card-body">
                             <n-link to="" class="custom-center-box">
-                                <p class="card-text  text-center pt-15">Avis d'appel à concurence</p>
+                                <p class="card-text  text-center pt-15">Avis d'appel à concurrence</p>
                             </n-link>
                             <n-link to="" class="custom-center-box">
                                 <h2 class="card-title custom-sub-title pb-10 text-center">{{listmarchepublics.filter(marchepublic => marchepublic.categories[0].slug === 'plan-de-passation').length}}</h2>
@@ -48,18 +54,25 @@
             </div>
         </div>
     </div>
+        </div>
+    </div>
 </template>
 
 <script>
+import Spinner from 'vue-spinner/src/SquareLoader.vue';
 import { mapMutations, mapGetters } from 'vuex'
     export default {
-        
+        components: {
+            Spinner,
+        },
         computed: mapGetters({
             listmarchepublics: 'marchepublics/listmarchepublics',
         }),
-        mounted: function() {
-            //this.getListStatistique()
-        },
+        mounted() {
+    this.$store.dispatch("marchepublics/getList").then(() => {
+        this.showContent = true;
+    });
+  },
         methods: {
             getListStatistique(){
                 this.progress=true
@@ -78,6 +91,7 @@ import { mapMutations, mapGetters } from 'vuex'
         },
         data() {
             return {
+                showContent: false,
                 siteUrl:process.env.siteUrl,
                 statistiques: []
             }
@@ -106,4 +120,23 @@ import { mapMutations, mapGetters } from 'vuex'
 .text-center{
     text-align: center;
 }
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
+

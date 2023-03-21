@@ -21,6 +21,13 @@
     "_name": "_d9a69dfe"
   },
   {
+    "name": "candidatures",
+    "path": "/candidatures",
+    "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\candidatures\\\\index.vue",
+    "chunkName": "pages/candidatures/index",
+    "_name": "_6a49e6d4"
+  },
+  {
     "name": "cart",
     "path": "/cart",
     "component": "C:\\\\wamp\\\\www\\\\SIRAT\\\\siteweb-sirat\\\\pages\\\\cart.vue",

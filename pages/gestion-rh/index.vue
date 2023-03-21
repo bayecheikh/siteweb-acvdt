@@ -3,10 +3,6 @@
         <TheHeader />
         <Breadcrumb pageTitle="CARRIÈRES" />
         <StatistiqueOffres />
-<<<<<<< HEAD
-        
-=======
->>>>>>> yacine_v2
         <OffreEncours />
         <TableOffres />
         <TheFooter />

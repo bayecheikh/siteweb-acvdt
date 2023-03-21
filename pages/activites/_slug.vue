@@ -2,7 +2,10 @@
     <div class="product-details-page-wrapper">
         <TheHeader />
         <Breadcrumb :pageTitle="mission && mission.title" />
-
+        <div>
+        
+        <spinner class="square-loader" :width="'1290px'" :height="'1679px'" :margin="'0px'" :marginBottom="'50px'" :marginTop="'50px'"   v-if="!showContent" ></spinner>
+    <div v-if="showContent">
         <div class="Blog-details-inner pt-60 pb-100">
             <div class="container">
                 <div class="row justify-content-center">
@@ -26,15 +29,18 @@
                 </div>
             </div>
         </div>
+    </div>
+        </div>
         <TheFooter />
     </div>
 </template>
 
 <script>
     import blog from "@/data/blog.json";
-
+    import Spinner from 'vue-spinner/src/SquareLoader.vue';
     export default {
         components: {
+            Spinner,
             TheHeader: () => import('@/components/TheHeader'),
             TheFooter: () => import("@/components/TheFooter")
         },
@@ -43,6 +49,7 @@
         },
         data() {
             return {
+                showContent: false,
                 slug: this.$route.params.slug,
                 mission:{},
                 siteUrl:process.env.siteUrl,
@@ -56,6 +63,7 @@
                 this.progress=true
                 this.$axios.$get('/api/quisommesnous/section-1/?nid='+this.slug+'&_format=json')
                 .then(async (response) => {
+                    this.showContent = true;
                     //this.$toast.success(response.message).goAway(2000)
                     console.log('Données Reçu ++++++: ', response)
                     this.mission = response[0]

@@ -1,4 +1,11 @@
 <template>
+      <div>
+        <div style="display: flex;">
+            <spinner class="square-loader" :width="'660px'" :height="'500px'" :margin="'0px'"  v-if="!showContent" ></spinner>
+            <spinner class="square-loader" :width="'640px'" :height="'500px'" :margin="'0px'"  :marginLeft="'16px'"  v-if="!showContent" ></spinner>
+        </div>
+
+    <div v-if="showContent">
     <div class="support-area pt-60 pb-40">
         <div class="container">
             <div class="row justify-content-center custom-row margin-left-0" v-for="(item, index) in listcontenus.filter(contenu => contenu.categories[0].slug === 'service-abonnement')" :key="index">
@@ -20,14 +27,26 @@
             </div>
         </div>
     </div>
+    </div>
+    </div>
 </template>
 <script>
+import Spinner from 'vue-spinner/src/SquareLoader.vue';
+
 import { mapMutations, mapGetters } from 'vuex'
     import countTo from 'vue-count-to';
     export default {
+        components: {
+            Spinner,
+        },
         computed: mapGetters({
             listcontenus: 'contenus/listcontenus',
         }),
+        mounted() {
+    this.$store.dispatch("contenus/getList").then(() => {
+        this.showContent = true;
+    });
+  },
         methods: {
             getUrlImage(url){
                 return url.substring(str.indexOf('drupal-api') + 1);
@@ -36,6 +55,7 @@ import { mapMutations, mapGetters } from 'vuex'
         },
         data() {
             return {
+                showContent: false,
                 siteUrl:process.env.siteUrl,
                 fileUrl:process.env.fileUrl,
                 missions: [],
@@ -107,4 +127,23 @@ padding-left: 47px !important;
     margin-right: -30px !important;
 }
 
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
+

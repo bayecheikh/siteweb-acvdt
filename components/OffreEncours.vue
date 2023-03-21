@@ -1,4 +1,10 @@
 <template>
+      <div>
+        
+        <spinner class="square-loader" :width="'1290px'" :height="'500px'" :margin="'0px'"  :marginTop="'30px'"   v-if="!showContent" ></spinner>
+
+        <spinner class="square-loader" :width="'1290px'" :height="'500px'" :margin="'0px'" :marginBottom="'30px'" :marginTop="'30px'"   v-if="!showContent" ></spinner>
+    <div v-if="showContent">
     <div class="support-area pt-60 pb-90 grey-bg">
         <div class="container">
             <div class="row justify-content-center mb-30">
@@ -90,7 +96,7 @@
             </div>
         </div>
         <div v-if="offreObject">
-            <modal :name="'modal_'+offreObject.id" width="50%" :scrollable="true" height=auto>
+            <modal :name="'modalOffreEnCours_'+offreObject.id" width="50%" :scrollable="true" height=auto>
             <div class="container pt-15 pb-15">
                 <div class="custom-row-2">
                     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -124,16 +130,25 @@
             </div>
         </modal>
         </div>
-       
+    </div>
+    </div>
     </div>
 </template>
 
 <script>
+import Spinner from 'vue-spinner/src/SquareLoader.vue';
 import { mapGetters } from 'vuex'
     export default {
-        mounted: function() {
-            this.$store.dispatch('gestionrhs/getList')
+        components: {
+            Spinner,
         },
+        mounted() {
+    this.$store.dispatch("gestionrhs/getList").then(() => {
+        setTimeout(() => {
+      this.showContent = true;
+    }, 2000); 
+    });
+  },
         computed: mapGetters({
             listoffres: 'gestionrhs/listgestionrhs',
             listemplois: 'gestionrhs/listemplois',
@@ -143,12 +158,13 @@ import { mapGetters } from 'vuex'
             async onClickConsulter(offre) {
                this.offreObject = offre
                 this.isPageLoad=true
-              await this.$modal.show('modal_'+offre.id)
+              await this.$modal.show('modalOffreEnCours_'+offre.id)
              
             },
         },
         data() {
             return {
+                showContent: false,
                 offreObject:null,
                 isPageLoad: false,
                 siteUrl:process.env.siteUrl,
@@ -299,4 +315,24 @@ import { mapGetters } from 'vuex'
     background-color: #dbe3eba1;
 }
 
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
+
+

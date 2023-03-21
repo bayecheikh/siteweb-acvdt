@@ -1,4 +1,9 @@
 <template>
+    <div>
+        <spinner class="square-loader" :width="'1536px'" :height="'750px'" :margin="'0px'" :marginLeft="'0px'" :marginRight="'0px'"  v-if="!showContent" ></spinner>
+
+
+    <div v-if="showContent">
     <div class="slider-area nav-style-1">
         <swiper :options="swiperOption">
             <swiper-slide v-for="(item,i) in listcontenus.filter(contenu => contenu.categories[0].slug === 'slider-accueil')" :key="i" class="single-slider slider-height-1 bg-green bg-slide-1" :style="{'background-image':'url('+(fileUrl+(item.futured_images[0] && item.futured_images[0].name))+')'}">
@@ -34,18 +39,30 @@
             <!-- Swiper Navigation End -->
         </swiper>
     </div>
+    </div>
+    </div>
 </template>
 
 <script>
+import Spinner from 'vue-spinner/src/SquareLoader.vue';
 import { mapMutations, mapGetters } from 'vuex'
     export default {
+        components: {
+            Spinner,
+        },
         computed: mapGetters({
             listcontenus: 'contenus/listcontenus',
         }),
+        mounted() {
+    this.$store.dispatch("contenus/getList").then(() => {
+        this.showContent = true;
+    });
+  },
         methods: {
         },
         data() {
             return {
+                showContent: false,
                 fileUrl:process.env.fileUrl,
                 sliders:[],
                 swiperOption: {
@@ -121,5 +138,23 @@ import { mapMutations, mapGetters } from 'vuex'
 }
 .custom-nav{
     color:#fff !important
+}
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

@@ -7,6 +7,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _618ac95e = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
 const _b88ff88e = () => interopDefault(import('..\\pages\\activites\\index.vue' /* webpackChunkName: "pages/activites/index" */))
 const _d9a69dfe = () => interopDefault(import('..\\pages\\blog\\index.vue' /* webpackChunkName: "pages/blog/index" */))
+const _6a49e6d4 = () => interopDefault(import('..\\pages\\candidatures\\index.vue' /* webpackChunkName: "pages/candidatures/index" */))
 const _888cfe42 = () => interopDefault(import('..\\pages\\cart.vue' /* webpackChunkName: "pages/cart" */))
 const _7080e485 = () => interopDefault(import('..\\pages\\checkout.vue' /* webpackChunkName: "pages/checkout" */))
 const _1176ec76 = () => interopDefault(import('..\\pages\\compare.vue' /* webpackChunkName: "pages/compare" */))
@@ -89,6 +90,10 @@ export const routerOptions = {
     path: "/blog",
     component: _d9a69dfe,
     name: "blog"
+  }, {
+    path: "/candidatures",
+    component: _6a49e6d4,
+    name: "candidatures"
   }, {
     path: "/cart",
     component: _888cfe42,

@@ -1,4 +1,10 @@
 <template>
+     <div>
+        
+        <spinner class="square-loader" :width="'1290px'" :height="'819.8px'" :margin="'0px'" :marginBottom="'20px'"   v-if="!showContent" ></spinner>
+
+       
+    <div v-if="showContent">
     <div class="support-area pt-30 pb-40">
         <div class="container">
             <div class="row justify-content-center mb-30">
@@ -74,6 +80,11 @@
                                                                             <p class="text-center btn ref_">Télécharger</p>
                                                                         </a>          
                                                                     </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <n-link :to="{ path: '/candidatures', query: { reference: `${item.reference}` } }">
+                                                                            <p class="text-center btn ref_">Postuler</p>
+                                                                        </n-link>     
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -105,7 +116,7 @@
                                     <tbody>
                                         <tr v-for="(item, index) in listgestionrhs.filter(gestionrh => gestionrh.categories[0].slug === 'stages')" :key="index">
                                             <th scope="row">{{ item.reference }}</th>
-                                            <td><div class="card-text" v-html="item.objet"></div></td>
+                                            <td><div class="card-text" v-html="$truncate(item.objet,256)"></div></td>
                                             <td>{{ item.secteur }}</td>
                                             <td>{{ item.date_publication}}</td>
                                             <td>{{ item.date_limite }}</td>
@@ -144,6 +155,16 @@
                                                                     <div class="custom-bloc-bottom d-flex justify-content-between">
                                                                         <a target="_blank" :href="item.lien" class="custom-center-box">
                                                                             <p class="text-center btn ref_">Télécharger</p>
+                                                                        </a>          
+                                                                    </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <a target="_blank" :href="item.lien" class="custom-center-box">
+                                                                            <p class="text-center btn ref_">Télécharger</p>
+                                                                        </a>          
+                                                                    </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <a target="_blank" :href="item.lien" class="custom-center-box">
+                                                                            <p class="text-center btn ref_">Postuler</p>
                                                                         </a>          
                                                                     </div>
                                                                 </div>
@@ -217,6 +238,11 @@
                                                                             <p class="text-center btn ref_">Télécharger</p>
                                                                         </a>          
                                                                     </div>
+                                                                    <div class="custom-bloc-bottom d-flex justify-content-between">
+                                                                        <a target="_blank" :href="item.lien" class="custom-center-box">
+                                                                            <p class="text-center btn ref_">Postuler</p>
+                                                                        </a>          
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -231,17 +257,29 @@
                     </div> 
                 </div>
             </div>
-            
+            </div>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import Spinner from 'vue-spinner/src/SquareLoader.vue';
 import { mapMutations, mapGetters } from 'vuex'
     export default {
+        components: {
+            Spinner,
+        },
         computed: mapGetters({
             listgestionrhs: 'gestionrhs/listgestionrhs',
         }),
+        mounted() {
+    this.$store.dispatch("gestionrhs/getList").then(() => {
+        setTimeout(() => {
+      this.showContent = true;
+    }, 2000); 
+    });
+  },
         methods: {
             getUrlImage(url){
                 return url.substring(str.indexOf('drupal-api') + 1);
@@ -255,6 +293,7 @@ import { mapMutations, mapGetters } from 'vuex'
         },
         data() {
             return {
+                showContent: false,
                 isPageLoad:false,
                 siteUrl:process.env.siteUrl,
                 fileUrl:process.env.fileUrl,
@@ -313,4 +352,24 @@ import { mapMutations, mapGetters } from 'vuex'
 .grey-bg{
     background-color: #dbe3eba1;
 }
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
+
+

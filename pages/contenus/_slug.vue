@@ -1,8 +1,12 @@
 <template>
+ 
     <div class="product-details-page-wrapper">
         <TheHeader />
-        <Breadcrumb :pageTitle="mission && mission.title" />
-
+        <Breadcrumb :pageTitle="mission.titre ? mission.categorie + ' > '+mission.titre : mission.categorie" />
+            <div>
+        
+                <spinner class="square-loader" :width="'1300px'" :height="'1679px'" :margin="'0px'" :marginBottom="'50px'" :marginLeft="'130px'" :marginRight="'130px'"  :marginTop="'50px'"   v-if="!showContent" ></spinner>
+    <div v-if="showContent">
         <div class="Blog-details-inner pt-60 pb-100">
             <div class="container">
                 <div class="row justify-content-center ">
@@ -53,15 +57,18 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
         <TheFooter />
     </div>
 </template>
 
 <script>
     import blog from "@/data/blog.json";
-
+    import Spinner from 'vue-spinner/src/SquareLoader.vue';
     export default {
         components: {
+            Spinner,
             TheHeader: () => import('@/components/TheHeader'),
             TheFooter: () => import("@/components/TheFooter")
         },
@@ -70,9 +77,12 @@
         },
         data() {
             return {
+                showContent: false,
                 fileUrl:process.env.fileUrl,
                 slug: this.$route.params.slug,
-                mission:{},
+                mission:{
+                    titre:''
+                },
                 siteUrl:process.env.siteUrl,
                 sharing: {
                     url: process.env.frontUrl + this.$route.fullPath,
@@ -97,6 +107,7 @@
                 this.progress=true
                 this.$axios.$get('/allcontenus/'+this.slug)
                 .then(async (response) => {
+                    this.showContent = true;
                     //this.$toast.success(response.message).goAway(2000)
                     console.log('Données detail Reçu ++++++: ', response.data)
                     this.mission = response.data
@@ -134,4 +145,24 @@
 #share-network .fa{
     font-size: 28px !important;
 }
+.square-loader {
+  height: 100%;
+  width: 100%;
+  animation: blink 1s infinite;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
+
+
